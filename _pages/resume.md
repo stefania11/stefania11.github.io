@@ -17,7 +17,7 @@ nav: true
 
 
 ### Awards
-* [NSF FMitF Grant](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505518) for End-User Programming project, 2021
+* [NSF FMitF Grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2122950&HistoricalAwards=false) for End-User Programming project, 2021
 * [Jacobs Foundation Grant](https://ischool.uw.edu/news/2020/01/researchers-win-fellowship-study-new-frontier-tech-education) for AI Literacy project, 2020
 * [Weizenbaum Research Fellow](https://www.weizenbaum-institut.de/portrait/p/stefania-druga/) in Criticality of AI-based Systems Lab in Berlin, 2019
 * [Human in Residence Fellow](https://tisch.nyu.edu/itp/itp-people/faculty/somethings-in-residence-sirs), Google & NYU ITP, 2019.
