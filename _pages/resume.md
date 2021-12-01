@@ -10,8 +10,8 @@ nav: true
 
 
 ### Qualifications summary
-* Program synthesis for end-user programming. 
-* Research on AI literacy for families.
+* Program synthesis for creative coding. 
+* Research on AI literacies for families.
 * Extensive experience in building programming platforms for children.
 * Teaching classes about creative learning and prototyping with AI. 
 
@@ -56,6 +56,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * [Design Internet Research](https://wiki.communitydata.science/Internet_Research_Methods_(Winter_2020))
 * [Culture Learning and Development](https://myplan.uw.edu/course/#/courses/EDPSY503)
 * [Computer-Supported Collaborative Learning](https://ischool.uw.edu/programs/phd/curriculum/special-topics)
+* [Child-Computer Interaction](https://ischool.uw.edu/programs/phd/curriculum/special-topics)
 
 
 ### Professional Experience
@@ -110,11 +111,13 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * Summer Intern, Microsoft Research (June 2020 – Sep. 2020)
     - Conducted an longitudinal study with 17 families for 5 weeks evaluating a new programming platform for kids.
     - Analyzed and communicated findings in company wide presentations and public webinars
-    - `https://cri­paris.org/`
+    - `https://www.microsoft.com/en-us/research/project/microsoft-tilecode/`
+
 * Research Associate, CRI (Mar. 2011 – Jan. 2012)
     - Participated as a research associate in a project that applied machine learning algorithms for interdisciplinary online educational programs.
     - The proposal was validated by an international committee of researchers and involved collaborating with an international team of data scientists
-    - `https://www.microsoft.com/en-us/research/project/microsoft-tilecode/`
+    - `https://cri­paris.org/`
+
 * ICT Researcher, Open University UNIT (Jan 2009 – May. 200)
     - Conducted a study for the French Ministry of Education on the use of digital resources in 20 universities and engineering schools.
     - The study was published by UNIT and is now an industry standard guide in the participating universities.
@@ -130,6 +133,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 ### Service
 * Chair for [IDC 2021 Conference](https://idc.acm.org/2021/)
+* Student Volunteer for [ICER 2021](https://icer2021.acm.org/)
 * Reviewer for CHI, IDC, CSCW, Fablearn conferences from 2018-Present
 * Research Committee Representative for [UW iSchool](https://ischool.uw.edu/) student organization
 * Volunteer with [iSchool Diversity Initiative](https://ischool.uw.edu/diversity) supporting BIPOC graduate applicants
@@ -139,8 +143,11 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * Board member for [AIDA](https://ai4da.com/who-we-are/meet-our-experts/), organisation using AI for social development 
 
 ### Talks 
+* Speaker a Computing Education Research Seminars [Democratizing AI education with and for families](https://www.raspberrypi.org/computing-education-research-online-seminars/) with Raspberry Pi Foundation (1 Mar 2022)
+* Speaker at mSchools EdChange [Machines & Humans Educational Perspectives](https://mschools.com/event/machines-humans-educational-perspective/) at the GSMA Mobile World Congress (2021) 
+* Webinar for teachers in Chile [La Democratización de la Inteligencia Artificial para los Niños](https://webinars-britanico.inbound.cl/inteligencia-artificial/) with Chilean British Institute (2021)
 * Seminar on AI Education research [Why Teach and Learn AI?](https://docs.google.com/document/d/1IB7Dkn25lUK3do3c4LFvOQBb1LEbdYykIo7i2JyLaNM/edit) for National Department of Education in France (2021)
-* Webinar on [development of new coding platforms for children](https://www.youtube.com/watch?v=rhQ2jJGtgwM&list=PLD7HFcN7LXRcmgk4JI7yw9eWT7Sz5w1eD&index=22) with Microsoft Research(2020)
+* Webinar on [development of new coding platforms for children](https://www.youtube.com/watch?v=rhQ2jJGtgwM&list=PLD7HFcN7LXRcmgk4JI7yw9eWT7Sz5w1eD&index=22) with Microsoft Research (2020)
 * Panel on future of [AI education with Unesco](https://mgiep.unesco.org/article/future-of-education-artificial-intelligence-and-social-and-emotional-learning) (2020)
 * Speaker at [Future of childhood Summit](https://joanganzcooneycenter.org/initiative/future-of-childhood-summit/) with Google and Sesame Workshop (2020)
 * Speaker at [Applied Machine Learning Days](https://appliedmldays.org/all-time-speakers/stefania-druga), EPFL (2020) 
