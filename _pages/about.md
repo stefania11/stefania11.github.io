@@ -6,7 +6,7 @@ description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: headshot2018.jpg
+  image: headshot2021.jpeg
   address: >
  
 
