@@ -5,7 +5,7 @@ permalink: /
 description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: left
+  align: right
   image: headshot2021.jpeg
   address: >
  
@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I am Stefania. I am currently a third-year Ph.D. Candidate 🎓 at the University of Washington Information School, advised by Prof. [Amy J. Ko](https://faculty.washington.edu/ajko/) in the [Code & Cognition Lab](https://faculty.washington.edu/ajko/lab). I am also affiliated with the [PLSE Lab](http://uwplse.org/), working with Prof. [Rastislav Bodik](https://homes.cs.washington.edu/~bodik/) and with the [Community Data Science Collective](https://wiki.communitydata.science/Main_Page) working with Prof. [Benjamin Mako Hill](https://mako.cc/). 
+Hi! I am Stefania. I am currently a third-year Ph.D. Candidate 🎓 at the University of Washington Information School, advised by Prof. [Amy J. Ko](https://faculty.washington.edu/ajko/) in the [Code & Cognition Lab](https://faculty.washington.edu/ajko/lab). I am also affiliated with the [PLSE Lab](http://uwplse.org/) and with the [Community Data Science Collective](https://wiki.communitydata.science/Main_Page). 
 
 My research focuses on Computer-Supported Creative Coding for Youth and the design of AI Literacies tools and resources for Families 📚. I also enjoy designing and building future smart toys 🤖 and games. When I am not coding & writing papers 👩🏽‍💻 I love hiking, climbing, and riding my 🚲.
 
