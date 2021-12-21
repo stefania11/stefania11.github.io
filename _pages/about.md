@@ -5,7 +5,7 @@ permalink: /
 description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: right
+  align: left
   image: headshot2021.jpeg
   address: >
  
