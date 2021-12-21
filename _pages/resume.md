@@ -26,6 +26,8 @@ nav: true
 * [Women to Watch in Science](http://www.womenatthefrontier.org/wf-spotlight-stefania-druga/), Women at the frontier, 2016
 
 ### Active Projects
+* [PippySynth](https://github.com/stefania11/pippisynth/)
+    - Platform for synthesizing programs that represent video-games given a dedicated grammar and constraints derived from specific game mechanics and from user-input.
 * [Cognimates](https://github.com/hackidemia/cognimates-gui) : Live at [cognimates.me](http://cognimates.me)
     - AI education platform for children to train their own machine learning models.
     - Users can also code smart games using their custom models.
@@ -49,6 +51,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 &nbsp;
 
 ### Graduate Courses Taken
+* [Computer-Aided Reasoning for Software](https://courses.cs.washington.edu/courses/cse507/21au/)
 * [Machine Learning Fairness](https://courses.cs.washington.edu/courses/cse599m/20wi/)
 * [Data Management and Data Science](https://courses.cs.washington.edu/courses/csed514/18wi/)
 * [Prototyping Interactive Devices with AI](https://github.com/jonfroehlich/CSE599Au2019)
@@ -132,7 +135,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 
 ### Service
-* Chair for [IDC 2021 Conference](https://idc.acm.org/2021/)
+* Organizing the [HCI seminar](https://dub.washington.edu/seminar.html) at the University of Washington 
+* Chair for [IDC 2021, 2022 Conference](https://idc.acm.org/2021/)
 * Student Volunteer for [ICER 2021](https://icer2021.acm.org/)
 * Reviewer for CHI, IDC, CSCW, Fablearn conferences from 2018-Present
 * Research Committee Representative for [UW iSchool](https://ischool.uw.edu/) student organization
