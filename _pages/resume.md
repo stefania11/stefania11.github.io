@@ -150,7 +150,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 ### Talks 
 * Speaker at the US Chamber of Congress AI Commission on [Future Governance for Family AI Use and Literacy] (https://americaninnovators.com/aicommission/)(9 May 2022)
 * Webinar on [Creativity in Data Science and Machine Learning](https://www.youtube.com/watch?v=VWEMruzC3to) moderated by Comet ML.(29 April 2022)
-* Speaker a Computing Education Research Seminars [Democratizing AI education with and for families](https://www.raspberrypi.org/computing-education-research-online-seminars/) with Raspberry Pi Foundation (1 Mar 2022)
+* Speaker a Computing Education Research Seminars [Democratizing AI education with and for families](https://www.raspberrypi.org/blog/ai-literacy-children-families-working-together-ai-education-research/) with Raspberry Pi Foundation (1 Mar 2022)
 * Speaker at mSchools EdChange [Machines & Humans Educational Perspectives](https://mschools.com/event/machines-humans-educational-perspective/) at the GSMA Mobile World Congress (2021) 
 * Webinar for teachers in Chile [La Democratización de la Inteligencia Artificial para los Niños](https://webinars-britanico.inbound.cl/inteligencia-artificial/) with Chilean British Institute (2021)
 * Seminar on AI Education research [Why Teach and Learn AI?](https://docs.google.com/document/d/1IB7Dkn25lUK3do3c4LFvOQBb1LEbdYykIo7i2JyLaNM/edit) for National Department of Education in France (2021)
