@@ -59,6 +59,25 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * [Computer-Supported Collaborative Learning](https://ischool.uw.edu/programs/phd/curriculum/special-topics)
 * [Child-Computer Interaction](https://ischool.uw.edu/programs/phd/curriculum/special-topics)
 
+### Research Experience
+* AI Research Resident, X Moonshot Factory (March 2022 – Present)
+    - Build new future developper tools with AI.
+    - `https://x.company/`
+* Summer Intern, Microsoft Research (June 2020 – Sep. 2020)
+    - Conducted an longitudinal study with 17 families for 5 weeks evaluating a new programming platform for kids.
+    - Analyzed and communicated findings in company wide presentations and public webinars
+    - `https://www.microsoft.com/en-us/research/project/microsoft-tilecode/`
+
+* Research Associate, CRI (Mar. 2011 – Jan. 2012)
+    - Participated as a research associate in a project that applied machine learning algorithms for interdisciplinary online educational programs.
+    - The proposal was validated by an international committee of researchers and involved collaborating with an international team of data scientists
+    - `https://cri­paris.org/`
+
+* ICT Researcher, Open University UNIT (Jan 2009 – May. 200)
+    - Conducted a study for the French Ministry of Education on the use of digital resources in 20 universities and engineering schools.
+    - The study was published by UNIT and is now an industry standard guide in the participating universities.
+    - `http://www.unit.eu/`
+
 
 ### Professional Experience
 * Creative AI Track Lead, MIT MediaLab Berlin, Berlin, Germany (Jun. 2018 – Jul. 2018)
@@ -108,26 +127,6 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
     - `http://www.pucp.edu.pe`
 
 
-### Research Experience
-* AI Research Resident, X Moonshot Factory (March 2022 – Present)
-    - Build new future developper tools with AI.
-    - `https://x.company/`
-* Summer Intern, Microsoft Research (June 2020 – Sep. 2020)
-    - Conducted an longitudinal study with 17 families for 5 weeks evaluating a new programming platform for kids.
-    - Analyzed and communicated findings in company wide presentations and public webinars
-    - `https://www.microsoft.com/en-us/research/project/microsoft-tilecode/`
-
-* Research Associate, CRI (Mar. 2011 – Jan. 2012)
-    - Participated as a research associate in a project that applied machine learning algorithms for interdisciplinary online educational programs.
-    - The proposal was validated by an international committee of researchers and involved collaborating with an international team of data scientists
-    - `https://cri­paris.org/`
-
-* ICT Researcher, Open University UNIT (Jan 2009 – May. 200)
-    - Conducted a study for the French Ministry of Education on the use of digital resources in 20 universities and engineering schools.
-    - The study was published by UNIT and is now an industry standard guide in the participating universities.
-    - `http://www.unit.eu/`
-
-
 ### Teaching Experience
 * [Designing Smart Toys at RISD](https://github.com/stefania11/DesignSmartToys)
 * [Hacking Smart Toys at ITP NYU](https://github.com/stefania11/HackingSmartToys)
@@ -148,8 +147,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * Board member for [AIDA](https://ai4da.com/who-we-are/meet-our-experts/), organisation using AI for social development 
 
 ### Talks 
-* Speaker at the US Chamber of Congress AI Commission on [Future Governance for Family AI Use and Literacy] (https://americaninnovators.com/aicommission/)(9 May 2022)
-* Webinar on [Creativity in Data Science and Machine Learning](https://www.youtube.com/watch?v=VWEMruzC3to) moderated by Comet ML.(29 April 2022)
+* Speaker at the US Chamber of Congress AI Commission on [Future Governance for Family AI Use and Literacy](https://americaninnovators.com/aicommission) (9 May 2022)
+* Webinar on [Creativity in Data Science and Machine Learning](https://www.youtube.com/watch?v=VWEMruzC3to) moderated by Comet ML (29 April 2022)
 * Speaker a Computing Education Research Seminars [Democratizing AI education with and for families](https://www.raspberrypi.org/blog/ai-literacy-children-families-working-together-ai-education-research/) with Raspberry Pi Foundation (1 Mar 2022)
 * Speaker at mSchools EdChange [Machines & Humans Educational Perspectives](https://mschools.com/event/machines-humans-educational-perspective/) at the GSMA Mobile World Congress (2021) 
 * Webinar for teachers in Chile [La Democratización de la Inteligencia Artificial para los Niños](https://webinars-britanico.inbound.cl/inteligencia-artificial/) with Chilean British Institute (2021)
