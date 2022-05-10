@@ -11,6 +11,7 @@ nav: true
 
 ### Qualifications summary
 * Program synthesis for creative coding. 
+* Prompt enginnering research for large language models.
 * Research on AI literacies for families.
 * Extensive experience in building programming platforms for children.
 * Teaching classes about creative learning and prototyping with AI. 
@@ -108,6 +109,9 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 
 ### Research Experience
+* AI Research Resident, X Moonshot Factory (March 2022 – Present)
+    - Build new future developper tools with AI.
+    - `https://x.company/`
 * Summer Intern, Microsoft Research (June 2020 – Sep. 2020)
     - Conducted an longitudinal study with 17 families for 5 weeks evaluating a new programming platform for kids.
     - Analyzed and communicated findings in company wide presentations and public webinars
@@ -132,6 +136,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 
 ### Service
+* Chair for [IDC 2022 Conference](https://idc.acm.org/2022/)
 * Chair for [IDC 2021 Conference](https://idc.acm.org/2021/)
 * Student Volunteer for [ICER 2021](https://icer2021.acm.org/)
 * Reviewer for CHI, IDC, CSCW, Fablearn conferences from 2018-Present
@@ -143,6 +148,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * Board member for [AIDA](https://ai4da.com/who-we-are/meet-our-experts/), organisation using AI for social development 
 
 ### Talks 
+* Speaker at the US Chamber of Congress AI Commission on [Future Governance for Family AI Use and Literacy] (https://americaninnovators.com/aicommission/)(9 May 2022)
+* Webinar on [Creativity in Data Science and Machine Learning](https://www.youtube.com/watch?v=VWEMruzC3to) moderated by Comet ML.(29 April 2022)
 * Speaker a Computing Education Research Seminars [Democratizing AI education with and for families](https://www.raspberrypi.org/computing-education-research-online-seminars/) with Raspberry Pi Foundation (1 Mar 2022)
 * Speaker at mSchools EdChange [Machines & Humans Educational Perspectives](https://mschools.com/event/machines-humans-educational-perspective/) at the GSMA Mobile World Congress (2021) 
 * Webinar for teachers in Chile [La Democratización de la Inteligencia Artificial para los Niños](https://webinars-britanico.inbound.cl/inteligencia-artificial/) with Chilean British Institute (2021)
