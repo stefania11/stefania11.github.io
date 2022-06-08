@@ -11,6 +11,10 @@ social: true  # includes social icons at the bottom of the page
 
 ![Data Literacies Workshop](/assets/img/data_lit.jpeg)
 
+* [Raising a different kind of gamers](https://medium.com/@Stefania_druga/raising-a-different-kind-of-gamers-4094e51cfb64)
+It is not a surprise that youth are spending significant time playing computer, and video games, with 97% of children ages 12–17 playing computer, web, portable, or console games. Moreover, we have witnessed significant growth in youth participation in online gaming communities such as Minecraft, Roblox, and Fortnite (141, 120, and 80 million monthly active players). Parents are now at an impasse, not knowing how best to mediate their children’s consumption of this new media. This motivated us to run a 4-week in-home programming workshop with families. We recruited 15 families from 10 different USA states with different technological backgrounds and levels of exposure to technology. Families did all the coding activities on TileCode, an open-sources rule-based programming platform for video-game programming that can run on low-cost arcade devices.
+Read more [here](https://medium.com/@Stefania_druga/raising-a-different-kind-of-gamers-4094e51cfb64)
+
 * [How do families learn about AI together?](https://medium.com/bits-and-behavior/how-do-children-and-parents-learn-about-ai-together-ece2ed370ca4)
 In our recent CHI study we set to answer the following research question: what happens when children and parents learn about AI together? To answer this question we used our prior co-design sessions with families to create 11 learning activities for family AI literacy. We invited 15 families from all over the USA to participate in a 5-week in-home study. Families spoke more than 10 languages other than English and had a variety of backgrounds and levels of exposure to smart devices. Each family got to learn more about image classification, machine learning, voice assistants and they also got to design and analyze their own AI assistants.
 Read more [here](https://medium.com/bits-and-behavior/how-do-children-and-parents-learn-about-ai-together-ece2ed370ca4).
