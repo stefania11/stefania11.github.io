@@ -16,16 +16,19 @@ nav: true
 * Extensive experience in building programming platforms for children.
 * Teaching classes about creative learning and prototyping with AI.
 
+&nbsp;
+
 ### Awards
 
 * [NSF FMitF Grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2122950&HistoricalAwards=false) for End-User Programming project, 2021
 * [Jacobs Foundation Grant](https://ischool.uw.edu/news/2020/01/researchers-win-fellowship-study-new-frontier-tech-education) for AI Literacy project, 2020
 * [Weizenbaum Research Fellow](https://www.weizenbaum-institut.de/portrait/p/stefania-druga/) in Criticality of AI-based Systems Lab in Berlin, 2019
-* [Google Residence Fellow](https://tisch.nyu.edu/itp/itp-people/faculty/somethings-in-residence-sirs), Google & NYU ITP, 2019.
+* [Google Fellow](https://tisch.nyu.edu/itp/itp-people/faculty/somethings-in-residence-sirs), Google & NYU ITP, 2019.
 * [LEGO Papert Fellow](https://www.media.mit.edu/posts/meet-the-2017-lego-papert-fellows/), MIT MediaLab, 2018
 * [Finalist of Ideas for Europe competition](https://blogs.ec.europa.eu/promotingenterprise/the-10-most-inspiring-ideas-from-europe-have-been-chosen/), EU, 2017
 * [Women to Watch in Science](http://www.womenatthefrontier.org/wf-spotlight-stefania-druga/), Women at the frontier, 2016
 
+&nbsp;
 
 ### Research Experience
 
@@ -47,6 +50,8 @@ nav: true
   * The study was published by UNIT and is now an industry standard guide in the participating universities.
   * `http://www.unit.eu/`
 
+&nbsp;
+
 
 ### Active Projects
 
@@ -59,6 +64,9 @@ nav: true
 * [TileCode](http://github.com/microsoft/TileCode) : Live at [https://microsoft.github.io/tilecode/](https://microsoft.github.io/tilecode/)
   * TileCode is an app for designing, coding, and playing video games directly on low-cost arcade gaming handhelds.
   * Our starting point are retro video games to be created via a set of visual rules.
+
+&nbsp;
+
 
 ### Education
 
@@ -120,6 +128,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
   * Conducted a final evaluation which showed that 80% of the teachers were using the new tools.
   * `http://www.pucp.edu.pe`
 
+&nbsp;
+
 ### Graduate Courses Taken
 
 * [Computer-Aided Reasoning for Software](https://courses.cs.washington.edu/courses/cse507/21au/)
@@ -132,6 +142,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * [Computer-Supported Collaborative Learning](https://ischool.uw.edu/programs/phd/curriculum/special-topics)
 * [Child-Computer Interaction](https://ischool.uw.edu/programs/phd/curriculum/special-topics)
 
+&nbsp;
 
 ### Teaching Experience
 
@@ -139,6 +150,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * [Hacking Smart Toys at ITP NYU](https://github.com/stefania11/HackingSmartToys)
 * [INFO 350 Information Ethics and Policy](http://www.washington.edu/students/crscat/info.html#info350)
 * [INFO 330 Research Methods](http://www.washington.edu/students/crscat/info.html#info300")
+
+&nbsp;
 
 ### Service
 
@@ -152,6 +165,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * Education Board member for Unesco MGIEP
 * AI Education Committee member for [Technovation](https://www.technovation.org/team/), organisation for international AI Education for families
 * Board member for [AIDA](https://ai4da.com/who-we-are/meet-our-experts/), organisation using AI for social development
+
+&nbsp;
 
 ### Talks
 
@@ -172,6 +187,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * Keynote at [Libre Learn Lab Conference](http://www.librelearnlab.org/conference/keynote-speakers)(2018)
 * Guest [Cognimates tutorial on the Coding Train](https://www.youtube.com/watch?v=kg2G26TWjY4&ab_channel=TheCodingTrain)(2018)
 
+&nbsp;
+
 ### Press
 
 * [DW TV Documentary: How artificial intelligence is changing our society](https://www.youtube.com/watch?v=-ePZ7OdY-Dw&t=2224s) from DW German Public Broadcast (2020)
@@ -187,25 +204,31 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 * [Growing Up with Alexa](https://www.technologyreview.com/2017/08/16/149722/growing-up-with-alexa/) MIT Technology Review (2017)
 * [Understanding Generation Alpha](https://www.wired.co.uk/article/understanding-generation-alpha) for Wired (2017)
 
+&nbsp;
+
 ### Podcasts
 
-* TechnoGypsie:[Computer-supported programming & AI Education](https://open.spotify.com/episode/0FxXWh5T95fT9tt6BQTDGf?si=kBAXBTlRRzyZACz-lrAExw)(2022)
-* Humanitarian AI:[AI literacy for families](https://soundcloud.com/humanitarian-ai-today/stefania-druga-cognimates)(2021)
+* TechnoGypsie: [Computer-supported programming & AI Education](https://open.spotify.com/episode/0FxXWh5T95fT9tt6BQTDGf?si=kBAXBTlRRzyZACz-lrAExw)(2022)
+* Humanitarian AI: [AI literacy for families](https://soundcloud.com/humanitarian-ai-today/stefania-druga-cognimates)(2021)
 * Prof Talks: [AI Education & Smart Toy Design](https://prof-talks.com/2019/05/10/stefania-druga/)(2020)
 * Ed Tech: [Digging into Digital Skills Development](https://theedtechpodcast.com/144-digging-into-digital-skills-development/)(2019)
 * Meaningful Making: [What is AI](https://podcasts.apple.com/us/podcast/episode-13-what-is-ai-educator-edition-with-stefania-druga/id1209779054?i=1000474079116)(2019)
 * Airtalk: [They’re alive! Are smart toys changing how children interact with humans?](https://www.scpr.org/programs/airtalk/2017/11/17/60286/they-re-alive-are-smart-toys-changing-how-children/)(2017)
 * CBC Radio: [Would you let your kids play with AI robots?](https://www.cbc.ca/radio/thecurrent/the-current-for-november-27-2017-1.4418695/would-you-let-your-kids-play-with-ai-robots-1.4418700)(2017)
 
+&nbsp;
+
 ### Skills
 
-* **Research**: `AI Education` *`Large Language Models`* `Program Synthesis` * `Interaction Design`
-* **R&amp;D**: `CAD design` *`Embedded programming`* `Digital fabrication`
-* **Instructional Design**: `STEAM curriculum` *`Teacher training`* `Project-based teaching`
-* **Programming Languages**: `R` *`Ruby`* `Python` *`Javascript`* `HTML`
-* **Web Frameworks**: `React` *`Rails`* `Bootstrap`
+* **Research**: `AI Education` * `Large Language Models` * `Program Synthesis` * `Interaction Design`
+* **R&amp;D**: `CAD design` * `Embedded programming` * `Digital fabrication`
+* **Instructional Design**: `STEAM curriculum` * `Teacher training` * `Project-based teaching`
+* **Programming Languages**: `R` * `Ruby` * `Python` * `Javascript` * `HTML`
+* **Web Frameworks**: `React` * `Rails` * `Bootstrap`
 * **Databases**: `MySQL` * `PostgreSQL`
-* **Languages**: `Romanian` *`English`* `French` *`Spanish`* `Italian`
+* **Languages**: `Romanian` * `English` * `French` * `Spanish` * `Italian` * `Portuguese`
+
+&nbsp;
 
 ### Passions
 
