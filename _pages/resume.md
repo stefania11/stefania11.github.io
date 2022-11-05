@@ -10,9 +10,9 @@ nav: true
 
 ### Qualifications summary
 
-* Program synthesis for creative coding.
-* Prompt enginnering research for large language models.
-* Research on AI literacies for families.
+* Program synthesis for computer-supported coding.
+* Large language models for code generation.
+* Research on Creative AI applications.
 * Extensive experience in building programming platforms for children.
 * Teaching classes about creative learning and prototyping with AI.
 
@@ -21,10 +21,32 @@ nav: true
 * [NSF FMitF Grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2122950&HistoricalAwards=false) for End-User Programming project, 2021
 * [Jacobs Foundation Grant](https://ischool.uw.edu/news/2020/01/researchers-win-fellowship-study-new-frontier-tech-education) for AI Literacy project, 2020
 * [Weizenbaum Research Fellow](https://www.weizenbaum-institut.de/portrait/p/stefania-druga/) in Criticality of AI-based Systems Lab in Berlin, 2019
-* [Human in Residence Fellow](https://tisch.nyu.edu/itp/itp-people/faculty/somethings-in-residence-sirs), Google & NYU ITP, 2019.
+* [Google Residence Fellow](https://tisch.nyu.edu/itp/itp-people/faculty/somethings-in-residence-sirs), Google & NYU ITP, 2019.
 * [LEGO Papert Fellow](https://www.media.mit.edu/posts/meet-the-2017-lego-papert-fellows/), MIT MediaLab, 2018
 * [Finalist of Ideas for Europe competition](https://blogs.ec.europa.eu/promotingenterprise/the-10-most-inspiring-ideas-from-europe-have-been-chosen/), EU, 2017
 * [Women to Watch in Science](http://www.womenatthefrontier.org/wf-spotlight-stefania-druga/), Women at the frontier, 2016
+
+
+### Research Experience
+
+* AI Research Resident, X Moonshot Factory (March 2022 – October 2022)
+  * Build future developper tools with AI.
+  * `https://x.company/`
+* Summer Intern, Microsoft Research (June 2020 – Sep. 2020)
+  * Conducted an longitudinal study with 17 families for 5 weeks evaluating a new programming platform for kids.
+  * Analyzed and communicated findings in company wide presentations and public webinars
+  * `https://www.microsoft.com/en-us/research/project/microsoft-tilecode/`
+
+* Research Associate, CRI (Mar. 2011 – Jan. 2012)
+  * Participated as a research associate in a project that applied machine learning algorithms for interdisciplinary online educational programs.
+  * The proposal was validated by an international committee of researchers and involved collaborating with an international team of data scientists
+  * `https://cri­paris.org/`
+
+* ICT Researcher, Open University UNIT (Jan 2009 – May. 200)
+  * Conducted a study for the French Ministry of Education on the use of digital resources in 20 universities and engineering schools.
+  * The study was published by UNIT and is now an industry standard guide in the participating universities.
+  * `http://www.unit.eu/`
+
 
 ### Active Projects
 
@@ -49,26 +71,6 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 &nbsp;
 
-
-### Research Experience
-
-* AI Research Resident, X Moonshot Factory (March 2022 – Present)
-  * Build new future developper tools with AI.
-  * `https://x.company/`
-* Summer Intern, Microsoft Research (June 2020 – Sep. 2020)
-  * Conducted an longitudinal study with 17 families for 5 weeks evaluating a new programming platform for kids.
-  * Analyzed and communicated findings in company wide presentations and public webinars
-  * `https://www.microsoft.com/en-us/research/project/microsoft-tilecode/`
-
-* Research Associate, CRI (Mar. 2011 – Jan. 2012)
-  * Participated as a research associate in a project that applied machine learning algorithms for interdisciplinary online educational programs.
-  * The proposal was validated by an international committee of researchers and involved collaborating with an international team of data scientists
-  * `https://cri­paris.org/`
-
-* ICT Researcher, Open University UNIT (Jan 2009 – May. 200)
-  * Conducted a study for the French Ministry of Education on the use of digital resources in 20 universities and engineering schools.
-  * The study was published by UNIT and is now an industry standard guide in the participating universities.
-  * `http://www.unit.eu/`
 
 ### Professional Experience
 
@@ -120,6 +122,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 ### Graduate Courses Taken
 
+* [Computer-Aided Reasoning for Software](https://courses.cs.washington.edu/courses/cse507/21au/)
 * [Machine Learning Fairness](https://courses.cs.washington.edu/courses/cse599m/20wi/)
 * [Data Management and Data Science](https://courses.cs.washington.edu/courses/csed514/18wi/)
 * [Prototyping Interactive Devices with AI](https://github.com/jonfroehlich/CSE599Au2019)
@@ -154,7 +157,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 * Speaker at the US Chamber of Congress AI Commission on [Future Governance for Family AI Use and Literacy](https://americaninnovators.com/aicommission) (9 May 2022)
 * Webinar on [Creativity in Data Science and Machine Learning](https://www.youtube.com/watch?v=VWEMruzC3to) moderated by Comet ML (29 April 2022)
-* Speaker a Computing Education Research Seminars [Democratizing AI education with and for families](https://www.raspberrypi.org/blog/ai-literacy-children-families-working-together-ai-education-research/) with Raspberry Pi Foundation (1 Mar 2022)
+* Speaker on Talking Robotics Seminar on [Creative coding with AI Friends for Youth](https://www.youtube.com/watch?v=18JzdLrOUog)(3 April 2022)
+* Speaker a Computing Education Research Seminars [Democratizing AI education with and for families](https://www.youtube.com/watch?v=sGGXFQvCOyQ) with Raspberry Pi Foundation (1 Mar 2022)
 * Speaker at mSchools EdChange [Machines & Humans Educational Perspectives](https://mschools.com/event/machines-humans-educational-perspective/) at the GSMA Mobile World Congress (2021)
 * Webinar for teachers in Chile [La Democratización de la Inteligencia Artificial para los Niños](https://webinars-britanico.inbound.cl/inteligencia-artificial/) with Chilean British Institute (2021)
 * Seminar on AI Education research [Why Teach and Learn AI?](https://docs.google.com/document/d/1IB7Dkn25lUK3do3c4LFvOQBb1LEbdYykIo7i2JyLaNM/edit) for National Department of Education in France (2021)
@@ -185,7 +189,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 ### Podcasts
 
-* Humanitarian AI:[AI literacy for families](https://soundcloud.com/humanitarian-ai-today/stefania-druga-cognimates)
+* TechnoGypsie:[Computer-supported programming & AI Education](https://open.spotify.com/episode/0FxXWh5T95fT9tt6BQTDGf?si=kBAXBTlRRzyZACz-lrAExw)(2022)
+* Humanitarian AI:[AI literacy for families](https://soundcloud.com/humanitarian-ai-today/stefania-druga-cognimates)(2021)
 * Prof Talks: [AI Education & Smart Toy Design](https://prof-talks.com/2019/05/10/stefania-druga/)(2020)
 * Ed Tech: [Digging into Digital Skills Development](https://theedtechpodcast.com/144-digging-into-digital-skills-development/)(2019)
 * Meaningful Making: [What is AI](https://podcasts.apple.com/us/podcast/episode-13-what-is-ai-educator-edition-with-stefania-druga/id1209779054?i=1000474079116)(2019)
@@ -194,7 +199,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 
 ### Skills
 
-* **Research**: `AI Education` *`Family teachnology`* `Smart toys` * `Interaction Design for children`
+* **Research**: `AI Education` *`Large Language Models`* `Program Synthesis` * `Interaction Design`
 * **R&amp;D**: `CAD design` *`Embedded programming`* `Digital fabrication`
 * **Instructional Design**: `STEAM curriculum` *`Teacher training`* `Project-based teaching`
 * **Programming Languages**: `R` *`Ruby`* `Python` *`Javascript`* `HTML`
