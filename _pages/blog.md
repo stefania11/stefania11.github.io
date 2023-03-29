@@ -13,6 +13,11 @@ social: true  # includes social icons at the bottom of the page
 
 __[List of Recent Blogposts published on Medium](https://medium.com/@Stefania_druga)__
 
+![Generative AI as Craft Material](/assets/img/gai_prototypes.png)
+* [Generative AI as Craft Material](https://medium.com/bits-and-behavior/the-landscape-of-teaching-resources-for-ai-education-8c86411e8351)
+Imagine the star trek replicator exists, and you can use it to create or replicate any object. Would you instead print ready-made things or prefer to get parts you can assemble, polish, and customize? While existing Generative AI models are the closest approximation of the replicator we currently have, their results are primarily digital and still require quite a bit of shepherding to materialize in the physical world. But already, it can be done — and we’re seeing a proliferation of tools and improvements in this space.
+Read more [here.](https://medium.com/bits-and-behavior/generative-ai-as-craft-material-24493bb19a7)
+
 
 ![AI landscape](/assets/img/flying_pixels.jpeg)
 * [Landscape of AI Education Ressources](https://medium.com/bits-and-behavior/the-landscape-of-teaching-resources-for-ai-education-8c86411e8351)

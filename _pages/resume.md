@@ -10,8 +10,8 @@ nav: true
 
 ### Qualifications summary
 
+* Large Language Models applications.
 * Program synthesis for computer-supported coding.
-* Large language models for code generation.
 * Research on Creative AI applications.
 * Extensive experience in building programming platforms for children.
 * Teaching classes about creative learning and prototyping with AI.
@@ -31,7 +31,12 @@ nav: true
 &nbsp;
 
 ### Research Experience
-
+* Research Intern, HAX Microsoft Research (March 2023 - Present)
+  * Working on novel LLM applications
+* Product Engineer, Fixie.ai (December 2022 - March 2023)
+  * Help prototype new LLM platform for distributed specialized LLM agents
+  * Designed and ran user-studies to evaluate the platform
+  * Organized large-scale community events for prototyping and building LLM Agents
 * AI Research Resident, X Moonshot Factory (March 2022 – October 2022)
   * Build future developper tools with AI.
   * `https://x.company/`
@@ -169,7 +174,7 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 &nbsp;
 
 ### Talks
-
+* Webinar on [Generative AI](https://medium.com/bits-and-behavior/generative-ai-as-craft-material-24493bb19a7)for MAKE Magazine (March 2023)
 * Speaker at the US Chamber of Congress AI Commission on [Future Governance for Family AI Use and Literacy](https://americaninnovators.com/aicommission) (9 May 2022)
 * Webinar on [Creativity in Data Science and Machine Learning](https://www.youtube.com/watch?v=VWEMruzC3to) moderated by Comet ML (29 April 2022)
 * Speaker on Talking Robotics Seminar on [Creative coding with AI Friends for Youth](https://www.youtube.com/watch?v=18JzdLrOUog)(3 April 2022)
@@ -190,7 +195,8 @@ Bachelor of Communication | Public Relations &amp; Communication | Polytechnic U
 &nbsp;
 
 ### Press
-
+* [Generative AI for Makers: AI Has Truly Arrived — and It’s Here to Help You Make and Craft](https://makezine.com/article/craft/fine-art/generative-ai-for-makers-ai-has-truly-arrived-and-its-here-to-help-you-make-and-craft/) for MAKE Magazine (2023)
+* [Amazon Alexa Wants To Put Your Child To Bed With Generative AI Storytelling](https://www.forbes.com/sites/rashishrivastava/2022/12/07/amazon-alexa-wants-to-put-your-child-to-bed-with-generative-ai-storytelling/) for Forbes (2022)
 * [DW TV Documentary: How artificial intelligence is changing our society](https://www.youtube.com/watch?v=-ePZ7OdY-Dw&t=2224s) from DW German Public Broadcast (2020)
 * [UW researchers receive grant to explore childhood AI literacy](http://www.dailyuw.com/science/article_f5eac95a-5ffa-11ea-9ae2-fbc1f7840c87.html) for UW Daily (2020)
 * [How is AI upgrading playtime?](https://www.canvas8.com/content/2020/03/06/stefania-druga-thought-leader.html) for Canvas8 (2020)
