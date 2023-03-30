@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I am Stef. I graduated with a Ph.D. in [Creative AI Literacies](#) 🎓 at the University of Washington Information School. I am currently doing a research internship at Microsoft’s [Human-AI eXperience Team](https://www.microsoft.com/en-us/research/group/hax-team) focused on Large Language Models applications.
+Hi! I am Stef. I graduated with a Ph.D. in Creative AI Literacies 🎓 at the University of Washington Information School. I am currently doing a research internship at Microsoft’s [Human-AI eXperience Team](https://www.microsoft.com/en-us/research/group/hax-team) focused on Large Language Models applications.
 
 My research focuses on __Large Language Models__ and the design of __Creative AI tools__ and resources 🖌️. I also enjoy designing and building future smart toys 🤖 and games. When I am not coding & writing papers 👩🏽‍💻 I love hiking, climbing, and riding my 🚲.
 

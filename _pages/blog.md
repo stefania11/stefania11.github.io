@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: Blog
 permalink: /blog_stef/
 description:
 nav: true
