@@ -33,10 +33,12 @@ nav: true
 ### Research Experience
 * Research Intern, HAX Microsoft Research (March 2023 - Present)
   * Working on novel LLM applications
+  * `https://www.microsoft.com/en-us/research/group/hax-team`
 * Product Engineer, Fixie.ai (December 2022 - March 2023)
   * Help prototype new LLM platform for distributed specialized LLM agents
   * Designed and ran user-studies to evaluate the platform
   * Organized large-scale community events for prototyping and building LLM Agents
+  * `https://fixie.ai`
 * AI Research Resident, X Moonshot Factory (March 2022 – October 2022)
   * Build future developper tools with AI.
   * `https://x.company/`
