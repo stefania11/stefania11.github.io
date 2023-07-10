@@ -6,7 +6,7 @@ description:
 nav: true
 ---
 
- ✉ st3f@uw.edu ✆ +1 (415) 503-8944 🔗 [https://stefania11.github.io/](https://stefania11.github.io/)
+ ✉ st3f@uchicago.edu ✆ +1 (415) 503-8944 🔗 [https://stefania11.github.io/](https://stefania11.github.io/)
 
 ### Qualifications summary
 
@@ -31,7 +31,10 @@ nav: true
 &nbsp;
 
 ### Research Experience
-* Research Intern, HAX Microsoft Research (March 2023 - Present)
+* Principal Researcher, Center of Applied AI Research U. Chicago (July 2023 - Present)
+  * Working on LLM applications for social impact
+  * `https://www.chicagobooth.edu/research/center-for-applied-artificial-intelligence`
+* Research Intern, HAX Microsoft Research (March 2023 - July 2023)
   * Working on novel LLM applications
   * `https://www.microsoft.com/en-us/research/group/hax-team`
 * Product Engineer, Fixie.ai (December 2022 - March 2023)
