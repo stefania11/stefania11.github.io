@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="absolute -inset-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB] rounded-lg blur-md opacity-50 group-hover:opacity-80 transition duration-1000"></div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=600" 
+                src="https://media.licdn.com/dms/image/C5603AQFGe-Mbm6YiRw/profile-displayphoto-shrink_800_800/0/1626471374532?e=2147483647&v=beta&t=2_f5nZBDtTR16TiZfAmHsWDnDPxqkpCm_qpR4eiVi8g" 
                 alt="Stefania Druga" 
                 className="w-full h-full object-cover"
               />

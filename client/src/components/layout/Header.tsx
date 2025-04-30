@@ -60,7 +60,7 @@ export default function Header() {
         </button>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <a
               key={item.id}
@@ -75,6 +75,15 @@ export default function Header() {
               <span className="absolute h-0.5 bg-current inset-x-0 bottom-0 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
             </a>
           ))}
+          <a 
+            href="/resume" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
+          >
+            <FileText className="w-4 h-4 mr-1" />
+            <span>Resume</span>
+          </a>
         </nav>
       </div>
       
@@ -102,6 +111,15 @@ export default function Header() {
                   {item.label}
                 </a>
               ))}
+              <a 
+                href="/resume" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center py-2 px-4 bg-black text-white rounded-md hover:bg-gray-800 transition-colors"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                <span>Resume</span>
+              </a>
             </nav>
           </motion.div>
         )}
