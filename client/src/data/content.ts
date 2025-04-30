@@ -94,7 +94,7 @@ export const content = {
       venue: "AI Engineer Summit",
       year: "2023",
       description: "A talk about developing the next generation of AI engineers and making AI education accessible to all. Over 38,000 views!",
-      image: "/attached_assets/image_1745996487989.png",
+      image: "/ai_engineer_talk.png",
       link: "https://www.youtube.com/watch?v=ySYLsoAhXmg"
     },
     {
