@@ -1,0 +1,50 @@
+import { useEffect } from "react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Research from "@/components/sections/Research";
+import Projects from "@/components/sections/Projects";
+import Talks from "@/components/sections/Talks";
+import Publications from "@/components/sections/Publications";
+import Contact from "@/components/sections/Contact";
+import CursorFollower from "@/components/ui/cursor-follower";
+import { useSectionVisibility } from "@/hooks/use-section-visibility";
+
+export default function HomePage() {
+  const { registerSection } = useSectionVisibility();
+
+  useEffect(() => {
+    // Set title
+    document.title = "Stefania Druga | Portfolio";
+  }, []);
+
+  return (
+    <>
+      <CursorFollower />
+      <Header />
+      <main>
+        <Hero />
+        <section id="about" ref={registerSection} className="section-fade">
+          <About />
+        </section>
+        <section id="research" ref={registerSection} className="section-fade">
+          <Research />
+        </section>
+        <section id="projects" ref={registerSection} className="section-fade">
+          <Projects />
+        </section>
+        <section id="talks" ref={registerSection} className="section-fade">
+          <Talks />
+        </section>
+        <section id="publications" ref={registerSection} className="section-fade">
+          <Publications />
+        </section>
+        <section id="contact" ref={registerSection} className="section-fade">
+          <Contact />
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
