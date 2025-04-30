@@ -4,7 +4,6 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import News from "@/components/sections/News";
 import About from "@/components/sections/About";
-import Research from "@/components/sections/Research";
 import Projects from "@/components/sections/Projects";
 import Talks from "@/components/sections/Talks";
 import Publications from "@/components/sections/Publications";
@@ -31,9 +30,6 @@ export default function HomePage() {
         </section>
         <section id="about" ref={registerSection} className="section-fade">
           <About />
-        </section>
-        <section id="research" ref={registerSection} className="section-fade">
-          <Research />
         </section>
         <section id="projects" ref={registerSection} className="section-fade">
           <Projects />
