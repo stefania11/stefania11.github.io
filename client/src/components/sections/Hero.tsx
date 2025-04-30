@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="absolute -inset-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB] rounded-lg blur-md opacity-50 group-hover:opacity-80 transition duration-1000"></div>
             <div className="relative rounded-lg overflow-hidden" style={{ aspectRatio: "3/4" }}>
               <img 
-                src="/cherry_blossom.png" 
+                src="/blossom_headshot.jpg" 
                 alt="Stefania Druga with cherry blossoms" 
                 className="w-full h-full object-cover"
               />
