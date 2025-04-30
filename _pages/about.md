@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi! I am Stef. I am currently a Research Scientist in [Google Gemini](https://gemini.google.com/) working on novel multimodal AI applications. Previously I was a Principal Researcher in the [Center of Applied AI Research](https://www.chicagobooth.edu/research/center-for-applied-artificial-intelligence) at the University of Chicago. I graduated with a Ph.D. in Creative AI Literacies 🎓 at the University of Washington Information School.
+Hi! I am Stef. I am currently a Research Scientist in [Google DeepMind](https://gemini.google.com/) working on novel multimodal AI applications. Previously I was a Principal Researcher in the [Center of Applied AI Research](https://www.chicagobooth.edu/research/center-for-applied-artificial-intelligence) at the University of Chicago. I graduated with a Ph.D. in Creative AI Literacies 🎓 at the University of Washington Information School.
 
 My research focuses on __Large Language Models__ and the design of __Multimodal AI tools__ and resources 🖌️ and during grad school I built the first open-source platform for [K12 AI Education - Cognimates](cognimates.me). When I am not coding & writing papers 👩🏽‍💻 I love trail running, yoga, and riding my 🚲.
 
