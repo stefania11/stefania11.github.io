@@ -66,8 +66,8 @@ export const content = {
     {
       title: "Cognimates",
       description: "An AI education platform that allows children to create projects with artificial intelligence and learn about how these technologies work through hands-on activities.",
-      image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?auto=format&fit=crop&w=800&h=600",
-      link: "#",
+      image: "https://cognimates-copilot.replit.app/assets/images/code_project.jpg",
+      link: "https://github.com/stefania11/cognimates-gui",
       gradient: "from-[#C1F0DB] to-[#E0D6FF]",
       tags: [
         { name: "AI", color: "#FFD6E0" },
@@ -76,15 +76,15 @@ export const content = {
       ]
     },
     {
-      title: "FamilyAI",
-      description: "A research project exploring how families can learn about AI together, featuring activities, tools, and resources designed for multi-generational engagement.",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&h=600",
-      link: "#",
+      title: "AI Playground",
+      description: "An interactive platform to explore AI concepts through playful activities and experiments, making advanced technologies accessible and engaging for all ages.",
+      image: "http://aiplayground.me/static/media/landing.1cac0bbd.jpg",
+      link: "http://aiplayground.me/",
       gradient: "from-[#FFD6E0] to-[#C1F0DB]",
       tags: [
         { name: "Research", color: "#FFD6E0" },
         { name: "AI Literacy", color: "#C1F0DB" },
-        { name: "Family Learning", color: "#E0D6FF" }
+        { name: "Interactive Learning", color: "#E0D6FF" }
       ]
     }
   ],
@@ -124,52 +124,64 @@ export const content = {
   ],
   publications: [
     {
-      title: "How Children Understand Artificial Intelligence",
-      venue: "CHI",
-      year: "2021",
-      authors: "Druga, S., Williams, R., Breazeal, C.",
+      title: "Growing up with AI: How do children learn about AI?",
+      venue: "IMX",
+      year: "2022",
+      authors: "Druga, S.",
       tags: [
         { name: "AI Education", color: "#E0D6FF" },
         { name: "HCI", color: "#C1F0DB" }
       ],
-      abstractLink: "#",
-      pdfLink: "#"
+      abstractLink: "https://stefania11.github.io/publications/",
+      pdfLink: "https://dl.acm.org/doi/abs/10.1145/3505284.3528577"
     },
     {
-      title: "Cognimates: A Platform for AI Education",
-      venue: "IDC",
-      year: "2020",
-      authors: "Druga, S., Breazeal, C.",
+      title: "Research Priorities for Artificial Intelligence in Global Childhood Development",
+      venue: "IEEE Pervasive Computing",
+      year: "2022",
+      authors: "Druga, S., Pataranutaporn, P., Green, D., Shah, P.",
       tags: [
-        { name: "Educational Technology", color: "#FFD6E0" },
-        { name: "AI Literacy", color: "#E0D6FF" }
+        { name: "AI Development", color: "#FFD6E0" },
+        { name: "Global Computing", color: "#E0D6FF" }
       ],
-      abstractLink: "#",
-      pdfLink: "#"
+      abstractLink: "https://stefania11.github.io/publications/",
+      pdfLink: "https://ieeexplore.ieee.org/abstract/document/9851512/"
     },
     {
-      title: "Family Learning with AI: A Longitudinal Study",
+      title: "TalkingTree: A Case Study on Designing for Agency with Generative AI in Education",
       venue: "CSCW",
-      year: "2019",
-      authors: "Druga, S., Vu, S., Likhith, E., Qiu, T.",
+      year: "2022",
+      authors: "Seok, J., Hartmann, B., Druga, S.",
       tags: [
-        { name: "Family Learning", color: "#C1F0DB" },
-        { name: "CSCW", color: "#FFD6E0" }
+        { name: "Generative AI", color: "#C1F0DB" },
+        { name: "Education", color: "#FFD6E0" }
       ],
-      abstractLink: "#",
-      pdfLink: "#"
+      abstractLink: "https://stefania11.github.io/publications/",
+      pdfLink: "https://dl.acm.org/doi/abs/10.1145/3501247.3531547"
     },
     {
-      title: "Hey Google is it OK if I eat you?: Initial Explorations in Child-Agent Interaction",
+      title: "How do children's perceptions of machine intelligence change when training & coding smart programs?",
       venue: "IDC",
-      year: "2018",
-      authors: "Druga, S., Williams, R., Park, H. W., Breazeal, C.",
+      year: "2021",
+      authors: "Druga, S., Vu, S.T., Likhith, E., Oh, L., Qiu, T.",
       tags: [
         { name: "Child-Agent Interaction", color: "#E0D6FF" },
-        { name: "Voice Assistants", color: "#FFD6E0" }
+        { name: "Machine Learning", color: "#FFD6E0" }
       ],
-      abstractLink: "#",
-      pdfLink: "#"
+      abstractLink: "https://stefania11.github.io/publications/",
+      pdfLink: "https://dl.acm.org/doi/abs/10.1145/3459990.3465176"
+    },
+    {
+      title: "Learning with Friends: Designing Social Robot Learning Companions for Young Children",
+      venue: "CSCL",
+      year: "2021",
+      authors: "Leong, Z., Chen, Z., Druga, S., Lee, Y., Sande, S., Rollins, C., Oleksy, M.",
+      tags: [
+        { name: "Social Robotics", color: "#E0D6FF" },
+        { name: "Learning Companions", color: "#C1F0DB" }
+      ],
+      abstractLink: "https://stefania11.github.io/publications/",
+      pdfLink: "https://repository.isls.org/handle/1/7470"
     }
   ]
 };

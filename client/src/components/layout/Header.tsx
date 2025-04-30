@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { Link } from "wouter";
 import { scrollToSection } from "@/lib/scroll-to-section";
-import { Menu } from "lucide-react";
+import { Menu, FileText } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
