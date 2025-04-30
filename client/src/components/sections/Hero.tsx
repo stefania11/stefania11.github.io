@@ -55,21 +55,21 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB] rounded-lg blur-md opacity-50 group-hover:opacity-80 transition duration-1000"></div>
-            <div className="relative rounded-lg overflow-hidden" style={{ aspectRatio: "3/4" }}>
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB] rounded-xl blur-md opacity-50 group-hover:opacity-80 transition duration-1000"></div>
+            <div className="relative rounded-xl overflow-hidden" style={{ aspectRatio: "1/1.2" }}>
               <div 
                 className="w-full h-full relative after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-r after:from-[#FFD6E0]/10 after:via-transparent after:to-[#C1F0DB]/10"
               >
                 <img 
                   src="/blossom_headshot.jpg" 
                   alt="Stefania Druga with cherry blossoms" 
-                  className="w-full h-full object-cover mix-blend-normal"
+                  className="w-full h-full object-cover"
                   style={{ 
                     filter: "contrast(1.1) brightness(1.05)",
                     opacity: 0.85,
-                    objectPosition: "left 40%",
-                    objectFit: "cover",
-                    clipPath: "inset(0 0 20% 0)" /* Crops 20% from bottom */
+                    objectPosition: "65% 20%",
+                    transform: "scale(1.2)",
+                    transformOrigin: "center"
                   }}
                 />
               </div>
