@@ -1,9 +1,29 @@
 import { motion } from "framer-motion";
-import { content } from "@/data/content";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Calendar, MapPin } from "lucide-react";
 
 export default function Talks() {
-  const updatedTalks = [...content.talks];
+  const talks = [
+    {
+      id: 1,
+      title: "The Future of Multimodal AI Applications",
+      venue: "Infobip Shift Miami",
+      date: "May 6, 2025 at 10:00 AM",
+      year: "2025",
+      description: "Excited to attend #InfobipShift Miami this year (May 5-7)! I'll be giving a keynote talk on \"The Future of Multimodal AI Applications\". Join me to explore AI that sees, hears & interacts in real-time. Expect technical insights + live demos!",
+      image: "/ai_engineer_talk.png",
+      link: "https://shift.infobip.com/us/schedule/"
+    },
+    {
+      id: 2,
+      title: "Next-gen AI Engineers",
+      venue: "AI Engineer Summit",
+      date: "April 2023",
+      year: "2023",
+      description: "My talk on the next generation of AI Engineers has reached over 38,000 views on YouTube. The session explores critical skills and mindsets needed for building the future of AI systems.",
+      image: "https://i.ytimg.com/vi/ySYLsoAhXmg/maxresdefault.jpg",
+      link: "https://www.youtube.com/watch?v=ySYLsoAhXmg"
+    }
+  ];
   
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -21,7 +41,7 @@ export default function Talks() {
   };
   
   return (
-    <div className="py-20 px-6 md:px-16">
+    <div className="py-20 px-6 md:px-16" id="talks">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 relative">
           Talks
@@ -35,9 +55,9 @@ export default function Talks() {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          {updatedTalks.map((talk, index) => (
+          {talks.map((talk) => (
             <motion.div 
-              key={index}
+              key={talk.id}
               className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300"
               variants={itemVariants}
             >
@@ -48,14 +68,29 @@ export default function Talks() {
                   className="w-full h-full object-cover"
                 />
               </div>
+              
+              <div className="flex flex-wrap items-center gap-4 mb-3 text-sm text-gray-600">
+                <div className="flex items-center">
+                  <Calendar className="w-4 h-4 mr-1" />
+                  {talk.date}
+                </div>
+                <div className="flex items-center">
+                  <MapPin className="w-4 h-4 mr-1" />
+                  {talk.venue}
+                </div>
+              </div>
+              
               <h3 className="text-xl font-bold mb-2">{talk.title}</h3>
-              <p className="text-gray-800 mb-3">{talk.venue}, {talk.year}</p>
-              <p className="mb-4">{talk.description}</p>
+              <p className="mb-4 text-gray-700">{talk.description}</p>
+              
               <a 
                 href={talk.link} 
-                className="inline-flex items-center text-[#FFD6E0] hover:underline font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors"
               >
-                Watch talk <ExternalLink className="ml-1 h-4 w-4" />
+                {talk.id === 1 ? "View Schedule" : "Watch Talk"} 
+                <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </motion.div>
           ))}
