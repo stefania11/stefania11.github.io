@@ -4,34 +4,35 @@ import { Award, Sparkles, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function News() {
-  const newsItems = [
+  interface NewsItem {
+    id: number;
+    title: string;
+    date: string;
+    description: string;
+    icon: React.ReactNode;
+    link: string | null;
+    color: string;
+    thumbnail?: string;
+  }
+
+  const newsItems: NewsItem[] = [
     {
       id: 1,
-      title: "AI Engineer Summit Talk Reaches 38K+ Views",
-      date: "April 2023",
-      description: "My talk on Next-gen AI Engineers at the AI Engineer Summit has reached over 38,000 views on YouTube.",
-      icon: <Youtube className="w-5 h-5" />,
-      link: "https://www.youtube.com/watch?v=ySYLsoAhXmg",
-      thumbnail: "https://i.ytimg.com/vi/ySYLsoAhXmg/maxresdefault.jpg",
+      title: "Keynote at Infobip Shift Miami 2025",
+      date: "May 2025",
+      description: "Excited to attend #InfobipShift Miami (May 5-7)! I'll be giving a keynote talk on 'The Future of Multimodal AI Applications'. Join me May 6th at 10:00 AM to explore AI that sees, hears & interacts in real-time.",
+      icon: <Sparkles className="w-5 h-5" />,
+      link: "https://shift.infobip.com/us/schedule/",
       color: "#FFD6E0"
     },
     {
       id: 2,
-      title: "Joined Google DeepMind as Research Scientist",
-      date: "January 2023",
-      description: "I've joined Google DeepMind as a Research Scientist focusing on novel multimodal AI applications.",
-      icon: <Sparkles className="w-5 h-5" />,
-      link: null,
-      color: "#E0D6FF"
-    },
-    {
-      id: 3,
-      title: "Awarded MIT TR35 Innovator Under 35",
-      date: "June 2022",
-      description: "Honored to be recognized as one of MIT Technology Review's 35 Innovators Under 35 for my work on AI education.",
+      title: "ASU GSV Summit's 2025 Leading Women in AI",
+      date: "April 2025",
+      description: "Honored to be recognized as one of THE AI SHOW @asugsvsummit's 2025 Leading Women in AI. Recent studies show 70% of generative AI users are from Gen Z, making Critical AI literacy skills crucial for youth.",
       icon: <Award className="w-5 h-5" />,
-      link: "https://www.technologyreview.com/innovators-under-35/",
-      color: "#C1F0DB"
+      link: "https://asugsvsummit.com/show/women-ai-in-edu",
+      color: "#E0D6FF"
     }
   ];
 

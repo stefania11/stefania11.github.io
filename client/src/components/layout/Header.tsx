@@ -34,7 +34,6 @@ export default function Header() {
   const navItems = [
     { id: "news", label: "News" },
     { id: "about", label: "About" },
-    { id: "research", label: "Research" },
     { id: "projects", label: "Projects" },
     { id: "talks", label: "Talks" },
     { id: "publications", label: "Publications" },
@@ -61,30 +60,26 @@ export default function Header() {
         </button>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-10">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="relative nav-link"
+              className="relative nav-link hover:text-gray-600 transition-colors"
               onClick={(e) => {
                 e.preventDefault();
                 handleNavClick(item.id);
               }}
             >
               {item.label}
-              <span className="absolute h-0.5 bg-current inset-x-0 bottom-0 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
             </a>
           ))}
-          <a 
+          <Link 
             href="/resume" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="flex items-center px-3 py-1 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
+            className="relative nav-link hover:text-gray-600 transition-colors flex items-center"
           >
-            <FileText className="w-4 h-4 mr-1" />
             <span>Resume</span>
-          </a>
+          </Link>
         </nav>
       </div>
       
@@ -112,15 +107,12 @@ export default function Header() {
                   {item.label}
                 </a>
               ))}
-              <a 
+              <Link 
                 href="/resume" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-center py-2 px-4 bg-black text-white rounded-md hover:bg-gray-800 transition-colors"
+                className="py-2 px-4 hover:bg-gray-50 rounded-md transition-colors"
               >
-                <FileText className="w-4 h-4 mr-2" />
-                <span>Resume</span>
-              </a>
+                Resume
+              </Link>
             </nav>
           </motion.div>
         )}

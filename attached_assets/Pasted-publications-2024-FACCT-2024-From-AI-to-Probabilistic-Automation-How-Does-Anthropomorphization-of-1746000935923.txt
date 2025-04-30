@@ -1,0 +1,176 @@
+publications
+2024
+FACCT 2024
+From “AI” to Probabilistic Automation: How Does Anthropomorphization of Technical Systems Descriptions Influence Trust?
+Nanna Inia, Stefania Druga, Peter Zukerman, and Emily Bender
+2024
+JCHE 2024
+A Benchmark for Math Misconceptions: Bridging Gaps in Middle School Algebra with AI-Supported Personalized Instruction
+Nancy Otero, and Stefania Druga
+2024
+2023
+FAccT 2023
+Language Models and Society: Bridging Research and Policy
+Stefania Druga, Ioana Baldini, Mihaela Vorvoreanu, and Rishi Bommasani
+FAccT ’23: ACM Conference on Fairness, Accountability, and Transparency, 2023
+C&C 2023
+The Prompt Artists (Honorable Mention)
+Minsuk Chang, Stefania Druga, Alex Fiannaca, Pedro Vergani, Chinmay Kulkarni, Carrie Cai, and Michael Terry
+C&C’23: ACM Conference on Creativity and Cognition, 2023
+2023
+AI Friends: Designing Creative Coding Assistants for Families
+Stefania Druga, and Amy J. Ko
+Proceedings TOCE, 2023
+ 
+2023
+Scratch Copilot Evaluation: Assessing AI-Assisted Creative Coding for Families
+Stefania Druga, and Nancy Otero
+Proceedings VL/HCC, 2023
+ 
+MAKE 2023
+Generative AI for Makers: AI Has Truly Arrived — and It’s Here to Help You Make and Craft
+Stefania Druga
+2023
+ 
+IDC 2023
+Factors used by Children to Make Sense of Algorithmic Fairness
+Jean Salac, Rotem Landesman, Stefania Druga, and Amy J. Ko
+IDC ’23: ACM Conference on Interaction Design and Children, 2023
+arXiv 2023
+A Word is Worth a Thousand Pictures: Prompts as AI Design Material
+Chinmay Kulkarni, Stefania Druga, Minsuk Chang, Alex Fiannaca, Carrie Cai, and Michael Terry
+2023
+UW 2023
+PhD Thesis: Creative AI Literacies for Families
+Druga Stefania
+University of Washington , 2023
+MAKE 2023
+Book: Creative AI, A Guide to Making and Tinkering with Artificial Intelligence
+Druga Stefania
+2023
+2022
+MIT PRESS 2022
+The 4As: Ask, Adapt, Author, Analyze: AI Literacy Framework for Families
+Druga Stefania, Yip Jason, Preston Michael, and Dillon Devin
+2022
+CHI 2022
+Family as a Third Space for AI Literacies: How do children and parents learn about AI together?
+Stefania Druga, Fee Christoph, and Amy J. Ko
+CHI ’22: ACM Conference on Computer-Human Interaction, 2022
+IDC 2022
+How families design and program games: a qualitative analysis of a 4-week online in-home study
+Stefania Druga, Thomas Ball, and Amy J. Ko
+IDC ’22: ACM Conference on Interaction Design and Children, 2022
+ITICSE 2022
+The Landscape of Teaching Resources for AI Education
+Stefania Druga, Nancy Otero, and Amy J. Ko
+ITICSE ’22: ACM conference on Innovation and Technology in Computer Science Education, 2022
+IJCCI 2022
+Examining voice assistants in the context of children’s speech
+Min Kyong Kim, Stefania Druga, Shaghayegh Esmaeili, Julia Woodward, Alex Shaw, Ayushi Jain, Jaida Langham, Kristy Hollingshead, Silvia B Lovato, Erin Beneteau, and  others
+International Journal of Child-Computer Interaction, 2022
+UW 2022
+Interest-Driven Creative Programming for Youth with AI Friends
+Druga Stefania
+2022
+2021
+IDC 2021
+How do children’s perceptions of machine intelligence change when training and coding smart programs?
+Stefania Druga, and Amy J. Ko
+Interaction Design for Children ACM, 2021
+CLS 2021
+Imagining Future Designs of Tools for Youth Data Literacies
+Regina Cheng, Stefania Druga, Emilia Gan, Catherine D’Ignazio, Rahul Bhargava, Victor Lee, Camillia Matuk, Tamara Clegg, Andee Rubin, and Yasmin Kafai
+Connected Learning Summit, 2021
+KDD 2021
+A Design Framework for Citizen-Science AI Platforms for Families
+Fangqing He*, Yifeng Wang*, and Stefania Druga
+Fragile Earth Workshop at ACM’s KDD Virtual 2021 Conference, 2021
+2020
+JoDS 2020
+The 4As: Ask, Adapt, Author, Analyze AI Literacy Framework for Families
+Druga Stefania, Yip Jason, Preston Michael, and Dillon Devin
+Journal of Design and Science, 2020
+IDC 2020
+Research Toolkit for Future-Oriented Play with Families
+Michelson Rebecca Druga Stefania
+Researchers’ Toolbox for the Future Workshop, 2020
+IDC 2020
+”Puffy and Sticking Out” CollaborativeImage Classification with Kids
+Druga Stefania Tian Yubing
+Creating Opportunities for Children’s Reflections on Artificial Intelligence, Robotics and other Intelligent Technologies, 2020
+CACM 2020
+It Is Time for More Critical CS Education
+Amy J. Ko, Alannah Oleson, Neil Ryan, Yim Register, Benjamin Xie, Mina Tari, Matthew Davidson, Stefania Druga, and Dastyni Loksa
+Communications of the ACM, 2020
+ 
+2019
+FABLEARN 2019
+Inclusive AI literacy for kids around the world
+Druga Stefania, Vu Sarah T, Likhith Eesh, and Qiu Tammy
+In Proceedings of FabLearn 2019 , 2019
+ 
+CHIPLAY 2019
+Ballbit Adventure: A Physical Game for a Collaborative Racing
+Kuang Quincy, Zhang Jiaxin, and Druga Stefania
+In Extended Abstracts of the Annual Symposium on Computer-Human Interaction in Play Companion Extended Abstracts , 2019
+ 
+CHIPLAY 2019
+The Humming Box: AI-powered Tangible Music Toy for Children
+Chen Chunhan, Tang Yihan, Xie Tianyi, and Druga Stefania
+In Extended Abstracts of the Annual Symposium on Computer-Human Interaction in Play Companion Extended Abstracts , 2019
+ 
+CHIPLAY 2019
+Legoons: Inflatable Construction Kit for Children
+Yang Xuefei, and Druga Stefania
+In Extended Abstracts of the Annual Symposium on Computer-Human Interaction in Play Companion Extended Abstracts , 2019
+ 
+2018
+IDC 2018
+How smart are the smart toys? children and parents’ agent interaction and intelligence attribution
+Druga Stefania, Williams Randi, Park Hae Won, and Breazeal Cynthia
+In Proceedings of the 17th ACM Conference on Interaction Design and Children , 2018
+ 
+IDC 2018
+" My doll says it’s ok" a study of children’s conformity to a talking doll
+Williams Randi, Machado Christian Vázquez, Druga Stefania, Breazeal Cynthia, and Maes Pattie
+In Proceedings of the 17th ACM Conference on Interaction Design and Children , 2018
+ 
+MIT 2018
+Growing up with AI: Cognimates: from coding to teaching machines
+Druga Stefania
+Massachusetts Institute of Technology , 2018
+ 
+MIT 2018
+Cognimates
+Druga Stefania, Vu Sarah, Likhith Eesh, and Qui Tammy
+2018
+2017
+CHI 2017
+Embodied learning and play in sensorimotor augmentations for kids
+Druga Stefania
+2017
+ 
+IDC 2017
+" Hey Google is it OK if I eat you?" Initial Explorations in Child-Agent Interaction
+Druga Stefania, Williams Randi, Breazeal Cynthia, and Resnick Mitchel
+In Proceedings of the 2017 Conference on Interaction Design and Children , 2017
+ 
+ISWC 2018
+Motif: a wearable sonic cueing device for memory support and cognitive intervention
+Druga Stefania, Maes Pattie, and Rieger Alexandra
+In Proceedings of the 2017 ACM International Symposium on Wearable Computers , 2017
+ 
+2014
+SIGRAPH 2014
+Open Source Hardware (OSHW) Supporting Interaction between Traditional Crafts and Emergent Science: Wayang Kulit over Microfluidic Interfaces
+Ausareny Justyna, Kera Denisa, Druga Stefania, and Reshef Yair
+In SIGGRAPH Asia 2014 Designing Tools For Crafting Interactive Artifacts , Shenzhen, China, 2014
+ 
+In this paper we will summarize our research into the use of Open Source Hardware (OSHW) as a tool for communicating emergent scientific and technical knowledge via crafts. We were specifically interested in the microfabrication and microfluidic devices, which define the next generation of diagnostic and research tools often inaccessible to the larger public, but also to the scientists from the Global South. We used the traditional wayang kulit theater (shadow puppets) as a model for building microfluidic interfaces, which communicate emergent scientific issues to the larger public while testing the possibilities for DIY microfluidics. This culture-centered approach to design and science communication supports open science and citizen science projects. The prototype of a microfluidic shadow puppets’ theater is discussed in the context of previous and future OSHW and crafts prototypes, which support culture-centered design.
+
+2010
+EUROMIME 2010
+Open Education Resources Practices and Copyrights for Teachers
+Druga Stefania
+2010
