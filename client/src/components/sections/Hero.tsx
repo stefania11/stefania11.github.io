@@ -66,8 +66,10 @@ export default function Hero() {
                   className="w-full h-full object-cover mix-blend-normal"
                   style={{ 
                     filter: "contrast(1.1) brightness(1.05)",
-                    opacity: 0.95,
-                    objectPosition: "left center" 
+                    opacity: 0.85,
+                    objectPosition: "left 40%",
+                    objectFit: "cover",
+                    clipPath: "inset(0 0 20% 0)" /* Crops 20% from bottom */
                   }}
                 />
               </div>
