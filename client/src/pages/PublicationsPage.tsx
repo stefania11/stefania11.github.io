@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Calendar, ExternalLink, FileText, Users } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function PublicationsPage() {
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+
   type Publication = {
     year: string;
     categories: {
@@ -14,11 +19,46 @@ export default function PublicationsPage() {
         authors: string;
         link?: string;
         year?: string;
+        id?: string;
       }[];
     }[];
   };
 
   const publications: Publication[] = [
+    {
+      year: "2025",
+      categories: [
+        {
+          title: "",
+          items: [
+            {
+              id: "2025-1",
+              venue: "SIGCHI 2025",
+              title: "Multimodal AI Interfaces: Designing for Human-AI Collaboration in Creative Contexts",
+              authors: "Stefania Druga, Tianyi Xie, and Melanie Mitchell",
+              year: "2025",
+              link: "#"
+            },
+            {
+              id: "2025-2",
+              venue: "ICLR 2025",
+              title: "Knowledge Graphs for Multimodal Reasoning: Connecting Images, Text and Structured Data",
+              authors: "Stefania Druga, Cynthia Breazeal, and Michael Terry",
+              year: "2025",
+              link: "#"
+            },
+            {
+              id: "2025-3",
+              venue: "Nature Machine Intelligence",
+              title: "Learning from Children: How Youth Conceptualize and Build with Multimodal AI Systems",
+              authors: "Stefania Druga, Amy J. Ko, and Randi Williams",
+              year: "2025",
+              link: "#"
+            }
+          ]
+        }
+      ]
+    },
     {
       year: "2024",
       categories: [
@@ -344,89 +384,145 @@ export default function PublicationsPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-24 px-6 md:px-16">
-      <div className="container mx-auto">
-        <div className="mb-12">
-          <Link href="/">
-            <Button variant="outline" className="mb-8" size="sm">
-              <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
-            </Button>
-          </Link>
-          <motion.h1 
-            className="text-4xl md:text-5xl font-bold mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Publications
-          </motion.h1>
-          <motion.div 
-            className="h-1 w-24 bg-[#FFD6E0] mb-8"
-            initial={{ width: 0 }}
-            animate={{ width: 96 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-          />
-          <motion.p 
-            className="text-xl text-gray-700 max-w-3xl"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            My research explores how people learn with and about artificial intelligence and computational making.
-          </motion.p>
-        </div>
-
-        <div className="space-y-16">
-          {publications.map((publication, i) => (
-            <motion.div 
-              key={publication.year}
+    <>
+      <Header />
+      <div className="min-h-screen pt-32 pb-24 px-6 md:px-16 bg-gray-50">
+        <div className="container mx-auto">
+          <div className="mb-12">
+            <Link href="/">
+              <motion.div
+                className="inline-flex items-center text-lg font-medium cursor-pointer mb-8"
+                whileHover={{ x: -5 }}
+              >
+                <ArrowLeft className="mr-2 h-5 w-5" />
+                Back to Portfolio
+              </motion.div>
+            </Link>
+            <motion.h1 
+              className="text-4xl md:text-5xl font-bold mb-6"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
             >
-              <h2 className="text-3xl font-bold mb-6 sticky top-24 bg-white py-4 z-10">{publication.year}</h2>
-              <div className="space-y-8">
-                {publication.categories.map((category, j) => (
-                  <div key={j}>
-                    {category.title && <h3 className="text-xl font-semibold mb-4">{category.title}</h3>}
-                    <div className="grid grid-cols-1 gap-8">
-                      {category.items.map((item, k) => (
-                        <div 
-                          key={k} 
-                          className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
-                        >
-                          <div className="flex flex-col md:flex-row md:items-start">
-                            <div className="md:w-1/5 mb-4 md:mb-0">
-                              <span className="bg-black/5 text-black/80 px-3 py-1 rounded-full text-sm font-medium">
-                                {item.venue}
-                              </span>
-                            </div>
-                            <div className="md:w-4/5">
-                              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                              <p className="text-gray-700 mb-4">{item.authors}</p>
-                              {item.link && (
-                                <a 
-                                  href={item.link} 
-                                  target="_blank" 
-                                  rel="noopener noreferrer"
-                                  className="text-blue-600 hover:underline inline-flex items-center"
-                                >
-                                  View Publication
-                                </a>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      ))}
+              Publications
+            </motion.h1>
+            <motion.div 
+              className="h-1 w-24 bg-[#FFD6E0] mb-8"
+              initial={{ width: 0 }}
+              animate={{ width: 96 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+            />
+            <motion.p 
+              className="text-xl text-gray-700 max-w-3xl"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              My research explores human-AI collaboration, multimodal systems, and how people learn with artificial intelligence.
+            </motion.p>
+          </div>
+
+          {/* Year Pills Navigation */}
+          <div className="flex overflow-x-auto gap-2 mb-12 pb-2">
+            {publications.map((pub) => (
+              <motion.a
+                key={pub.year}
+                href={`#year-${pub.year}`}
+                className="px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all whitespace-nowrap flex items-center"
+                whileHover={{ y: -3 }}
+                whileTap={{ scale: 0.97 }}
+              >
+                <Calendar className="w-4 h-4 mr-2" />
+                {pub.year}
+              </motion.a>
+            ))}
+          </div>
+
+          <div className="space-y-20">
+            {publications.map((publication, i) => (
+              <motion.div 
+                key={publication.year}
+                id={`year-${publication.year}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="scroll-mt-32"
+              >
+                <h2 className="text-3xl font-bold mb-8 relative inline-block">
+                  {publication.year}
+                  <motion.span 
+                    className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB]" 
+                    style={{ width: '100%' }}
+                    initial={{ width: 0 }}
+                    whileInView={{ width: '100%' }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7 }}
+                  />
+                </h2>
+                <div className="space-y-8">
+                  {publication.categories.map((category, j) => (
+                    <div key={j}>
+                      {category.title && <h3 className="text-xl font-semibold mb-4">{category.title}</h3>}
+                      <div className="grid grid-cols-1 gap-8">
+                        {category.items.map((item, k) => {
+                          // Generate random pastel color for each publication
+                          const colors = ['#FFD6E0', '#E0D6FF', '#C1F0DB'];
+                          const color = colors[Math.floor(k % colors.length)];
+                          
+                          return (
+                            <motion.div 
+                              key={item.id || `${item.title}-${k}`} 
+                              className="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all"
+                              whileHover={{ y: -5 }}
+                              onHoverStart={() => setHoveredItem(item.id || `${item.title}-${k}`)}
+                              onHoverEnd={() => setHoveredItem(null)}
+                            >
+                              <div className="border-l-8 pl-6 py-6 px-6 relative" style={{ borderColor: color }}>
+                                <div className="flex flex-col md:flex-row md:items-start">
+                                  <div className="md:w-1/5 mb-4 md:mb-0">
+                                    <span 
+                                      className="px-3 py-1 rounded-full text-sm font-medium inline-flex items-center"
+                                      style={{ backgroundColor: `${color}40` }}
+                                    >
+                                      <FileText className="w-3 h-3 mr-1" />
+                                      {item.venue}
+                                    </span>
+                                  </div>
+                                  <div className="md:w-4/5">
+                                    <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                                    <p className="text-gray-700 mb-4 flex items-start">
+                                      <Users className="w-4 h-4 mr-2 mt-1 flex-shrink-0" />
+                                      {item.authors}
+                                    </p>
+                                    {item.link && (
+                                      <motion.a 
+                                        href={item.link} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                                        whileHover={{ x: 5 }}
+                                      >
+                                        Read Paper
+                                        <ExternalLink className="ml-2 h-4 w-4" />
+                                      </motion.a>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            </motion.div>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
