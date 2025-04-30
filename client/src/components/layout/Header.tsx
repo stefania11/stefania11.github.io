@@ -32,6 +32,7 @@ export default function Header() {
   };
 
   const navItems = [
+    { id: "news", label: "News" },
     { id: "about", label: "About" },
     { id: "research", label: "Research" },
     { id: "projects", label: "Projects" },

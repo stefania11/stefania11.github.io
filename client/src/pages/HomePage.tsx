@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
+import News from "@/components/sections/News";
 import About from "@/components/sections/About";
 import Research from "@/components/sections/Research";
 import Projects from "@/components/sections/Projects";
@@ -25,6 +26,9 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        <section id="news" ref={registerSection} className="section-fade">
+          <News />
+        </section>
         <section id="about" ref={registerSection} className="section-fade">
           <About />
         </section>

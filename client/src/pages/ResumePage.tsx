@@ -7,15 +7,14 @@ export default function ResumePage() {
     <div className="min-h-screen bg-white py-16">
       <div className="container mx-auto px-6 md:px-16">
         <div className="mb-8">
-          <Link href="/">
-            <motion.a 
-              className="inline-flex items-center text-lg hover:underline cursor-pointer"
-              whileHover={{ x: -5 }}
-            >
-              <ArrowLeft className="mr-2 h-5 w-5" />
-              Back to Portfolio
-            </motion.a>
-          </Link>
+          <motion.div
+            className="inline-flex items-center text-lg hover:underline cursor-pointer"
+            whileHover={{ x: -5 }}
+            onClick={() => window.location.href = '/'}
+          >
+            <ArrowLeft className="mr-2 h-5 w-5" />
+            Back to Portfolio
+          </motion.div>
         </div>
         
         <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-sm">
