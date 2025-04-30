@@ -90,6 +90,14 @@ export const content = {
   ],
   talks: [
     {
+      title: "Next-gen AI Engineers",
+      venue: "AI Engineer Summit",
+      year: "2023",
+      description: "A talk about developing the next generation of AI engineers and making AI education accessible to all. Over 38,000 views!",
+      image: "/attached_assets/image_1745996487989.png",
+      link: "https://www.youtube.com/watch?v=ySYLsoAhXmg"
+    },
+    {
       title: "Teaching Kids About AI",
       venue: "TED Conference",
       year: "2022",

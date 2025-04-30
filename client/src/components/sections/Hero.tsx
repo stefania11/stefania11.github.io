@@ -56,10 +56,10 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="absolute -inset-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB] rounded-lg blur-md opacity-50 group-hover:opacity-80 transition duration-1000"></div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
+            <div className="relative rounded-lg overflow-hidden" style={{ aspectRatio: "3/4" }}>
               <img 
-                src="https://media.licdn.com/dms/image/C5603AQFGe-Mbm6YiRw/profile-displayphoto-shrink_800_800/0/1626471374532?e=2147483647&v=beta&t=2_f5nZBDtTR16TiZfAmHsWDnDPxqkpCm_qpR4eiVi8g" 
-                alt="Stefania Druga" 
+                src="/attached_assets/image_1745996751723.png" 
+                alt="Stefania Druga with cherry blossoms" 
                 className="w-full h-full object-cover"
               />
             </div>

@@ -3,7 +3,7 @@ import { content } from "@/data/content";
 import { ExternalLink } from "lucide-react";
 
 export default function Talks() {
-  const { talks } = content;
+  const updatedTalks = [...content.talks];
   
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -35,7 +35,7 @@ export default function Talks() {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          {talks.map((talk, index) => (
+          {updatedTalks.map((talk, index) => (
             <motion.div 
               key={index}
               className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300"
