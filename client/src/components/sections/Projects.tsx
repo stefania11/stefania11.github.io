@@ -33,8 +33,8 @@ export default function Projects() {
       id: 3,
       title: "AI Playground",
       description: "An interactive platform for exploring machine learning concepts through hands-on demos and visualizations, designed for learners of all ages to experience AI training and inference.",
-      image: "https://i.ytimg.com/vi_webp/GrPgN-EvaO8/maxresdefault.webp",
-      link: "https://github.com/stefania11/ai_playground",
+      image: "https://aiplayground.me/assets/aiplayground_hero.png",
+      link: "http://aiplayground.me/",
       tags: [
         { name: "Machine Learning", color: "#C1F0DB" }, 
         { name: "Interactive Learning", color: "#FFD6E0" },
