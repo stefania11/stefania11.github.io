@@ -1,9 +1,9 @@
 export const content = {
   about: {
     paragraphs: [
-      "I'm Stefania Druga, a researcher focused on how people learn with and about artificial intelligence and computational making. Currently a PhD student at the University of Washington and part of the Human-Centered AI group at INIT.",
-      "My research focuses on the development of AI literacy tools and curriculum for children and communities. I'm the founder of Cognimates and HacKIDemia, platforms designed to empower kids to be creators of technology, not just consumers.",
-      "I've worked at the MIT Media Lab, the Personal Robots Group, Mozilla, and Play-i Inc, and have exhibited work at venues such as CES, Maker Faire, and SXSW."
+      "I'm Stefania Druga, a Research Scientist at Google DeepMind, where I work on novel multimodal AI applications. I have a master's degree from MIT, PhD from UW and have been doing research on AI education since 2015.",
+      "During graduate school, I built the first open-source platform for K12 AI Education - Cognimates. My research focuses on the development of AI literacy tools and curriculum for children and communities.",
+      "When I'm not coding and writing papers, I enjoy trail running, yoga, and riding my bicycle."
     ],
     infoBoxes: [
       {
