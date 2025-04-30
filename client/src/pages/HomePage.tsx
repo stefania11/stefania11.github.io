@@ -25,20 +25,17 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
-        <section id="news" ref={registerSection} className="section-fade">
-          <News />
-        </section>
         <section id="about" ref={registerSection} className="section-fade">
           <About />
+        </section>
+        <section id="news" ref={registerSection} className="section-fade">
+          <News />
         </section>
         <section id="projects" ref={registerSection} className="section-fade">
           <Projects />
         </section>
         <section id="talks" ref={registerSection} className="section-fade">
           <Talks />
-        </section>
-        <section id="publications" ref={registerSection} className="section-fade">
-          <Publications />
         </section>
         <section id="contact" ref={registerSection} className="section-fade">
           <Contact />

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { scrollToSection } from "@/lib/scroll-to-section";
-import { Menu, FileText } from "lucide-react";
+import { Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
@@ -32,11 +32,10 @@ export default function Header() {
   };
 
   const navItems = [
-    { id: "news", label: "News" },
     { id: "about", label: "About" },
+    { id: "news", label: "News" },
     { id: "projects", label: "Projects" },
     { id: "talks", label: "Talks" },
-    { id: "publications", label: "Publications" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -51,7 +50,7 @@ export default function Header() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Stefania Druga
+          <span className="font-bold">Stefania Druga</span>
         </a>
         
         {/* Mobile menu button */}
@@ -60,12 +59,12 @@ export default function Header() {
         </button>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-10">
+        <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="relative nav-link hover:text-gray-600 transition-colors"
+              className="text-sm relative nav-link hover:text-gray-600 transition-colors"
               onClick={(e) => {
                 e.preventDefault();
                 handleNavClick(item.id);
@@ -75,10 +74,16 @@ export default function Header() {
             </a>
           ))}
           <Link 
-            href="/resume" 
-            className="relative nav-link hover:text-gray-600 transition-colors flex items-center"
+            href="/publications" 
+            className="text-sm relative nav-link hover:text-gray-600 transition-colors"
           >
-            <span>Resume</span>
+            Publications
+          </Link>
+          <Link 
+            href="/resume" 
+            className="text-sm relative nav-link hover:text-gray-600 transition-colors"
+          >
+            Resume
           </Link>
         </nav>
       </div>
@@ -107,6 +112,12 @@ export default function Header() {
                   {item.label}
                 </a>
               ))}
+              <Link 
+                href="/publications" 
+                className="py-2 px-4 hover:bg-gray-50 rounded-md transition-colors"
+              >
+                Publications
+              </Link>
               <Link 
                 href="/resume" 
                 className="py-2 px-4 hover:bg-gray-50 rounded-md transition-colors"

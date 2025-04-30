@@ -5,12 +5,12 @@ export default function Talks() {
   const talks = [
     {
       id: 1,
-      title: "The Future of Multimodal AI Applications",
+      title: "Future of Multimodal Applications",
       venue: "Infobip Shift Miami",
       date: "May 6, 2025 at 10:00 AM",
       year: "2025",
       description: "Excited to attend #InfobipShift Miami this year (May 5-7)! I'll be giving a keynote talk on \"The Future of Multimodal AI Applications\". Join me to explore AI that sees, hears & interacts in real-time. Expect technical insights + live demos!",
-      image: "/ai_engineer_talk.png",
+      image: "https://images.unsplash.com/photo-1624996379697-f01d168b1a52?q=80&w=2070",
       link: "https://shift.infobip.com/us/schedule/"
     },
     {

@@ -20,7 +20,7 @@ export default function Projects() {
       id: 2,
       title: "Cognimates",
       description: "An AI education platform that enables children to create with and learn about artificial intelligence through creative coding, training custom models, and building smart projects.",
-      image: "https://i.ytimg.com/vi/POuK3Vrq-Qk/maxresdefault.jpg",
+      image: "https://ik.imagekit.io/asu/sites/default/files/inline-images/CognimatesImageCover.jpg",
       link: "https://cognimates.me",
       tags: [
         { name: "AI Education", color: "#FFD6E0" },
@@ -33,7 +33,7 @@ export default function Projects() {
       id: 3,
       title: "AI Playground",
       description: "An interactive platform for exploring machine learning concepts through hands-on demos and visualizations, designed for learners of all ages to experience AI training and inference.",
-      image: "https://github.com/stefania11/ai_playground/raw/master/banner.png",
+      image: "https://i.ytimg.com/vi_webp/GrPgN-EvaO8/maxresdefault.webp",
       link: "https://github.com/stefania11/ai_playground",
       tags: [
         { name: "Machine Learning", color: "#C1F0DB" }, 
