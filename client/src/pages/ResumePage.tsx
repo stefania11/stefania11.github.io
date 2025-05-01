@@ -219,9 +219,9 @@ export default function ResumePage() {
                 </div>
               </header>
               
-              {/* Section Navigation - Centered, Colorful, Two Columns */}
+              {/* Section Navigation - Centered, Colorful, Three-Column Layout */}
               <div className="flex justify-center mb-10 print:hidden">
-                <div className="grid grid-cols-2 gap-2 max-w-2xl">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-3xl">
                   {[
                     { id: "qualifications", label: "Qualifications", icon: <Briefcase className="h-4 w-4 mr-2" />, color: "#FFD6E0" },
                     { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" />, color: "#E0D6FF" },
@@ -234,7 +234,7 @@ export default function ResumePage() {
                     <motion.a
                       key={section.id}
                       href={`#${section.id}`}
-                      className="flex items-center justify-center whitespace-nowrap px-4 py-2 rounded-full transition-colors hover:shadow-md"
+                      className="flex items-center justify-center whitespace-nowrap px-5 py-3 rounded-full transition-colors hover:shadow-md"
                       style={{ backgroundColor: section.color }}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.98 }}

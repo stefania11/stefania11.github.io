@@ -40,7 +40,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`py-6 px-6 md:px-16 fixed top-0 left-0 w-full z-40 transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"}`}>
+    <header className={`py-6 px-6 md:px-16 fixed top-0 left-0 w-full z-40 transition-all duration-300 print:hidden ${scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"}`}>
       <div className="container mx-auto flex justify-between items-center">
         <a 
           href="#" 
