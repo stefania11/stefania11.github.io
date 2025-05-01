@@ -20,6 +20,7 @@ export default function ResumePage() {
   ];
   
   const awardsContent = [
+    "ASU GSV Summit's 2025 Leading Women in AI - Honored to be recognized as one of THE AI SHOW @asugsvsummit's 2025 Leading Women in AI. Recent studies show 70% of generative AI users are from Gen Z, making Critical AI literacy skills crucial for youth.",
     "NSF FMitF Grant for End-User Programming project, 2021",
     "Jacobs Foundation Grant for AI Literacy project, 2020",
     "Weizenbaum Research Fellow in Criticality of AI-based Systems Lab in Berlin, 2019",
@@ -67,6 +68,16 @@ export default function ResumePage() {
   ];
   
   const activeProjectsContent = [
+    {
+      title: "ChemBuddy: Multimodal AI Chemistry Assistant",
+      description: "An AI-powered learning companion that combines computer vision, voice interaction, and sensor data to help students understand chemistry concepts through real-time experiment analysis.",
+      link: "https://chembuddy.ai"
+    },
+    {
+      title: "MathMind Platform",
+      description: "An interactive multimodal AI system designed to detect algebraic misconceptions directly from images of student work, provide targeted conceptual feedback, and generate personalized practice exercises enhanced with visual representations. Built on Google's Gemini 2.5 Pro and Imagen 3.0 models, MathMind addresses critical gaps in educational technology through a responsive web interface analyzing student work via live video streams or image uploads.",
+      link: "https://mathmind.edu"
+    },
     {
       title: "Cognimates",
       description: "AI education platform for children to train their own machine learning models. Users can also code smart games using their custom models.",
@@ -183,10 +194,9 @@ export default function ResumePage() {
                 {[
                   { id: "qualifications", label: "Qualifications", icon: <Briefcase className="h-4 w-4 mr-2" /> },
                   { id: "awards", label: "Awards", icon: <Award className="h-4 w-4 mr-2" /> },
-                  { id: "research", label: "Research", icon: <GraduationCap className="h-4 w-4 mr-2" /> },
+                  { id: "experience", label: "Experience", icon: <Briefcase className="h-4 w-4 mr-2" /> },
                   { id: "projects", label: "Projects", icon: <Code className="h-4 w-4 mr-2" /> },
-                  { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" /> },
-                  { id: "experience", label: "Experience", icon: <Briefcase className="h-4 w-4 mr-2" /> }
+                  { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" /> }
                 ].map((section) => (
                   <motion.a
                     key={section.id}
@@ -201,50 +211,24 @@ export default function ResumePage() {
                 ))}
               </div>
               
-              {/* Print Button */}
-              <div className="flex justify-end mb-6 print:hidden">
-                <motion.button
-                  className="flex items-center bg-black text-white px-4 py-2 rounded-full"
-                  onClick={handlePrint}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
+              {/* Print Button - Moved to top with lighter styling */}
+              <div className="flex justify-end mb-4 print:hidden">
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handlePrint();
+                  }}
+                  className="text-gray-400 hover:text-gray-700 text-sm flex items-center"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4" />
                   </svg>
                   Print Resume
-                </motion.button>
+                </a>
               </div>
               
-              {/* Qualifications Section */}
-              <motion.section
-                id="qualifications"
-                variants={sectionVariants}
-                initial="hidden"
-                animate="visible"
-                className="mb-16 print:mb-8 print:break-inside-avoid"
-              >
-                <h2 className="text-2xl font-bold mb-6 relative inline-block">
-                  Qualifications Summary
-                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#FFD6E0]"></span>
-                </h2>
-                <ul className="space-y-3 mt-6">
-                  {qualificationsContent.map((item, index) => (
-                    <motion.li 
-                      key={index}
-                      className="flex items-start"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                    >
-                      <span className="inline-block w-6 h-6 rounded-full bg-[#E0D6FF] flex-shrink-0 mr-3"></span>
-                      <span className="text-lg">{item}</span>
-                    </motion.li>
-                  ))}
-                </ul>
-              </motion.section>
-              
-              {/* Awards Section */}
+              {/* Awards Section - Moved to the top */}
               <motion.section
                 id="awards"
                 variants={sectionVariants}
@@ -268,6 +252,34 @@ export default function ResumePage() {
                       <span className="inline-block w-6 h-6 rounded-full bg-[#C1F0DB] flex-shrink-0 mr-3 flex items-center justify-center">
                         <Award className="h-3 w-3 text-gray-700" />
                       </span>
+                      <span className="text-lg">{item}</span>
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.section>
+              
+              {/* Qualifications Section */}
+              <motion.section
+                id="qualifications"
+                variants={sectionVariants}
+                initial="hidden"
+                animate="visible"
+                className="mb-16 print:mb-8 print:break-inside-avoid"
+              >
+                <h2 className="text-2xl font-bold mb-6 relative inline-block">
+                  Qualifications Summary
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#FFD6E0]"></span>
+                </h2>
+                <ul className="space-y-3 mt-6">
+                  {qualificationsContent.map((item, index) => (
+                    <motion.li 
+                      key={index}
+                      className="flex items-start"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                    >
+                      <span className="inline-block w-6 h-6 rounded-full bg-[#E0D6FF] flex-shrink-0 mr-3"></span>
                       <span className="text-lg">{item}</span>
                     </motion.li>
                   ))}

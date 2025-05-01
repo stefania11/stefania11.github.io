@@ -1,0 +1,70 @@
+/* Print-specific styles */
+@media print {
+  @page {
+    size: A4;
+    margin: 0.5cm;
+  }
+  
+  body {
+    font-size: 12pt;
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-color: white !important;
+  }
+  
+  .min-h-screen {
+    min-height: auto !important;
+  }
+  
+  .bg-gray-50, .bg-white {
+    background-color: white !important;
+  }
+  
+  .shadow-sm, .shadow-md {
+    box-shadow: none !important;
+  }
+  
+  .rounded-xl, .rounded-lg {
+    border-radius: 0 !important;
+  }
+  
+  header.site-header, footer.site-footer {
+    display: none !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+    color: black !important;
+  }
+  
+  button {
+    display: none !important;
+  }
+  
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  
+  /* Ensure page breaks don't happen in the middle of sections */
+  section {
+    break-inside: avoid;
+  }
+  
+  /* Ensure colors are preserved in print */
+  .bg-\[\#FFD6E0\], .bg-\[\#E0D6FF\], .bg-\[\#C1F0DB\] {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  /* Make sure the header is included in print */
+  .print\:block {
+    display: block !important;
+  }
+  
+  /* Hide elements that shouldn't be printed */
+  .print\:hidden {
+    display: none !important;
+  }
+}
