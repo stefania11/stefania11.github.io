@@ -18,21 +18,22 @@ export default function News() {
   const newsItems: NewsItem[] = [
     {
       id: 1,
-      title: "AI Engineering: Building Next-Gen Applications",
-      date: "June 2025",
-      description: "My latest work on AI engineering practices has been featured at Google I/O 2025. I discussed how we're developing frameworks for more robust multimodal AI systems that combine vision, language, and structured data processing capabilities.",
-      icon: <Sparkles className="w-5 h-5" />,
-      link: "https://io.google/2025",
-      color: "#C1F0DB"
-    },
-    {
-      id: 2,
       title: "Keynote at Infobip Shift Miami 2025",
       date: "May 2025",
       description: "Excited to attend #InfobipShift Miami (May 5-7)! I'll be giving a keynote talk on 'The Future of Multimodal AI Applications'. Join me May 6th at 10:00 AM to explore AI that sees, hears & interacts in real-time.",
       icon: <Sparkles className="w-5 h-5" />,
       link: "https://shift.infobip.com/us/schedule/",
       color: "#FFD6E0"
+    },
+    {
+      id: 2,
+      title: "AI Engineering Summit Talk in NYC",
+      date: "April 2025",
+      description: "My talk on 'Reimagining AI Experiences' at the AI Engineering Summit in New York has reached over 39,000 views! In this presentation, I explore how we can create more intuitive and responsive AI systems that adapt to human needs.",
+      icon: <Youtube className="w-5 h-5" />,
+      link: "https://www.youtube.com/watch?v=ySYLsoAhXmg&t=1s",
+      color: "#C1F0DB",
+      thumbnail: "https://i.ytimg.com/vi/ySYLsoAhXmg/maxresdefault.jpg"
     },
     {
       id: 3,
