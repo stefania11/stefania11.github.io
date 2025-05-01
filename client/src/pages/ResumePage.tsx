@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowLeft, Mail, Globe, Briefcase, GraduationCap, Award, Code } from "lucide-react";
+import { ArrowLeft, Mail, Globe, Briefcase, GraduationCap, Award, Code, Heart } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -20,7 +20,7 @@ export default function ResumePage() {
   ];
   
   const awardsContent = [
-    "ASU GSV Summit's 2025 Leading Women in AI - Honored to be recognized as one of THE AI SHOW @asugsvsummit's 2025 Leading Women in AI. Recent studies show 70% of generative AI users are from Gen Z, making Critical AI literacy skills crucial for youth.",
+    "ASU GSV Summit's 2025 Leading Women in AI, 2025",
     "NSF FMitF Grant for End-User Programming project, 2021",
     "Jacobs Foundation Grant for AI Literacy project, 2020",
     "Weizenbaum Research Fellow in Criticality of AI-based Systems Lab in Berlin, 2019",
@@ -28,6 +28,20 @@ export default function ResumePage() {
     "LEGO Papert Fellow, MIT MediaLab, 2018",
     "Finalist of Ideas for Europe competition, EU, 2017",
     "Women to Watch in Science, Women at the frontier, 2016"
+  ];
+  
+  const languagesContent = [
+    "Romanian",
+    "English",
+    "French",
+    "Spanish",
+    "Italian",
+    "Portuguese"
+  ];
+  
+  const passionsContent = [
+    "Trail running and ashtanga yoga",
+    "Reading science fiction books"
   ];
   
   const researchContent = [
@@ -75,7 +89,7 @@ export default function ResumePage() {
     },
     {
       title: "MathMind Platform",
-      description: "An interactive multimodal AI system designed to detect algebraic misconceptions directly from images of student work, provide targeted conceptual feedback, and generate personalized practice exercises enhanced with visual representations. Built on Google's Gemini 2.5 Pro and Imagen 3.0 models, MathMind addresses critical gaps in educational technology through a responsive web interface analyzing student work via live video streams or image uploads.",
+      description: "An interactive multimodal AI system designed to detect algebraic misconceptions directly from images of student work, provide targeted conceptual feedback, and generate personalized practice exercises enhanced with visual representations.",
       link: "https://mathmind.edu"
     },
     {
@@ -161,21 +175,37 @@ export default function ResumePage() {
       <Header />
       <div className="min-h-screen bg-gray-50 pt-24 pb-16 print:bg-white print:pt-2">
         <div className="container mx-auto px-6 md:px-16 print:px-0">
-          <div className="mb-8 mt-4 print:hidden">
-            <Link href="/">
-              <motion.div
-                className="inline-flex items-center text-lg font-medium cursor-pointer"
-                whileHover={{ x: -5 }}
-              >
-                <ArrowLeft className="mr-2 h-5 w-5" />
-                Back to Portfolio
-              </motion.div>
-            </Link>
-          </div>
-          
           <div className="max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-sm mb-8 print:shadow-none print:p-0">
-              <header className="text-center mb-10">
+              {/* Top navigation bar with Back and Print buttons */}
+              <div className="flex justify-between items-center mb-10 print:hidden">
+                <Link href="/">
+                  <motion.div
+                    className="inline-flex items-center text-sm font-medium cursor-pointer px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200"
+                    whileHover={{ x: -5 }}
+                  >
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Portfolio
+                  </motion.div>
+                </Link>
+                
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handlePrint();
+                  }}
+                  className="inline-flex items-center text-sm font-medium cursor-pointer px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4" />
+                  </svg>
+                  Print Resume
+                </a>
+              </div>
+              
+              {/* Header with name and contact info */}
+              <header className="text-center mb-8 print:mb-4">
                 <h1 className="text-4xl md:text-5xl font-bold mb-3">Stefania Druga</h1>
                 <div className="flex justify-center items-center flex-wrap gap-3 text-gray-600">
                   <div className="flex items-center">
@@ -189,14 +219,16 @@ export default function ResumePage() {
                 </div>
               </header>
               
-              {/* Section Navigation */}
-              <div className="flex overflow-x-auto mb-10 pb-2 -mx-2 px-2 gap-2 print:hidden">
+              {/* Section Navigation - Centered */}
+              <div className="flex justify-center overflow-x-auto mb-10 pb-2 gap-2 print:hidden">
                 {[
                   { id: "qualifications", label: "Qualifications", icon: <Briefcase className="h-4 w-4 mr-2" /> },
+                  { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" /> },
                   { id: "awards", label: "Awards", icon: <Award className="h-4 w-4 mr-2" /> },
                   { id: "experience", label: "Experience", icon: <Briefcase className="h-4 w-4 mr-2" /> },
                   { id: "projects", label: "Projects", icon: <Code className="h-4 w-4 mr-2" /> },
-                  { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" /> }
+                  { id: "languages", label: "Languages", icon: <Globe className="h-4 w-4 mr-2" /> },
+                  { id: "passions", label: "Passions", icon: <Heart className="h-4 w-4 mr-2" /> }
                 ].map((section) => (
                   <motion.a
                     key={section.id}
@@ -209,23 +241,6 @@ export default function ResumePage() {
                     {section.label}
                   </motion.a>
                 ))}
-              </div>
-              
-              {/* Print Button - Moved to top with lighter styling */}
-              <div className="flex justify-end mb-4 print:hidden">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handlePrint();
-                  }}
-                  className="text-gray-400 hover:text-gray-700 text-sm flex items-center"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4" />
-                  </svg>
-                  Print Resume
-                </a>
               </div>
               
               {/* Awards Section - Moved to the top */}
@@ -284,6 +299,49 @@ export default function ResumePage() {
                     </motion.li>
                   ))}
                 </ul>
+              </motion.section>
+              
+              {/* Education Section - Moved right after Qualifications */}
+              <motion.section
+                id="education"
+                variants={sectionVariants}
+                initial="hidden"
+                animate="visible"
+                className="mb-16 print:mb-8 print:break-inside-avoid"
+              >
+                <h2 className="text-2xl font-bold mb-6 relative inline-block">
+                  Education
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#C1F0DB]"></span>
+                </h2>
+                <div className="overflow-x-auto mt-6">
+                  <table className="min-w-full divide-y divide-gray-200">
+                    <thead className="bg-gray-50">
+                      <tr>
+                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Degree</th>
+                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Major</th>
+                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Institution</th>
+                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
+                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">GPA</th>
+                      </tr>
+                    </thead>
+                    <tbody className="bg-white divide-y divide-gray-200">
+                      {educationContent.map((edu, index) => (
+                        <motion.tr 
+                          key={index}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ delay: index * 0.1 }}
+                        >
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{edu.degree}</td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{edu.major}</td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{edu.institution}</td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{edu.year}</td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{edu.gpa}</td>
+                        </motion.tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </motion.section>
               
               {/* Experience Section (Combined Research and Professional) */}
