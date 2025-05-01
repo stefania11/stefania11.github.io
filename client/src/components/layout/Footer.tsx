@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="py-12 px-6 md:px-16 bg-black text-white">
+    <footer className="py-12 px-6 md:px-16 bg-black text-white print:hidden">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">

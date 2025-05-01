@@ -40,7 +40,7 @@ export default function ResumePage() {
   ];
   
   const passionsContent = [
-    "Trail running and ashtanga yoga",
+    "Trail running and Ashtanga yoga",
     "Reading science fiction books"
   ];
   
@@ -219,28 +219,31 @@ export default function ResumePage() {
                 </div>
               </header>
               
-              {/* Section Navigation - Centered */}
-              <div className="flex justify-center overflow-x-auto mb-10 pb-2 gap-2 print:hidden">
-                {[
-                  { id: "qualifications", label: "Qualifications", icon: <Briefcase className="h-4 w-4 mr-2" /> },
-                  { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" /> },
-                  { id: "awards", label: "Awards", icon: <Award className="h-4 w-4 mr-2" /> },
-                  { id: "experience", label: "Experience", icon: <Briefcase className="h-4 w-4 mr-2" /> },
-                  { id: "projects", label: "Projects", icon: <Code className="h-4 w-4 mr-2" /> },
-                  { id: "languages", label: "Languages", icon: <Globe className="h-4 w-4 mr-2" /> },
-                  { id: "passions", label: "Passions", icon: <Heart className="h-4 w-4 mr-2" /> }
-                ].map((section) => (
-                  <motion.a
-                    key={section.id}
-                    href={`#${section.id}`}
-                    className="flex items-center whitespace-nowrap px-4 py-2 rounded-full transition-colors bg-gray-100 hover:bg-gray-200"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    {section.icon}
-                    {section.label}
-                  </motion.a>
-                ))}
+              {/* Section Navigation - Centered, Colorful, Two Columns */}
+              <div className="flex justify-center mb-10 print:hidden">
+                <div className="grid grid-cols-2 gap-2 max-w-2xl">
+                  {[
+                    { id: "qualifications", label: "Qualifications", icon: <Briefcase className="h-4 w-4 mr-2" />, color: "#FFD6E0" },
+                    { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" />, color: "#E0D6FF" },
+                    { id: "awards", label: "Awards", icon: <Award className="h-4 w-4 mr-2" />, color: "#C1F0DB" },
+                    { id: "experience", label: "Experience", icon: <Briefcase className="h-4 w-4 mr-2" />, color: "#FFE0B0" },
+                    { id: "projects", label: "Projects", icon: <Code className="h-4 w-4 mr-2" />, color: "#B0E0FF" },
+                    { id: "languages", label: "Languages", icon: <Globe className="h-4 w-4 mr-2" />, color: "#E0F0C1" },
+                    { id: "passions", label: "Passions", icon: <Heart className="h-4 w-4 mr-2" />, color: "#F0C1E0" }
+                  ].map((section) => (
+                    <motion.a
+                      key={section.id}
+                      href={`#${section.id}`}
+                      className="flex items-center justify-center whitespace-nowrap px-4 py-2 rounded-full transition-colors hover:shadow-md"
+                      style={{ backgroundColor: section.color }}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      {section.icon}
+                      {section.label}
+                    </motion.a>
+                  ))}
+                </div>
               </div>
               
               {/* Awards Section - Moved to the top */}
@@ -481,9 +484,9 @@ export default function ResumePage() {
                   Languages
                   <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#E0D6FF]"></span>
                 </h2>
-                <ul className="space-y-3 mt-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
                   {languagesContent.map((item, index) => (
-                    <motion.li 
+                    <motion.div 
                       key={index}
                       className="flex items-start"
                       initial={{ opacity: 0, x: -20 }}
@@ -494,9 +497,9 @@ export default function ResumePage() {
                         <Globe className="h-3 w-3 text-gray-700" />
                       </span>
                       <span className="text-lg">{item}</span>
-                    </motion.li>
+                    </motion.div>
                   ))}
-                </ul>
+                </div>
               </motion.section>
 
               {/* Passions Section */}
@@ -511,7 +514,7 @@ export default function ResumePage() {
                   Passions
                   <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#FFD6E0]"></span>
                 </h2>
-                <ul className="space-y-3 mt-6">
+                <ul className="space-y-5 mt-6">
                   {passionsContent.map((item, index) => (
                     <motion.li 
                       key={index}
@@ -522,8 +525,8 @@ export default function ResumePage() {
                     >
                       <span className="inline-block w-6 h-6 rounded-full bg-[#FFD6E0] flex-shrink-0 mr-3 flex items-center justify-center">
                         {index === 0 ? 
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 11.5v.5"></path><path d="m18 5.5-1.5-1"></path><path d="m18 5.5 1.5-1"></path><path d="M18 5v.5"></path><path d="M12.5 7.5a1 1 0 0 0-1-1 1 1 0 0 0-3-2c-2 0-3 3-3 3 0 1.7 1.3 3 3 3 .24 0 .5-1 1-1a1 1 0 0 0 3-2Z"></path><path d="M20 10c2 3-2 6-2 6"></path><path d="m11 15-3-2"></path><path d="m13 15.5 2.5-2"></path><path d="M11 13v8"></path><path d="m14 18-3-3-3 3"></path><path d="M6 9c0 2 2 3 3 3"></path></svg> :
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 3v1a2 2 0 0 0 2 2h6"></path><path d="M10 12v-1a2 2 0 0 1 2-2h6"></path><path d="M18 21v-1a2 2 0 0 0-2-2h-6"></path><path d="M18 12v-1a2 2 0 0 0-2-2h-6"></path><path d="M4 16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h0a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h0Z"></path><path d="M4 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h0Z"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clipRule="evenodd" /><path strokeLinecap="round" strokeLinejoin="round" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" /></svg> :
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
                         }
                       </span>
                       {index === 1 ? (
