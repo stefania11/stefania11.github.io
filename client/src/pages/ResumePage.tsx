@@ -469,50 +469,81 @@ export default function ResumePage() {
                 </div>
               </motion.section>
               
-              {/* Education Section */}
+              {/* Languages Section */}
               <motion.section
-                id="education"
+                id="languages"
                 variants={sectionVariants}
                 initial="hidden"
                 animate="visible"
                 className="mb-16 print:mb-8 print:break-inside-avoid"
               >
                 <h2 className="text-2xl font-bold mb-6 relative inline-block">
-                  Education
-                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#C1F0DB]"></span>
+                  Languages
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#E0D6FF]"></span>
                 </h2>
-                <div className="overflow-x-auto mt-6">
-                  <table className="min-w-full divide-y divide-gray-200">
-                    <thead className="bg-gray-50">
-                      <tr>
-                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Degree</th>
-                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Major</th>
-                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Institution</th>
-                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
-                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">GPA</th>
-                      </tr>
-                    </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
-                      {educationContent.map((edu, index) => (
-                        <motion.tr 
-                          key={index}
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          transition={{ delay: index * 0.1 }}
-                        >
-                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{edu.degree}</td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{edu.major}</td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{edu.institution}</td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{edu.year}</td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{edu.gpa}</td>
-                        </motion.tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                <ul className="space-y-3 mt-6">
+                  {languagesContent.map((item, index) => (
+                    <motion.li 
+                      key={index}
+                      className="flex items-start"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                    >
+                      <span className="inline-block w-6 h-6 rounded-full bg-[#E0D6FF] flex-shrink-0 mr-3 flex items-center justify-center">
+                        <Globe className="h-3 w-3 text-gray-700" />
+                      </span>
+                      <span className="text-lg">{item}</span>
+                    </motion.li>
+                  ))}
+                </ul>
               </motion.section>
-              
 
+              {/* Passions Section */}
+              <motion.section
+                id="passions"
+                variants={sectionVariants}
+                initial="hidden"
+                animate="visible"
+                className="mb-16 print:mb-8 print:break-inside-avoid"
+              >
+                <h2 className="text-2xl font-bold mb-6 relative inline-block">
+                  Passions
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#FFD6E0]"></span>
+                </h2>
+                <ul className="space-y-3 mt-6">
+                  {passionsContent.map((item, index) => (
+                    <motion.li 
+                      key={index}
+                      className="flex items-start"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                    >
+                      <span className="inline-block w-6 h-6 rounded-full bg-[#FFD6E0] flex-shrink-0 mr-3 flex items-center justify-center">
+                        {index === 0 ? 
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 11.5v.5"></path><path d="m18 5.5-1.5-1"></path><path d="m18 5.5 1.5-1"></path><path d="M18 5v.5"></path><path d="M12.5 7.5a1 1 0 0 0-1-1 1 1 0 0 0-3-2c-2 0-3 3-3 3 0 1.7 1.3 3 3 3 .24 0 .5-1 1-1a1 1 0 0 0 3-2Z"></path><path d="M20 10c2 3-2 6-2 6"></path><path d="m11 15-3-2"></path><path d="m13 15.5 2.5-2"></path><path d="M11 13v8"></path><path d="m14 18-3-3-3 3"></path><path d="M6 9c0 2 2 3 3 3"></path></svg> :
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 3v1a2 2 0 0 0 2 2h6"></path><path d="M10 12v-1a2 2 0 0 1 2-2h6"></path><path d="M18 21v-1a2 2 0 0 0-2-2h-6"></path><path d="M18 12v-1a2 2 0 0 0-2-2h-6"></path><path d="M4 16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h0a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h0Z"></path><path d="M4 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h0Z"></path></svg>
+                        }
+                      </span>
+                      {index === 1 ? (
+                        <span className="text-lg">
+                          <a 
+                            href="https://www.goodreads.com/user/show/10667897-stefania" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-blue-600 hover:underline flex items-center print:text-black"
+                          >
+                            {item}
+                          </a>
+                        </span>
+                      ) : (
+                        <span className="text-lg">{item}</span>
+                      )}
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.section>
             </div>
           </div>
         </div>
