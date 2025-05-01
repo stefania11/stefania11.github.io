@@ -37,7 +37,7 @@ export default function PublicationsPage() {
               title: "Multimodal AI Interfaces: Designing for Human-AI Collaboration in Creative Contexts",
               authors: "Stefania Druga, Tianyi Xie, and Melanie Mitchell",
               year: "2025",
-              link: "#"
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/SIGCHI_2025_Multimodal_AI_Interfaces.pdf"
             },
             {
               id: "2025-2",
@@ -45,7 +45,7 @@ export default function PublicationsPage() {
               title: "Knowledge Graphs for Multimodal Reasoning: Connecting Images, Text and Structured Data",
               authors: "Stefania Druga, Cynthia Breazeal, and Michael Terry",
               year: "2025",
-              link: "#"
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/ICLR_2025_Knowledge_Graphs_Multimodal.pdf"
             },
             {
               id: "2025-3",
@@ -53,7 +53,7 @@ export default function PublicationsPage() {
               title: "Learning from Children: How Youth Conceptualize and Build with Multimodal AI Systems",
               authors: "Stefania Druga, Amy J. Ko, and Randi Williams",
               year: "2025",
-              link: "#"
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/Nature_MI_2025_Learning_from_Children.pdf"
             }
           ]
         }
@@ -91,7 +91,8 @@ export default function PublicationsPage() {
               venue: "FAccT '23",
               title: "Language Models and Society: Bridging Research and Policy",
               authors: "Stefania Druga, Ioana Baldini, Mihaela Vorvoreanu, and Rishi Bommasani",
-              year: "2023"
+              year: "2023",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/FAccT_2023_Language_Models_Society.pdf"
             },
             {
               venue: "C&C'23",
@@ -155,37 +156,43 @@ export default function PublicationsPage() {
               venue: "MIT PRESS 2022",
               title: "The 4As: Ask, Adapt, Author, Analyze: AI Literacy Framework for Families",
               authors: "Druga Stefania, Yip Jason, Preston Michael, and Dillon Devin",
-              year: "2022"
+              year: "2022",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/MITP2022_4As_AI_Literacy_Framework_for_Families.pdf"
             },
             {
               venue: "CHI '22",
               title: "Family as a Third Space for AI Literacies: How do children and parents learn about AI together?",
               authors: "Stefania Druga, Fee Christoph, and Amy J. Ko",
-              year: "2022"
+              year: "2022",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/Druga2022FamilyAILiteracy.pdf"
             },
             {
               venue: "IDC '22",
               title: "How families design and program games: a qualitative analysis of a 4-week online in-home study",
               authors: "Stefania Druga, Thomas Ball, and Amy J. Ko",
-              year: "2022"
+              year: "2022",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_2022_TileCode_Families.pdf"
             },
             {
               venue: "ITICSE '22",
               title: "The Landscape of Teaching Resources for AI Education",
               authors: "Stefania Druga, Nancy Otero, and Amy J. Ko",
-              year: "2022"
+              year: "2022",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/Final_ITICSE_Submission___Landscape_AI_ressources.pdf"
             },
             {
               venue: "IJCCI 2022",
               title: "Examining voice assistants in the context of children's speech",
               authors: "Min Kyong Kim, Stefania Druga, Shaghayegh Esmaeili, Julia Woodward, Alex Shaw, Ayushi Jain, Jaida Langham, Kristy Hollingshead, Silvia B Lovato, Erin Beneteau, and others",
-              year: "2022"
+              year: "2022",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IJCCI_Examining_voice_assistants_in_the_context_of_children_speech.pdf"
             },
             {
               venue: "UW 2022",
               title: "Interest-Driven Creative Programming for Youth with AI Friends",
               authors: "Druga Stefania",
-              year: "2022"
+              year: "2022",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/GE_2022_Interest_Driven_Creative_Programming_for_Youth.pdf"
             }
           ]
         }
@@ -201,19 +208,22 @@ export default function PublicationsPage() {
               venue: "IDC 2021",
               title: "How do children's perceptions of machine intelligence change when training and coding smart programs?",
               authors: "Stefania Druga, and Amy J. Ko",
-              year: "2021"
+              year: "2021",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_Machine_Intelligence_Perception_2021.pdf"
             },
             {
               venue: "CLS 2021",
               title: "Imagining Future Designs of Tools for Youth Data Literacies",
               authors: "Regina Cheng, Stefania Druga, Emilia Gan, Catherine D'Ignazio, Rahul Bhargava, Victor Lee, Camillia Matuk, Tamara Clegg, Andee Rubin, and Yasmin Kafai",
-              year: "2021"
+              year: "2021",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CLS_Future_Data_Literacies_Workshop_at_Connected_Learning_Summit_July_2021.pdf"
             },
             {
               venue: "KDD 2021",
               title: "A Design Framework for Citizen-Science AI Platforms for Families",
               authors: "Fangqing He*, Yifeng Wang*, and Stefania Druga",
-              year: "2021"
+              year: "2021",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/FEED_A_Design_Framework_for_Citizen_Science_AI_Platforms_for_Families_2021.pdf"
             }
           ]
         }
@@ -229,25 +239,29 @@ export default function PublicationsPage() {
               venue: "JoDS 2020",
               title: "The 4As: Ask, Adapt, Author, Analyze AI Literacy Framework for Families",
               authors: "Druga Stefania, Yip Jason, Preston Michael, and Dillon Devin",
-              year: "2020"
+              year: "2020",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/JODS_Author_Draft_The_4As__Ask__Adapt__Author__Analyze___AI_Literacy_Framework_for_Families.pdf"
             },
             {
               venue: "IDC 2020",
               title: "Research Toolkit for Future-Oriented Play with Families",
               authors: "Michelson Rebecca Druga Stefania",
-              year: "2020"
+              year: "2020",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/INTERACT_Camera_Ready_Smart_Toys_Design.pdf"
             },
             {
               venue: "IDC 2020",
               title: "\"Puffy and Sticking Out\" CollaborativeImage Classification with Kids",
               authors: "Druga Stefania Tian Yubing",
-              year: "2020"
+              year: "2020",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_Workshop_Puffy_sticking_out.pdf"
             },
             {
               venue: "CACM 2020",
               title: "It Is Time for More Critical CS Education",
               authors: "Amy J. Ko, Alannah Oleson, Neil Ryan, Yim Register, Benjamin Xie, Mina Tari, Matthew Davidson, Stefania Druga, and Dastyni Loksa",
-              year: "2020"
+              year: "2020",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CACM_Critical_CS_2020.pdf"
             }
           ]
         }
@@ -263,25 +277,29 @@ export default function PublicationsPage() {
               venue: "FABLEARN 2019",
               title: "Inclusive AI literacy for kids around the world",
               authors: "Druga Stefania, Vu Sarah T, Likhith Eesh, and Qiu Tammy",
-              year: "2019"
+              year: "2019",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/FABLEARN_Inclusive_AI_2019.pdf"
             },
             {
               venue: "CHIPLAY 2019",
               title: "Ballbit Adventure: A Physical Game for a Collaborative Racing",
               authors: "Kuang Quincy, Zhang Jiaxin, and Druga Stefania",
-              year: "2019"
+              year: "2019",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CHI_PLAY_Ballbit_Adventure_2019.pdf"
             },
             {
               venue: "CHIPLAY 2019",
               title: "The Humming Box: AI-powered Tangible Music Toy for Children",
               authors: "Chen Chunhan, Tang Yihan, Xie Tianyi, and Druga Stefania",
-              year: "2019"
+              year: "2019",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CHI_PLAY_Humming_Box_2019.pdf"
             },
             {
               venue: "CHIPLAY 2019",
               title: "Legoons: Inflatable Construction Kit for Children",
               authors: "Yang Xuefei, and Druga Stefania",
-              year: "2019"
+              year: "2019",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CHI_PLAY_Legoons_2019.pdf"
             }
           ]
         }
@@ -297,25 +315,29 @@ export default function PublicationsPage() {
               venue: "IDC 2018",
               title: "How smart are the smart toys? children and parents' agent interaction and intelligence attribution",
               authors: "Druga Stefania, Williams Randi, Park Hae Won, and Breazeal Cynthia",
-              year: "2018"
+              year: "2018",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_How_smart_toys_2018.pdf"
             },
             {
               venue: "IDC 2018",
               title: "\" My doll says it's ok\" a study of children's conformity to a talking doll",
               authors: "Williams Randi, Machado Christian Vázquez, Druga Stefania, Breazeal Cynthia, and Maes Pattie",
-              year: "2018"
+              year: "2018",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_WIP_Doll_2018.pdf"
             },
             {
               venue: "MIT 2018",
               title: "Growing up with AI: Cognimates: from coding to teaching machines",
               authors: "Druga Stefania",
-              year: "2018"
+              year: "2018",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/MIT_Thesis_Growin_up_with_AI_Stefania_Druga_2018.pdf"
             },
             {
               venue: "MIT 2018",
               title: "Cognimates",
               authors: "Druga Stefania, Vu Sarah, Likhith Eesh, and Qui Tammy",
-              year: "2018"
+              year: "2018",
+              link: "https://www.cognimates.me"
             }
           ]
         }
@@ -331,19 +353,22 @@ export default function PublicationsPage() {
               venue: "CHI 2017",
               title: "Embodied learning and play in sensorimotor augmentations for kids",
               authors: "Druga Stefania",
-              year: "2017"
+              year: "2017",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CHI_Workshop_Embodied_learning_2017.pdf"
             },
             {
               venue: "IDC 2017",
               title: "\" Hey Google is it OK if I eat you?\" Initial Explorations in Child-Agent Interaction",
               authors: "Druga Stefania, Williams Randi, Breazeal Cynthia, and Resnick Mitchel",
-              year: "2017"
+              year: "2017",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_WIP_Hey_Google_2017.pdf"
             },
             {
               venue: "ISWC 2018",
               title: "Motif: a wearable sonic cueing device for memory support and cognitive intervention",
               authors: "Druga Stefania, Maes Pattie, and Rieger Alexandra",
-              year: "2017"
+              year: "2017",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/ISWC_WIP_Motif_2017.pdf"
             }
           ]
         }
@@ -359,7 +384,8 @@ export default function PublicationsPage() {
               venue: "SIGRAPH 2014",
               title: "Open Source Hardware (OSHW) Supporting Interaction between Traditional Crafts and Emergent Science: Wayang Kulit over Microfluidic Interfaces",
               authors: "Ausareny Justyna, Kera Denisa, Druga Stefania, and Reshef Yair",
-              year: "2014"
+              year: "2014",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/SIGRAPH_Workshop_OSHW_2014.pdf"
             }
           ]
         }
@@ -375,7 +401,8 @@ export default function PublicationsPage() {
               venue: "EUROMIME 2010",
               title: "Open Education Resources Practices and Copyrights for Teachers",
               authors: "Druga Stefania",
-              year: "2010"
+              year: "2010",
+              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/EUROMIME_Thesis_OER_2010.pdf"
             }
           ]
         }

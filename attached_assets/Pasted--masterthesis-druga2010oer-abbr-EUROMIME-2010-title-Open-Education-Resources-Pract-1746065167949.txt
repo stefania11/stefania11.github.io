@@ -1,0 +1,459 @@
+---
+---
+
+@masterthesis{druga2010oer,
+  abbr={EUROMIME 2010},
+  title={Open Education Resources Practices and Copyrights for Teachers},
+  author={Druga Stefania},
+  year={2010},
+  school={EUROMIME Master (France, Spain, Portugal)},
+  pdf={EUROMIME_Thesis_OER_2010.pdf},
+  selected={false}
+}
+
+@inproceedings{10.1145/2668947.2668955,
+abbr={SIGRAPH 2014},
+author = {Ausareny Justyna and Kera Denisa and Druga Stefania and Reshef Yair},
+title = {Open Source Hardware (OSHW) Supporting Interaction between Traditional Crafts and Emergent Science: Wayang Kulit over Microfluidic Interfaces},
+year = {2014},
+isbn = {9781450332156},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2668947.2668955},
+doi = {10.1145/2668947.2668955},
+abstract = {In this paper we will summarize our research into the use of Open Source Hardware (OSHW) as a tool for communicating emergent scientific and technical knowledge via crafts. We were specifically interested in the microfabrication and microfluidic devices, which define the next generation of diagnostic and research tools often inaccessible to the larger public, but also to the scientists from the Global South. We used the traditional wayang kulit theater (shadow puppets) as a model for building microfluidic interfaces, which communicate emergent scientific issues to the larger public while testing the possibilities for DIY microfluidics. This culture-centered approach to design and science communication supports open science and citizen science projects. The prototype of a microfluidic shadow puppets' theater is discussed in the context of previous and future OSHW and crafts prototypes, which support culture-centered design.},
+booktitle = {SIGGRAPH Asia 2014 Designing Tools For Crafting Interactive Artifacts},
+articleno = {4},
+numpages = {4},
+keywords = {microfluidics, puppets, public participation in science, science communication, crafts, open source hardware},
+location = {Shenzhen, China},
+series = {SA '14},
+pdf={SIGRAPH_Workshop_OSHW_2014.pdf},
+selected={false}
+}
+
+@article{drugaembodied,
+  abbr={CHI 2017},
+  title={Embodied learning and play in sensorimotor augmentations for kids},
+  author={Druga Stefania},
+  year={2017},
+  url={http://curio-media.s3.amazonaws.com/chi2017/Druga.pdf},
+  html={http://curio-media.s3.amazonaws.com/chi2017/Druga.pdf},
+  pdf={CHI_Workshop_Embodied_learning_2017.pdf},
+  selected={false}
+}
+
+@inproceedings{druga2017hey,
+  abbr={IDC 2017},
+  title={" Hey Google is it OK if I eat you?" Initial Explorations in Child-Agent Interaction},
+  author={Druga Stefania and Williams Randi and Breazeal Cynthia and Resnick Mitchel},
+  booktitle={Proceedings of the 2017 Conference on Interaction Design and Children},
+  pages={595--600},
+  year={2017},
+  doi={10.1145/3078072.3084330},
+  url={https://dl.acm.org/doi/pdf/10.1145/3078072.3084330},
+  html={https://dl.acm.org/doi/pdf/10.1145/3078072.3084330},
+  pdf={IDC_WIP_Hey_Google_2017.pdf},
+  selected={false}
+}
+
+@inproceedings{druga2017motif,
+  abbr={ISWC 2018},
+  title={Motif: a wearable sonic cueing device for memory support and cognitive intervention},
+  author={Druga Stefania and Maes Pattie and Rieger Alexandra},
+  booktitle={Proceedings of the 2017 ACM International Symposium on Wearable Computers},
+  pages={180--185},
+  year={2017},
+  doi={10.1145/3123021.3123076},
+  url={https://dl.acm.org/doi/10.1145/3123021.3123076},
+  html={https://dl.acm.org/doi/10.1145/3123021.3123076},
+  pdf={ISWC_WIP_Motif_2017.pdf},
+  selected={false}
+}
+
+@inproceedings{druga2018smart,
+  abbr={IDC 2018},
+  title={How smart are the smart toys? children and parents' agent interaction and intelligence attribution},
+  author={Druga Stefania and Williams Randi and Park Hae Won and Breazeal Cynthia},
+  booktitle={Proceedings of the 17th ACM Conference on Interaction Design and Children},
+  pages={231--240},
+  year={2018},
+  doi={10.1145/3202185.3202741},
+  url={https://dl.acm.org/doi/10.1145/3202185.3202741},
+  html={https://dl.acm.org/doi/10.1145/3202185.3202741},
+  pdf={IDC_How_smart_toys_2018.pdf},
+  selected={false}
+}
+
+@inproceedings{williams2018my,
+  abbr={IDC 2018},
+  title={" My doll says it's ok" a study of children's conformity to a talking doll},
+  author={Williams Randi and Machado Christian V{\'a}zquez and Druga Stefania and Breazeal Cynthia and Maes Pattie},
+  booktitle={Proceedings of the 17th ACM Conference on Interaction Design and Children},
+  pages={625--631},
+  year={2018},
+  doi={10.1145/3202185.3210788},
+  url={https://dl.acm.org/doi/10.1145/3202185.3210788},
+  html={https://www.media.mit.edu/publications/my-doll-says-it-s-ok-voice-enabled-toy-influences-children-s-moral-decisions/},
+  pdf={IDC_WIP_Doll_2018.pdf},
+  selected={false}
+}
+
+
+@phdthesis{druga2018growing,
+  abbr={MIT 2018},
+  title={Growing up with AI: Cognimates: from coding to teaching machines},
+  author={Druga Stefania},
+  year={2018},
+  school={Massachusetts Institute of Technology},
+  url={https://www.media.mit.edu/publications/growing-up-with-ai/},
+  html={https://www.media.mit.edu/publications/growing-up-with-ai/},
+  pdf={MIT_Thesis_Growin_up_with_AI_Stefania_Druga_2018.pdf},
+  selected={false}
+}
+
+@misc{druga2018cognimates,
+  abbr={MIT 2018},
+  title={Cognimates},
+  author={Druga Stefania and Vu Sarah and Likhith Eesh and Qui Tammy},
+  year={2018},
+  url={https://www.cognimates.me},
+  html={https://www.cognimates.me},
+  selected={false}
+}
+
+@incollection{druga2019inclusive,
+  abbr={FABLEARN 2019},
+  title={Inclusive AI literacy for kids around the world},
+  author={Druga Stefania and Vu Sarah T and Likhith Eesh and Qiu Tammy},
+  booktitle={Proceedings of FabLearn 2019},
+  pages={104--111},
+  year={2019},
+  doi={10.1145/3311890.3311904},
+  url={https://dl.acm.org/doi/10.1145/3311890.3311904},
+  html={https://dl.acm.org/doi/10.1145/3311890.3311904},
+  pdf={FABLEARN_Inclusive_AI_2019.pdf},
+  selected={false}
+}
+@inproceedings{kuang2019ballbit,
+  abbr={CHIPLAY 2019},
+  title={Ballbit Adventure: A Physical Game for a Collaborative Racing},
+  author={Kuang Quincy and Zhang Jiaxin and Druga Stefania},
+  booktitle={Extended Abstracts of the Annual Symposium on Computer-Human Interaction in Play Companion Extended Abstracts},
+  pages={97--103},
+  year={2019},
+  doi={10.1145/3341215.3356982},
+  url={https://dl.acm.org/doi/10.1145/3341215.3356982},
+  html={https://dl.acm.org/doi/10.1145/3341215.3356982},
+  pdf={CHI_PLAY_Ballbit_Adventure_2019.pdf},
+  selected={false}
+}
+@inproceedings{chen2019humming,
+  abbr={CHIPLAY 2019},
+  title={The Humming Box: AI-powered Tangible Music Toy for Children},
+  author={Chen Chunhan and Tang Yihan and Xie Tianyi and Druga Stefania},
+  booktitle={Extended Abstracts of the Annual Symposium on Computer-Human Interaction in Play Companion Extended Abstracts},
+  pages={87--95},
+  year={2019},
+  doi={10.1145/3341215.3356990},
+  url={https://dl.acm.org/doi/10.1145/3341215.3356990},
+  html={https://dl.acm.org/doi/10.1145/3341215.3356990},
+  pdf={CHI_PLAY_Humming_Box_2019.pdf},
+  selected={false}
+}
+
+@inproceedings{yang2019legoons,
+  abbr={CHIPLAY 2019},
+  title={Legoons: Inflatable Construction Kit for Children},
+  author={Yang Xuefei and Druga Stefania},
+  booktitle={Extended Abstracts of the Annual Symposium on Computer-Human Interaction in Play Companion Extended Abstracts},
+  pages={139--146},
+  year={2019},
+  doi={10.1145/3341215.3356980},
+  url={https://dl.acm.org/doi/10.1145/3341215.3356980},
+  html={https://dl.acm.org/doi/10.1145/3341215.3356980},
+  pdf={CHI_PLAY_Legoons_2019.pdf},
+  selected={false}
+}
+
+@article{druga2020co,
+  abbr={JoDS 2020},
+  title={The 4As: Ask, Adapt, Author, Analyze AI Literacy Framework for Families},
+  author={Druga Stefania and Yip Jason and Preston Michael and Dillon Devin},
+  journal={Journal of Design and Science},
+  year={2020},
+  publisher={MIT Press},
+  pdf={JODS_Author_Draft_The_4As__Ask__Adapt__Author__Analyze___AI_Literacy_Framework_for_Families.pdf},
+  selected={false}
+}
+
+@article{druga2020idc1,
+  abbr={IDC 2020},
+  title={Research Toolkit for Future-Oriented Play with Families},
+  author={Druga Stefania, Michelson Rebecca},
+  journal={Researchers' Toolbox for the Future Workshop},
+  year={2020},
+  publisher={Interaction Design for Children ACM},
+  pdf={INTERACT_Camera_Ready_Smart_Toys_Design.pdf},
+  selected={false}
+}
+
+@article{druga2020idc2,
+  abbr={IDC 2020},
+  title={”Puffy and Sticking Out” CollaborativeImage Classification with Kids},
+  author={Tian Yubing, Zeng Yilin, Druga Stefania},
+  journal={Creating Opportunities for Children’s Reflections on Artificial Intelligence, Robotics and other Intelligent Technologies},
+  year={2020},
+  publisher={JRC & Interaction Design for Children ACM},
+  pdf={IDC_Workshop_Puffy_sticking_out.pdf},
+  selected={false}
+}
+
+@article{druga2020cacm,
+  abbr={CACM 2020},
+  title={It Is Time for More Critical CS Education},
+  author={Amy J. Ko and Alannah Oleson and Neil Ryan and Yim Register and Benjamin Xie and Mina Tari and Matthew Davidson and Stefania Druga and Dastyni Loksa},
+  journal={Communications of the ACM},
+  year={2020},
+  publisher={Communications of the ACM},
+  doi={10.1145/3424000},
+  url={https://dl.acm.org/doi/10.1145/3424000},
+  html={https://dl.acm.org/doi/10.1145/3424000},
+  pdf={CACM_Critical_CS_2020.pdf},
+  selected={false}
+}
+
+@article{druga2021idc,
+  abbr={IDC 2021},
+  title={How do children's perceptions of machine intelligence change when training and coding smart programs?},
+  author={Stefania Druga and Amy J. Ko},
+  journal={Interaction Design for Children ACM},
+  year={2021},
+  publisher={ACM},
+  doi={10.1145/3459990.3460712},
+  pdf={IDC_Machine_Intelligence_Perception_2021.pdf},
+  selected={false}
+}
+
+@article{cls_data2021,
+  abbr={CLS 2021},
+  title={Imagining Future Designs of Tools for Youth Data Literacies},
+  author={Regina Cheng and Stefania Druga and Emilia Gan and Catherine D’Ignazio and Rahul Bhargava and Victor Lee and Camillia Matuk and Tamara Clegg and Andee Rubin and Yasmin Kafai},
+  journal={Connected Learning Summit},
+  year={2021},
+  publisher={CLS},
+  pdf={CLS_Future_Data_Literacies_Workshop_at_Connected_Learning_Summit_July_2021.pdf},
+  selected={false}
+}
+
+@article{kdd_fragile2021,
+  abbr={KDD 2021},
+  title={A Design Framework for Citizen-Science AI Platforms for Families},
+  author={Fangqing He* and Yifeng Wang* and Stefania Druga},
+  journal={Fragile Earth Workshop at ACM's KDD Virtual 2021 Conference},
+  year={2021},
+  publisher={KDD},
+  pdf={FEED_A_Design_Framework_for_Citizen_Science_AI_Platforms_for_Families_2021.pdf},
+  selected={false}
+}
+
+
+
+@article{jodsmitpress,
+  abbr={MIT PRESS 2022},
+  title={The 4As: Ask, Adapt, Author, Analyze: AI Literacy Framework for Families},
+  author={Druga Stefania and Yip Jason and Preston Michael and Dillon Devin},
+  book={Algorithmic Rights and Protections for Children},
+  year={2022},
+  publisher={MIT Press},
+  pdf={MITP2022_4As_AI_Literacy_Framework_for_Families.pdf}
+}
+
+
+@article{chi_aifam2022,
+  abbr={CHI 2022},
+  title={Family as a Third Space for AI Literacies: How do children and parents learn about AI together?},
+  author={Stefania Druga and Fee Christoph and Amy J. Ko},
+  journal={CHI '22: ACM Conference on Computer-Human Interaction},
+  year={2022},
+  publisher={ACM},
+  pdf={Druga2022FamilyAILiteracy.pdf},
+  selected={false}
+}
+
+@article{druga2022familiescode,
+  abbr={IDC 2022},
+  title={How families design and program games: a qualitative analysis
+  of a 4-week online in-home study},
+  author={Stefania Druga and Thomas Ball and Amy J. Ko},
+  journal={IDC '22: ACM Conference on Interaction Design and Children},
+  year={2022},
+  publisher={ACM},
+  pdf={IDC_2022_TileCode_Families.pdf},
+  selected={false}
+}
+@article{druga2022landscapeai,
+  abbr={ITICSE 2022},
+  title={The Landscape of Teaching Resources for AI Education},
+  author={Stefania Druga and Nancy Otero and Amy J. Ko},
+  journal={ITICSE '22: ACM conference on Innovation and Technology in Computer Science Education},
+  year={2022},
+  publisher={ACM},
+  pdf={Final_ITICSE_Submission___Landscape_AI_ressources.pdf},
+  selected={false}
+}
+
+@article{kim2022examining,
+  abbr={IJCCI 2022},
+  title={Examining voice assistants in the context of children’s speech},
+  author={Kim, Min Kyong and Druga, Stefania and Esmaeili, Shaghayegh and Woodward, Julia and Shaw, Alex and Jain, Ayushi and Langham, Jaida and Hollingshead, Kristy and Lovato, Silvia B and Beneteau, Erin and others},
+  journal={International Journal of Child-Computer Interaction},
+  pages={100540},
+  year={2022},
+  publisher={Elsevier},
+  pdf={IJCCI_Examining_voice_assistants_in_the_context_of_children_speech.pdf},
+  selected={false}
+}
+@article{druga2022cst,
+  abbr={UW 2022},
+  title={Interest-Driven Creative Programming for Youth with AI Friends},
+  author={Druga Stefania},
+  year={2022},
+  publisher={General Exam Information School University of Washington},
+  pdf={GE_2022_Interest_Driven_Creative_Programming_for_Youth.pdf},
+  selected={false}
+}
+@article{druga2023policyAI,
+  abbr={FAccT 2023},
+  title = {Language Models and Society: Bridging Research and Policy},
+  author = {Stefania Druga and Ioana Baldini and Mihaela Vorvoreanu and Rishi Bommasani},
+  journal={FAccT '23: ACM Conference on Fairness, Accountability, and Transparency},
+  year = {2023},
+  publisher = {ACM},
+  html = {https://facctconference.org/2023/cfpcraft.html},
+  selected={false}
+}
+
+@article{chang2023prompt,
+      abbr={C&C 2023},
+      title={The Prompt Artists (Honorable Mention)},
+      author={Minsuk Chang and Stefania Druga and Alex Fiannaca and Pedro Vergani and Chinmay Kulkarni and Carrie Cai and Michael Terry},
+      journal={C&C'23: ACM Conference on Creativity and Cognition},
+      year={2023},
+      eprint={2303.12253},
+      archivePrefix={arXiv},
+      html={https://arxiv.org/pdf/2303.12253.pdf},
+      publisher={ACM},
+      selected={false}
+}
+
+@article{druga2023aifriends,
+  abbr={2023},
+  title = {AI Friends: Designing Creative Coding Assistants for Families},
+  author = {Stefania Druga  and  Amy J. Ko},
+  journal = {Proceedings TOCE},
+  year = {2023},
+  publisher = {ACM},
+  html = {https://arxiv.org/pdf/2303.12253.pdf},
+  pdf= {AI_Friends_Design_2023.pdf},
+  selected={false}
+}
+
+
+@article{druga2023scratchCopilot,
+  abbr={2023},
+  title = {Scratch Copilot Evaluation: Assessing AI-Assisted Creative Coding for Families},
+  author = {Stefania Druga  and  Nancy Otero},
+  journal = {Proceedings VL/HCC},
+  year = {2023},
+  publisher = {ACM},
+  html = {http://arxiv.org/abs/2305.10417},
+  pdf={Scratch_Copilot_2023.pdf},
+  selected={false}
+}
+
+@article{druga2023generativeAI,
+  abbr={MAKE 2023},
+  title = {Generative AI for Makers: AI Has Truly Arrived — and It’s Here to Help You Make and Craft},
+  author = {Stefania Druga},
+  publisher = {MAKE Magazine},
+  year = {2023},
+  html = {https://makezine.com/article/craft/fine-art/generative-ai-for-makers-ai-has-truly-arrived-and-its-here-to-help-you-make-and-craft/},
+  pdf={Make84_Generative_AI_Makers_2023.pdf},
+  selected={false}
+}
+
+
+@article{salac2023algokids,
+  abbr={IDC 2023},
+  title={Factors used by Children to Make Sense of Algorithmic Fairness},
+  author={Jean Salac and Rotem Landesman and Stefania Druga and Amy J. Ko},
+  journal={IDC '23: ACM Conference on Interaction Design and Children},
+  year={2023},
+  publisher={ACM},
+  pdf={IDC2023_Children_Sensemaking_Algo_Fairness.pdf},
+  selected={false}
+}
+
+@article{kulkarni2023word,
+      abbr={arXiv 2023},
+      title={A Word is Worth a Thousand Pictures: Prompts as AI Design Material},
+      author={Chinmay Kulkarni and Stefania Druga and Minsuk Chang and Alex Fiannaca and Carrie Cai and Michael Terry},
+      year={2023},
+      eprint={2303.12647},
+      archivePrefix={arXiv},
+      html={https://arxiv.org/pdf/2303.12647.pdf},
+      selected={false}
+}
+@phdthesis{druga2023creativeAI,
+  abbr={UW 2023},
+  title={PhD Thesis: Creative AI Literacies for Families},
+  author={Druga Stefania},
+  year={2023},
+  school={University of Washington},
+  selected={false}
+}
+
+@article{creativeAI,
+  abbr={MAKE 2023},
+  title={Book: Creative AI, A Guide to Making and Tinkering with Artificial Intelligence},
+  author={Druga Stefania},
+  year={2023},
+  publisher={O'Reilly Media & Make Community},
+  html={https://www.amazon.com/Make-Creative-Exploring-Artificial-Intelligence/dp/168045756X},
+  selected={false}
+}
+
+@article{anthro2024facct,
+      abbr={FACCT 2024},
+      title={From “AI” to Probabilistic Automation: How Does Anthropomorphization of
+Technical Systems Descriptions Influence Trust?},
+      author={Nanna Inia and Stefania Druga and Peter Zukerman and Emily Bender},
+      year={2024},
+      eprint={},
+      archivePrefix={},
+      html={https://faculty.washington.edu/ebender/papers/From_AI_to_Probabilistic_Automation_PREPRINT.pdf},
+      selected={false}
+}
+
+@article{MOE2024math,
+      abbr={JCHE 2024},
+      title={A Benchmark for Math Misconceptions: Bridging Gaps in Middle School Algebra with AI-Supported Personalized Instruction},
+      author={Nancy Otero and Stefania Druga},
+      year={2024},
+      eprint={Journal of Computing in Higher Education},
+      archivePrefix={},
+      html={#},
+      selected={false}
+}
+
+@article{druga2025cognimates,
+  abbr={IDC 2025},
+  title={Cognimates Copilot: Supporting Children's Creative AI Learning and Coding},
+  author={Druga Stefania},
+  journal={Interaction Design and Children (IDC '25)},
+  year={2025},
+  publisher={ACM},
+  pdf={IDC2025_Cognimates_Copilot.pdf},
+  selected={true}
+}
