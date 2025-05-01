@@ -32,8 +32,7 @@ export default function News() {
       description: "My talk on 'Reimagining AI Experiences' at the AI Engineering Summit in New York has reached over 39,000 views! In this presentation, I explore how we can create more intuitive and responsive AI systems that adapt to human needs.",
       icon: <Youtube className="w-5 h-5" />,
       link: "https://www.youtube.com/watch?v=ySYLsoAhXmg&t=1s",
-      color: "#C1F0DB",
-      thumbnail: "https://i.ytimg.com/vi/ySYLsoAhXmg/maxresdefault.jpg"
+      color: "#C1F0DB"
     },
     {
       id: 3,
