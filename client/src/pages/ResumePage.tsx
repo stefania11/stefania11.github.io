@@ -1,13 +1,10 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowLeft, Mail, Globe, Briefcase, GraduationCap, Award, Code, Heart } from "lucide-react";
-import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export default function ResumePage() {
-  const [activeSection, setActiveSection] = useState<string>("qualifications");
-  
   const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
@@ -177,7 +174,7 @@ export default function ResumePage() {
               </header>
               
               {/* Section Navigation */}
-              <div className="flex overflow-x-auto mb-10 pb-2 -mx-2 px-2 gap-2">
+              <div className="flex overflow-x-auto mb-10 pb-2 -mx-2 px-2 gap-2 print:hidden">
                 {[
                   { id: "qualifications", label: "Qualifications", icon: <Briefcase className="h-4 w-4 mr-2" /> },
                   { id: "awards", label: "Awards", icon: <Award className="h-4 w-4 mr-2" /> },
@@ -186,21 +183,32 @@ export default function ResumePage() {
                   { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" /> },
                   { id: "experience", label: "Experience", icon: <Briefcase className="h-4 w-4 mr-2" /> }
                 ].map((section) => (
-                  <motion.button
+                  <motion.a
                     key={section.id}
-                    className={`flex items-center whitespace-nowrap px-4 py-2 rounded-full transition-colors ${
-                      activeSection === section.id 
-                        ? "bg-black text-white" 
-                        : "bg-gray-100 hover:bg-gray-200"
-                    }`}
-                    onClick={() => setActiveSection(section.id)}
+                    href={`#${section.id}`}
+                    className="flex items-center whitespace-nowrap px-4 py-2 rounded-full transition-colors bg-gray-100 hover:bg-gray-200"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
                   >
                     {section.icon}
                     {section.label}
-                  </motion.button>
+                  </motion.a>
                 ))}
+              </div>
+              
+              {/* Print Button */}
+              <div className="flex justify-end mb-6 print:hidden">
+                <motion.button
+                  className="flex items-center bg-black text-white px-4 py-2 rounded-full"
+                  onClick={() => window.print()}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4" />
+                  </svg>
+                  Print Resume
+                </motion.button>
               </div>
               
               {/* Qualifications Section */}
