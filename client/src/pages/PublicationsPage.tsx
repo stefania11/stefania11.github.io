@@ -33,27 +33,25 @@ export default function PublicationsPage() {
           items: [
             {
               id: "2025-1",
-              venue: "SIGCHI 2025",
-              title: "Multimodal AI Interfaces: Designing for Human-AI Collaboration in Creative Contexts",
-              authors: "Stefania Druga, Tianyi Xie, and Melanie Mitchell",
+              venue: "Interaction Design and Children (IDC '25)",
+              title: "Cognimates Copilot: Supporting Children's Creative AI Learning and Coding",
+              authors: "Druga Stefania and Amy J. Ko",
               year: "2025",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/SIGCHI_2025_Multimodal_AI_Interfaces.pdf"
+              link: "https://stefania11.github.io/assets/pdf/IDC2025_Cognimates_Copilot.pdf"
             },
             {
               id: "2025-2",
-              venue: "ICLR 2025",
-              title: "Knowledge Graphs for Multimodal Reasoning: Connecting Images, Text and Structured Data",
-              authors: "Stefania Druga, Cynthia Breazeal, and Michael Terry",
-              year: "2025",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/ICLR_2025_Knowledge_Graphs_Multimodal.pdf"
+              venue: "Proceedings ACM UIST",
+              title: "ChemBuddy: An AI-Powered Multimodal Chemistry Lab Assistant Addressing Misconceptions in Middle-School Science",
+              authors: "Stefania Druga",
+              year: "2025"
             },
             {
               id: "2025-3",
-              venue: "Nature Machine Intelligence",
-              title: "Learning from Children: How Youth Conceptualize and Build with Multimodal AI Systems",
-              authors: "Stefania Druga, Amy J. Ko, and Randi Williams",
-              year: "2025",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/Nature_MI_2025_Learning_from_Children.pdf"
+              venue: "Proceedings ACM UIST",
+              title: "MathMind: AI-Powered Misconception Detection for Middle School Algebra Learning",
+              authors: "Stefania Druga",
+              year: "2025"
             }
           ]
         }
@@ -449,18 +447,26 @@ export default function PublicationsPage() {
             </motion.p>
           </div>
 
-          {/* Year Pills Navigation */}
-          <div className="flex overflow-x-auto gap-2 mb-12 pb-2">
-            {publications.map((pub) => (
+          {/* Topic Tags Navigation */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12 pb-2">
+            {[
+              { name: "AI Education", color: "#FFD6E0", link: "https://stefania11.github.io/assets/pdf/IDC2025_Cognimates_Copilot.pdf" },
+              { name: "AI Literacy", color: "#E0D6FF", link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/MITP2022_4As_AI_Literacy_Framework_for_Families.pdf" },
+              { name: "Multimodal AI", color: "#C1F0DB", link: "#year-2025" },
+              { name: "Child-AI Interaction", color: "#FFE0B0", link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_How_smart_toys_2018.pdf" },
+              { name: "Creative Computing", color: "#B0E0FF", link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_2022_TileCode_Families.pdf" }
+            ].map((topic) => (
               <motion.a
-                key={pub.year}
-                href={`#year-${pub.year}`}
-                className="px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all whitespace-nowrap flex items-center"
-                whileHover={{ y: -3 }}
+                key={topic.name}
+                href={topic.link}
+                className="px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all whitespace-nowrap flex items-center"
+                style={{ backgroundColor: topic.color }}
+                whileHover={{ y: -3, scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
+                target={topic.link.startsWith("http") ? "_blank" : "_self"}
+                rel={topic.link.startsWith("http") ? "noopener noreferrer" : ""}
               >
-                <Calendar className="w-4 h-4 mr-2" />
-                {pub.year}
+                {topic.name}
               </motion.a>
             ))}
           </div>
