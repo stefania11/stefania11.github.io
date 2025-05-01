@@ -67,8 +67,8 @@ export default function Hero() {
                   style={{ 
                     filter: "contrast(1.1) brightness(1.05)",
                     opacity: 0.85,
-                    objectPosition: "65% 20%",
-                    transform: "scale(1.2)",
+                    objectPosition: "center center",
+                    transform: "scale(1.0)",
                     transformOrigin: "center"
                   }}
                 />
@@ -85,7 +85,7 @@ export default function Hero() {
       >
         <ChevronDown 
           className="h-8 w-8 cursor-pointer"
-          onClick={() => scrollToSection("about")}
+          onClick={() => scrollToSection("news")}
         />
       </motion.div>
     </section>
