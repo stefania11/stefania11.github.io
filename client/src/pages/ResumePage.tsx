@@ -286,22 +286,23 @@ export default function ResumePage() {
                 </ul>
               </motion.section>
               
-              {/* Research Experience Section */}
+              {/* Experience Section (Combined Research and Professional) */}
               <motion.section
-                id="research"
+                id="experience"
                 variants={sectionVariants}
                 initial="hidden"
                 animate="visible"
                 className="mb-16 print:mb-8 print:break-inside-avoid"
               >
                 <h2 className="text-2xl font-bold mb-6 relative inline-block">
-                  Research Experience
+                  Experience
                   <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#E0D6FF]"></span>
                 </h2>
                 <div className="space-y-8 mt-6">
+                  <h3 className="text-xl font-semibold mb-4">Research Experience</h3>
                   {researchContent.map((item, index) => (
                     <motion.div 
-                      key={index}
+                      key={`research-${index}`}
                       className="border-l-4 border-[#E0D6FF] pl-6 py-2"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -326,6 +327,43 @@ export default function ResumePage() {
                       >
                         <Globe className="h-4 w-4 mr-1" />
                         {item.link.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                      </a>
+                    </motion.div>
+                  ))}
+                  
+                  <h3 className="text-xl font-semibold mb-4 mt-12">Professional Experience</h3>
+                  {professionalExperienceContent.map((exp, index) => (
+                    <motion.div 
+                      key={`professional-${index}`}
+                      className="border-l-4 border-[#FFD6E0] pl-6 py-2"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                    >
+                      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 className="text-xl font-bold">{exp.title}</h3>
+                        <div className="text-gray-600">
+                          <div className="flex items-center md:justify-end">
+                            <span>{exp.location}</span>
+                          </div>
+                          <div className="flex items-center md:justify-end">
+                            <span>{exp.period}</span>
+                          </div>
+                        </div>
+                      </div>
+                      <ul className="list-disc list-inside space-y-1 mb-2">
+                        {exp.description.map((desc, i) => (
+                          <li key={i}>{desc}</li>
+                        ))}
+                      </ul>
+                      <a 
+                        href={exp.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-blue-600 hover:underline flex items-center print:text-black"
+                      >
+                        <Globe className="h-4 w-4 mr-1" />
+                        {exp.link.replace(/^https?:\/\//, '').replace(/\/$/, '')}
                       </a>
                     </motion.div>
                   ))}
@@ -416,56 +454,7 @@ export default function ResumePage() {
                 </div>
               </motion.section>
               
-              {/* Professional Experience Section */}
-              <motion.section
-                id="experience"
-                variants={sectionVariants}
-                initial="hidden"
-                animate="visible"
-                className="mb-16 print:mb-8 print:break-inside-avoid"
-              >
-                <h2 className="text-2xl font-bold mb-6 relative inline-block">
-                  Professional Experience
-                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#FFD6E0]"></span>
-                </h2>
-                <div className="space-y-8 mt-6">
-                  {professionalExperienceContent.map((exp, index) => (
-                    <motion.div 
-                      key={index}
-                      className="border-l-4 border-[#FFD6E0] pl-6 py-2"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                    >
-                      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                        <h3 className="text-xl font-bold">{exp.title}</h3>
-                        <div className="text-gray-600">
-                          <div className="flex items-center md:justify-end">
-                            <span>{exp.location}</span>
-                          </div>
-                          <div className="flex items-center md:justify-end">
-                            <span>{exp.period}</span>
-                          </div>
-                        </div>
-                      </div>
-                      <ul className="list-disc list-inside space-y-1 mb-2">
-                        {exp.description.map((desc, i) => (
-                          <li key={i}>{desc}</li>
-                        ))}
-                      </ul>
-                      <a 
-                        href={exp.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-blue-600 hover:underline flex items-center print:text-black"
-                      >
-                        <Globe className="h-4 w-4 mr-1" />
-                        {exp.link.replace(/^https?:\/\//, '').replace(/\/$/, '')}
-                      </a>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.section>
+
             </div>
           </div>
         </div>
