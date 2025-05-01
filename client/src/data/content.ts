@@ -24,7 +24,7 @@ export const content = {
       {
         title: "Languages",
         color: "#E0D6FF",
-        items: ["English", "Romanian", "French", "Spanish"]
+        items: ["English", "Romanian", "French", "Spanish", "Italian", "Portuguese"]
       }
     ]
   },
