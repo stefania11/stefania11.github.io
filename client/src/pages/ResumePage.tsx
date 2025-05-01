@@ -219,59 +219,30 @@ export default function ResumePage() {
                 </div>
               </header>
               
-              {/* Section Navigation - Two-Row Layout with More Transparent Colors */}
-              <div className="flex justify-center mb-10 print:hidden">
-                <div className="flex flex-col gap-3 max-w-2xl">
-                  <div className="flex justify-center gap-3">
-                    {[
-                      { id: "qualifications", label: "Qualifications", icon: <Briefcase className="h-4 w-4 mr-2" />, color: "rgba(255, 214, 224, 0.5)" },
-                      { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" />, color: "rgba(224, 214, 255, 0.5)" },
-                      { id: "awards", label: "Awards", icon: <Award className="h-4 w-4 mr-2" />, color: "rgba(193, 240, 219, 0.5)" }
-                    ].map((section) => (
-                      <motion.a
-                        key={section.id}
-                        href={`#${section.id}`}
-                        className="flex items-center justify-center whitespace-nowrap px-5 py-3 rounded-full transition-colors hover:shadow-md"
-                        style={{ backgroundColor: section.color }}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.98 }}
-                      >
-                        {section.icon}
-                        {section.label}
-                      </motion.a>
-                    ))}
-                  </div>
-                  <div className="flex justify-center gap-3">
-                    {[
-                      { id: "experience", label: "Experience", icon: <Briefcase className="h-4 w-4 mr-2" />, color: "rgba(255, 224, 176, 0.5)" },
-                      { id: "projects", label: "Projects", icon: <Code className="h-4 w-4 mr-2" />, color: "rgba(176, 224, 255, 0.5)" },
-                      { id: "languages", label: "Languages", icon: <Globe className="h-4 w-4 mr-2" />, color: "rgba(224, 240, 193, 0.5)" }
-                    ].map((section) => (
-                      <motion.a
-                        key={section.id}
-                        href={`#${section.id}`}
-                        className="flex items-center justify-center whitespace-nowrap px-5 py-3 rounded-full transition-colors hover:shadow-md"
-                        style={{ backgroundColor: section.color }}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.98 }}
-                      >
-                        {section.icon}
-                        {section.label}
-                      </motion.a>
-                    ))}
-                  </div>
-                  <div className="flex justify-center">
+              {/* Section Navigation - Single Row Layout */}
+              <div className="flex justify-center flex-wrap mb-10 print:hidden">
+                <div className="flex flex-wrap justify-center gap-2 max-w-4xl">
+                  {[
+                    { id: "qualifications", label: "Qualifications", icon: <Briefcase className="h-4 w-4 mr-2" />, color: "rgba(255, 214, 224, 0.5)" },
+                    { id: "education", label: "Education", icon: <GraduationCap className="h-4 w-4 mr-2" />, color: "rgba(224, 214, 255, 0.5)" },
+                    { id: "awards", label: "Awards", icon: <Award className="h-4 w-4 mr-2" />, color: "rgba(193, 240, 219, 0.5)" },
+                    { id: "experience", label: "Experience", icon: <Briefcase className="h-4 w-4 mr-2" />, color: "rgba(255, 224, 176, 0.5)" },
+                    { id: "projects", label: "Projects", icon: <Code className="h-4 w-4 mr-2" />, color: "rgba(176, 224, 255, 0.5)" },
+                    { id: "languages", label: "Languages", icon: <Globe className="h-4 w-4 mr-2" />, color: "rgba(224, 240, 193, 0.5)" },
+                    { id: "passions", label: "Passions", icon: <Heart className="h-4 w-4 mr-2" />, color: "rgba(240, 193, 224, 0.5)" }
+                  ].map((section) => (
                     <motion.a
-                      href="#passions"
-                      className="flex items-center justify-center whitespace-nowrap px-5 py-3 rounded-full transition-colors hover:shadow-md"
-                      style={{ backgroundColor: "rgba(240, 193, 224, 0.5)" }}
+                      key={section.id}
+                      href={`#${section.id}`}
+                      className="flex items-center justify-center whitespace-nowrap px-5 py-2 rounded-full transition-colors hover:shadow-md"
+                      style={{ backgroundColor: section.color }}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.98 }}
                     >
-                      <Heart className="h-4 w-4 mr-2" />
-                      Passions
+                      {section.icon}
+                      {section.label}
                     </motion.a>
-                  </div>
+                  ))}
                 </div>
               </div>
               
