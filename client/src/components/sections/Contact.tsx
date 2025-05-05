@@ -5,13 +5,13 @@ export default function Contact() {
   const contactInfo = [
     { 
       icon: <Mail className="h-5 w-5" />, 
-      text: "contact@stefaniadruga.com", 
-      href: "mailto:contact@stefaniadruga.com",
+      text: "stefania [a] hackidemia dot com", 
+      href: undefined,
       color: "#FFD6E0"
     },
     { 
       icon: <MapPin className="h-5 w-5" />, 
-      text: "Google DeepMind, Research Scientist", 
+      text: "Tokyo, Japan", 
       href: undefined,
       color: "#C1F0DB"
     },
