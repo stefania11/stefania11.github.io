@@ -480,10 +480,14 @@ export default function PublicationsPage() {
           <div className="mb-12">
             <Link href="/">
               <motion.div
-                className="inline-flex items-center text-lg font-medium cursor-pointer mb-8"
+                className="inline-flex items-center text-sm font-medium cursor-pointer px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 mb-8"
                 whileHover={{ x: -5 }}
+                onClick={(e) => {
+                  // Allow default navigation to home page
+                  // No need to preventDefault here
+                }}
               >
-                <ArrowLeft className="mr-2 h-5 w-5" />
+                <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Portfolio
               </motion.div>
             </Link>
