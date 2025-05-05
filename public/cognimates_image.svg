@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f0f4f8"/>
+  <circle cx="400" cy="180" r="80" fill="#E0D6FF"/>
+  <circle cx="300" cy="300" r="60" fill="#FFD6E0"/>
+  <circle cx="500" cy="300" r="60" fill="#C1F0DB"/>
+  <path d="M 330 240 Q 400 180 470 240" fill="none" stroke="#5a5a5a" stroke-width="4"/>
+  <text x="400" y="400" font-family="Arial" font-size="32" text-anchor="middle" fill="#333">Cognimates</text>
+  <text x="400" y="450" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">AI Education Platform</text>
+</svg>
