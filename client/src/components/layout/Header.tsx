@@ -36,7 +36,6 @@ export default function Header() {
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
     { id: "talks", label: "Talks" },
-    { id: "contact", label: "Contact" },
   ];
 
   return (
