@@ -20,7 +20,7 @@ export default function Projects() {
       id: 2,
       title: "Cognimates",
       description: "An AI education platform that enables children to create with and learn about artificial intelligence through creative coding, training custom models, and building smart projects.",
-      image: "/cognimates_image.svg",
+      image: "/cognimates_image.png",
       link: "https://cognimates.me",
       tags: [
         { name: "AI Education", color: "#FFD6E0" },
