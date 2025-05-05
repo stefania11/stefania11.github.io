@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 // Import images directly 
 import chembuddyImage from "../../assets/chembuddy.png";
-import cognimatesImage from "../../assets/cognimates.png";
+import cognimatesImage from "../../assets/cognimates_platform.svg";
 import geminiImage from "../../assets/gemini.png";
 
 export default function Projects() {
