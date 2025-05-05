@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { scrollToSection } from "@/lib/scroll-to-section";
 
 export default function PublicationsPage() {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
@@ -516,33 +517,33 @@ export default function PublicationsPage() {
             {[
               {
                 name: "AI Education",
-                color: "#FFD6E0",
+                color: "rgba(255, 214, 224, 0.5)",
                 link: "https://stefania11.github.io/assets/pdf/IDC2025_Cognimates_Copilot.pdf",
               },
               {
                 name: "AI Literacy",
-                color: "#E0D6FF",
+                color: "rgba(224, 214, 255, 0.5)",
                 link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/MITP2022_4As_AI_Literacy_Framework_for_Families.pdf",
               },
-              { name: "Multimodal AI", color: "#C1F0DB", link: "#year-2025" },
+              { name: "Multimodal AI", color: "rgba(193, 240, 219, 0.5)", link: "#year-2025" },
               {
                 name: "Child-AI Interaction",
-                color: "#FFE0B0",
+                color: "rgba(255, 224, 176, 0.5)",
                 link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_How_smart_toys_2018.pdf",
               },
               {
                 name: "Creative Computing",
-                color: "#B0E0FF",
+                color: "rgba(176, 224, 255, 0.5)",
                 link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_2022_TileCode_Families.pdf",
               },
             ].map((topic) => (
               <motion.a
                 key={topic.name}
                 href={topic.link}
-                className="px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all whitespace-nowrap flex items-center"
+                className="px-4 py-2 rounded-full hover:shadow-md transition-colors whitespace-nowrap flex items-center"
                 style={{ backgroundColor: topic.color }}
-                whileHover={{ y: -3, scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
                 target={topic.link.startsWith("http") ? "_blank" : "_self"}
                 rel={topic.link.startsWith("http") ? "noopener noreferrer" : ""}
               >
