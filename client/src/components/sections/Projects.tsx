@@ -1,13 +1,18 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+// Import images directly 
+import chembuddyImage from "../../assets/chembuddy.png";
+import cognimatesImage from "../../assets/cognimates.png";
+import geminiImage from "../../assets/gemini.png";
+
 export default function Projects() {
   const projects = [
     {
       id: 1,
       title: "ChemBuddy: Multimodal AI Chemistry Assistant",
       description: "An AI-powered learning companion that combines computer vision, voice interaction, and sensor data to help students understand chemistry concepts through real-time experiment analysis.",
-      image: "/chembuddy.png",
+      image: chembuddyImage,
       link: "#",
       tags: [
         { name: "Multimodal AI", color: "#FFD6E0" },
@@ -20,7 +25,7 @@ export default function Projects() {
       id: 2,
       title: "Cognimates",
       description: "An AI education platform that enables children to create with and learn about artificial intelligence through creative coding, training custom models, and building smart projects.",
-      image: "/cognimates.png",
+      image: cognimatesImage,
       link: "https://cognimates.me",
       tags: [
         { name: "AI Education", color: "#FFD6E0" },
@@ -33,7 +38,7 @@ export default function Projects() {
       id: 3,
       title: "Google Home Gemini Extension",
       description: "Led the development of Google Home's Gemini Extension, bringing multimodal AI capabilities to smart home devices, enabling users to interact with their homes through natural language and visual inputs.",
-      image: "/gemini.png",
+      image: geminiImage,
       link: "https://home.google.com/gemini/",
       tags: [
         { name: "Gemini AI", color: "#C1F0DB" }, 

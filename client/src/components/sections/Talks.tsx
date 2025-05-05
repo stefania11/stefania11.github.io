@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Calendar, MapPin } from "lucide-react";
+import infoshiftImage from "../../assets/infoshift.jpg";
+import aiEngineerImage from "../../assets/ai_engineer_talk.png";
 
 export default function Talks() {
   const talks = [
@@ -10,7 +12,7 @@ export default function Talks() {
       date: "May 6, 2025 at 10:00 AM",
       year: "2025",
       description: "Excited to attend #InfobipShift Miami this year (May 5-7)! I'll be giving a keynote talk on \"The Future of Multimodal AI Applications\". Join me to explore AI that sees, hears & interacts in real-time. Expect technical insights + live demos!",
-      image: "/infoshift.jpg",
+      image: infoshiftImage,
       link: "https://shift.infobip.com/us/schedule/"
     },
     {
@@ -20,7 +22,7 @@ export default function Talks() {
       date: "April 2023",
       year: "2023",
       description: "My talk on the next generation of AI Engineers has reached over 38,000 views on YouTube. The session explores critical skills and mindsets needed for building the future of AI systems.",
-      image: "https://i.ytimg.com/vi/ySYLsoAhXmg/maxresdefault.jpg",
+      image: aiEngineerImage,
       link: "https://www.youtube.com/watch?v=ySYLsoAhXmg"
     }
   ];
