@@ -31,14 +31,14 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "AI Playground",
-      description: "An interactive platform for exploring machine learning concepts through hands-on demos and visualizations, designed for learners of all ages to experience AI training and inference.",
-      image: "/ai_playground_image.svg",
-      link: "http://aiplayground.me/",
+      title: "Google Home Gemini Extension",
+      description: "Led the development of Google Home's Gemini Extension, bringing multimodal AI capabilities to smart home devices, enabling users to interact with their homes through natural language and visual inputs.",
+      image: "/google_home_gemini.png",
+      link: "https://home.google.com/gemini/",
       tags: [
-        { name: "Machine Learning", color: "#C1F0DB" }, 
-        { name: "Interactive Learning", color: "#FFD6E0" },
-        { name: "Data Visualization", color: "#E0D6FF" }
+        { name: "Gemini AI", color: "#C1F0DB" }, 
+        { name: "Smart Home", color: "#FFD6E0" },
+        { name: "Multimodal Interaction", color: "#E0D6FF" }
       ],
       gradient: "from-[#C1F0DB] via-[#FFD6E0] to-[#E0D6FF]"
     }
