@@ -7,7 +7,7 @@ export default function Projects() {
       id: 1,
       title: "ChemBuddy: Multimodal AI Chemistry Assistant",
       description: "An AI-powered learning companion that combines computer vision, voice interaction, and sensor data to help students understand chemistry concepts through real-time experiment analysis.",
-      image: "/chembuddy_overview.png",
+      image: "/chembuddy.png",
       link: "#",
       tags: [
         { name: "Multimodal AI", color: "#FFD6E0" },
@@ -20,7 +20,7 @@ export default function Projects() {
       id: 2,
       title: "Cognimates",
       description: "An AI education platform that enables children to create with and learn about artificial intelligence through creative coding, training custom models, and building smart projects.",
-      image: "/cognimates_image.png",
+      image: "/cognimates.png",
       link: "https://cognimates.me",
       tags: [
         { name: "AI Education", color: "#FFD6E0" },
@@ -33,7 +33,7 @@ export default function Projects() {
       id: 3,
       title: "Google Home Gemini Extension",
       description: "Led the development of Google Home's Gemini Extension, bringing multimodal AI capabilities to smart home devices, enabling users to interact with their homes through natural language and visual inputs.",
-      image: "/google_home_gemini.png",
+      image: "/gemini.png",
       link: "https://home.google.com/gemini/",
       tags: [
         { name: "Gemini AI", color: "#C1F0DB" }, 
