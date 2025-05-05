@@ -90,15 +90,15 @@ export default function News() {
                     <p className="text-gray-700 mb-4">{item.description}</p>
                     
                     {item.link && (
-                      <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }}>
-                        <Button 
-                          asChild
-                          className="mt-2 bg-black hover:bg-gray-800 text-white"
+                      <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
+                        <a 
+                          href={item.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="mt-2 text-gray-500 hover:text-gray-700 text-sm inline-flex items-center transition-colors"
                         >
-                          <a href={item.link} target="_blank" rel="noopener noreferrer">
-                            Learn More
-                          </a>
-                        </Button>
+                          Read more
+                        </a>
                       </motion.div>
                     )}
                   </div>
