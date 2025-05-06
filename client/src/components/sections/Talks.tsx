@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Calendar, MapPin } from "lucide-react";
-import infoshiftImage from "../../assets/infoshift.jpg";
+import multimodalLegoImage from "../../assets/multimodal_lego.png";
 import aiEngineerImage from "../../assets/ai_engineer_talk.png";
 
 export default function Talks() {
@@ -12,7 +12,7 @@ export default function Talks() {
       date: "May 6, 2025 at 10:00 AM",
       year: "2025",
       description: "Excited to attend #InfobipShift Miami this year (May 5-7)! I'll be giving a keynote talk on \"The Future of Multimodal AI Applications\". Join me to explore AI that sees, hears & interacts in real-time. Expect technical insights + live demos!",
-      image: infoshiftImage,
+      image: multimodalLegoImage,
       link: "https://shift.infobip.com/us/schedule/"
     },
     {
