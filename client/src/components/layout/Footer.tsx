@@ -1,4 +1,5 @@
 import { Twitter, Linkedin, Github, BookOpen, Mail, MapPin } from "lucide-react";
+import { SiSubstack } from "react-icons/si";
 
 export default function Footer() {
   const socialLinks = [
@@ -6,6 +7,7 @@ export default function Footer() {
     { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/stefania-druga", ariaLabel: "LinkedIn" },
     { icon: <Github className="w-5 h-5" />, href: "https://github.com/stefania11", ariaLabel: "GitHub" },
     { icon: <BookOpen className="w-5 h-5" />, href: "https://medium.com/@stefania_druga", ariaLabel: "Medium" },
+    { icon: <SiSubstack className="w-5 h-5" />, href: "https://stefaniadruga.substack.com/", ariaLabel: "Substack" },
   ];
 
   return (
