@@ -27,16 +27,20 @@ jobs:
 
       - name: Build website 🏗️
         run: |
-          # Build the client only
-          cd client
-          npm install
+          # Build the project using the root package.json
           npm run build
           
+          # Create a dist directory for the client-side files
+          mkdir -p gh-pages
+          
+          # Copy client files to the gh-pages directory
+          cp -r dist/public/* gh-pages/
+          
           # Create .nojekyll file to disable Jekyll processing
-          touch dist/.nojekyll
+          touch gh-pages/.nojekyll
       
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: client/dist
+          folder: gh-pages
           branch: gh-pages
