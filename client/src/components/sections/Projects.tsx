@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 // Import images directly 
 import chembuddyImage from "../../assets/chembuddy.png";
-import cognimatesImage from "../../assets/cognimates_platform.svg";
+import cognimatesImage from "../../assets/cognimates.png";
 import geminiImage from "../../assets/gemini.png";
 
 export default function Projects() {
@@ -106,11 +106,12 @@ export default function Projects() {
                       opacity: hoveredProject === project.id ? 0.8 : 0.5,
                     }}
                   />
-                  <div className="relative rounded-lg overflow-hidden">
+                  <div className="relative rounded-lg overflow-hidden h-[300px] flex items-center justify-center bg-white">
                     <img 
                       src={project.image} 
                       alt={project.title} 
-                      className="w-full h-auto"
+                      className={`max-w-full max-h-full object-contain ${project.id === 3 ? 'w-[85%]' : ''}`}
+                      style={{ maxHeight: '280px' }}
                     />
                   </div>
                 </div>
