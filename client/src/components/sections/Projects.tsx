@@ -26,7 +26,7 @@ export default function Projects() {
       title: "ChemBuddy: Multimodal AI Chemistry Assistant",
       description: "An AI-powered learning companion that combines computer vision, voice interaction, and sensor data to help students understand chemistry concepts through real-time experiment analysis.",
       image: chembuddyImage,
-      link: "#",
+      link: "",
       tags: [
         { name: "Multimodal AI", color: "#FFD6E0" },
         { name: "Computer Vision", color: "#E0D6FF" },
@@ -37,9 +37,9 @@ export default function Projects() {
     {
       id: 3,
       title: "Cognimates",
-      description: "An AI education platform that enables children to create with and learn about artificial intelligence through creative coding, training custom models, and building smart projects.",
+      description: "AI education platform for children to train their own machine learning models. Users can also code smart games using their custom models.",
       image: cognimatesImage,
-      link: "https://cognimates.me",
+      link: "http://cognimatescopilot.com/",
       tags: [
         { name: "AI Education", color: "#FFD6E0" },
         { name: "Creative Coding", color: "#E0D6FF" },
@@ -79,16 +79,18 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <motion.a 
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-black text-white px-6 py-2 rounded-full transform transition"
-                  whileHover={{ y: -5 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  View Project
-                </motion.a>
+                {project.link && (
+                  <motion.a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-gray-300 text-gray-700 px-4 py-1.5 rounded-full transform transition text-sm"
+                    whileHover={{ y: -3 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Visit Project
+                  </motion.a>
+                )}
               </div>
               
               <motion.div 

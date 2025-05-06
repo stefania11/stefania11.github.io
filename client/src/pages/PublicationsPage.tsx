@@ -8,13 +8,18 @@ import {
 } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { scrollToSection } from "@/lib/scroll-to-section";
 
 export default function PublicationsPage() {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   type Publication = {
     year: string;
@@ -415,7 +420,7 @@ export default function PublicationsPage() {
             {
               venue: "IDC '17",
               title:
-                '" Hey Google is it OK if I eat you?" Initial Explorations in Child-Agent Interaction',
+                '"Hey Google is it OK if I eat you?" Initial Explorations in Child-Agent Interaction',
               authors:
                 "Druga Stefania, Williams Randi, Breazeal Cynthia, and Resnick Mitchel",
               year: "2017",

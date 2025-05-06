@@ -16,6 +16,9 @@ export default function HomePage() {
   useEffect(() => {
     // Set title
     document.title = "Stefania Druga | Portfolio";
+    
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
   }, []);
 
   return (

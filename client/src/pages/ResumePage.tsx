@@ -3,8 +3,14 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Mail, Globe, Briefcase, GraduationCap, Award, Code, Heart } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { useEffect } from "react";
 
 export default function ResumePage() {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
@@ -85,17 +91,17 @@ export default function ResumePage() {
     {
       title: "ChemBuddy: Multimodal AI Chemistry Assistant",
       description: "An AI-powered learning companion that combines computer vision, voice interaction, and sensor data to help students understand chemistry concepts through real-time experiment analysis.",
-      link: "https://chembuddy.ai"
+    
     },
     {
       title: "MathMind Platform",
       description: "An interactive multimodal AI system designed to detect algebraic misconceptions directly from images of student work, provide targeted conceptual feedback, and generate personalized practice exercises enhanced with visual representations.",
-      link: "https://mathmind.edu"
+      
     },
     {
       title: "Cognimates",
       description: "AI education platform for children to train their own machine learning models. Users can also code smart games using their custom models.",
-      link: "https://cognimates.me"
+      link: "http://cognimatescopilot.com/"
     },
     {
       title: "AI Literacy Playground",
@@ -111,7 +117,7 @@ export default function ResumePage() {
   
   const educationContent = [
     {
-      degree: "Ph.D­Information School",
+      degree: "Ph.D. ­Information School",
       major: "Informatics",
       institution: "University of Washington",
       year: "2023",
@@ -462,10 +468,10 @@ export default function ResumePage() {
                         href={project.link}
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm print:bg-white print:text-black print:border print:border-black"
+                        className={`inline-flex items-center bg-gray-300 text-gray-700 px-3 py-1.5 rounded-full text-sm print:bg-white print:text-black print:border print:border-black ${!project.link && 'hidden'}`}
                       >
                         Visit Project
-                        <Globe className="ml-2 h-4 w-4" />
+                        <Globe className="ml-2 h-3 w-3" />
                       </a>
                     </motion.div>
                   ))}
