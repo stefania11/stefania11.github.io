@@ -23,4 +23,6 @@ export default defineConfig({
       '@data': resolve(__dirname, './client/src/data'),
     },
   },
+  // Specify the correct entry point
+  root: './client',
 });
