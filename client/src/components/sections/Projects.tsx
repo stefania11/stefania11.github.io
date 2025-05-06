@@ -13,7 +13,7 @@ export default function Projects() {
       title: "Google Home Gemini Extension",
       description: "Led the development of Google Home's Gemini Extension, bringing multimodal AI capabilities to smart home devices, enabling users to interact with their homes through natural language and visual inputs.",
       image: geminiImage,
-      link: "https://home.google.com/gemini/",
+      link: "https://support.google.com/googlenest/answer/12494697",
       tags: [
         { name: "Gemini AI", color: "#C1F0DB" }, 
         { name: "Smart Home", color: "#FFD6E0" },
