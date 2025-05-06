@@ -26,13 +26,17 @@ jobs:
         run: npm ci
 
       - name: Build website 🏗️
-        run: npm run build:github
-
-      - name: Create .nojekyll file 📄
-        run: touch build/.nojekyll
-
+        run: |
+          # Build the client only
+          cd client
+          npm install
+          npm run build
+          
+          # Create .nojekyll file to disable Jekyll processing
+          touch dist/.nojekyll
+      
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build
+          folder: client/dist
           branch: gh-pages
