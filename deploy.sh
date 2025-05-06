@@ -15,20 +15,22 @@ npm run build:github
 # Create necessary GitHub Pages files
 echo -e "${GREEN}Creating GitHub Pages files...${NC}"
 
+# Ensure the build directory exists
+mkdir -p build
+
 # Create .nojekyll file to disable Jekyll processing
 touch build/.nojekyll
 
-# Move to the build directory
-cd build
+# Make sure we're in the project root
+cd "$(dirname "$0")"
 
-# Initialize git repository if not already initialized
-if [ ! -d ".git" ]; then
-  git init
-  git checkout -b main
-  git remote add origin https://github.com/stefania11/stefania11.github.io.git
-else
-  git checkout main
-fi
+# Create a clean gh-pages branch
+echo -e "${GREEN}Setting up gh-pages branch...${NC}"
+git checkout -b gh-pages
+
+# Copy the build files to the root
+cp -r build/* .
+cp build/.nojekyll .
 
 # Add all files to git
 git add -A
@@ -38,6 +40,10 @@ git commit -m "Deploy to GitHub Pages: $(date)"
 
 # Push to GitHub
 echo -e "${GREEN}Pushing to GitHub...${NC}"
-git push -f origin main
+git push -f origin gh-pages
+
+# Switch back to the main branch
+git checkout main
+git branch -D gh-pages
 
 echo -e "${GREEN}Deployment complete! Your site is now live at https://stefania11.github.io${NC}"
