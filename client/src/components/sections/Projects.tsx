@@ -10,6 +10,19 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: "Google Home Gemini Extension",
+      description: "Led the development of Google Home's Gemini Extension, bringing multimodal AI capabilities to smart home devices, enabling users to interact with their homes through natural language and visual inputs.",
+      image: geminiImage,
+      link: "https://home.google.com/gemini/",
+      tags: [
+        { name: "Gemini AI", color: "#C1F0DB" }, 
+        { name: "Smart Home", color: "#FFD6E0" },
+        { name: "Multimodal Interaction", color: "#E0D6FF" }
+      ],
+      gradient: "from-[#C1F0DB] via-[#FFD6E0] to-[#E0D6FF]"
+    },
+    {
+      id: 2,
       title: "ChemBuddy: Multimodal AI Chemistry Assistant",
       description: "An AI-powered learning companion that combines computer vision, voice interaction, and sensor data to help students understand chemistry concepts through real-time experiment analysis.",
       image: chembuddyImage,
@@ -22,7 +35,7 @@ export default function Projects() {
       gradient: "from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB]"
     },
     {
-      id: 2,
+      id: 3,
       title: "Cognimates",
       description: "An AI education platform that enables children to create with and learn about artificial intelligence through creative coding, training custom models, and building smart projects.",
       image: cognimatesImage,
@@ -33,19 +46,6 @@ export default function Projects() {
         { name: "Child-Computer Interaction", color: "#C1F0DB" }
       ],
       gradient: "from-[#E0D6FF] via-[#C1F0DB] to-[#FFD6E0]"
-    },
-    {
-      id: 3,
-      title: "Google Home Gemini Extension",
-      description: "Led the development of Google Home's Gemini Extension, bringing multimodal AI capabilities to smart home devices, enabling users to interact with their homes through natural language and visual inputs.",
-      image: geminiImage,
-      link: "https://home.google.com/gemini/",
-      tags: [
-        { name: "Gemini AI", color: "#C1F0DB" }, 
-        { name: "Smart Home", color: "#FFD6E0" },
-        { name: "Multimodal Interaction", color: "#E0D6FF" }
-      ],
-      gradient: "from-[#C1F0DB] via-[#FFD6E0] to-[#E0D6FF]"
     }
   ];
 
@@ -110,7 +110,7 @@ export default function Projects() {
                     <img 
                       src={project.image} 
                       alt={project.title} 
-                      className={`max-w-full max-h-full object-contain ${project.id === 3 ? 'w-[85%]' : ''}`}
+                      className={`max-w-full max-h-full object-contain ${project.id === 1 ? 'w-[85%]' : ''}`}
                       style={{ maxHeight: '280px' }}
                     />
                   </div>
