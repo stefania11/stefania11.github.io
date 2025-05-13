@@ -11,9 +11,10 @@ export default function Talks() {
       venue: "Infobip Shift Miami",
       date: "May 6, 2025 at 10:00 AM",
       year: "2025",
-      description: "Excited to attend #InfobipShift Miami this year (May 5-7)! I'll be giving a keynote talk on \"The Future of Multimodal AI Applications\". Join me to explore AI that sees, hears & interacts in real-time. Expect technical insights + live demos!",
+      description: "Excited to attend #InfobipShift Miami this year (May 5-7)! I'll be giving a keynote talk on \"The Future of Multimodal AI Applications\". Join me to explore AI that sees, hears & interacts in real-time. Expect technical insights + live demos! Slide deck now available online.",
       image: multimodalLegoImage,
-      link: "https://shift.infobip.com/us/schedule/"
+      link: "https://shift.infobip.com/us/schedule/",
+      slidesLink: "https://stefania11.github.io/future_multimodal_ai/"
     },
     {
       id: 2,
@@ -85,15 +86,29 @@ export default function Talks() {
               <h3 className="text-xl font-bold mb-2">{talk.title}</h3>
               <p className="mb-4 text-gray-700">{talk.description}</p>
               
-              <a 
-                href={talk.link} 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors"
-              >
-                {talk.id === 1 ? "View Schedule" : "Watch Talk"} 
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </a>
+              <div className="flex gap-3">
+                <a 
+                  href={talk.link} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors"
+                >
+                  {talk.id === 1 ? "View Schedule" : "Watch Talk"} 
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+
+                {talk.slidesLink && (
+                  <a 
+                    href={talk.slidesLink} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-[#FFD6E0] text-black px-4 py-2 rounded-full hover:bg-[#ffc1d4] transition-colors"
+                  >
+                    View Slides
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                )}
+              </div>
             </motion.div>
           ))}
         </motion.div>

@@ -5,6 +5,9 @@ import {
   ExternalLink,
   FileText,
   Users,
+  Filter,
+  X,
+  Check
 } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -15,6 +18,102 @@ import { scrollToSection } from "@/lib/scroll-to-section";
 
 export default function PublicationsPage() {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [activeTag, setActiveTag] = useState<string | null>(null);
+  
+  // Define publication tags/categories
+  const tags = [
+    {
+      name: "AI Education",
+      color: "rgba(255, 214, 224, 0.5)",
+    },
+    {
+      name: "AI Literacy",
+      color: "rgba(224, 214, 255, 0.5)",
+    },
+    { 
+      name: "Multimodal AI", 
+      color: "rgba(193, 240, 219, 0.5)" 
+    },
+    {
+      name: "Child-AI Interaction",
+      color: "rgba(255, 224, 176, 0.5)",
+    },
+    {
+      name: "Creative Computing",
+      color: "rgba(176, 224, 255, 0.5)",
+    },
+  ];
+
+  // Map publications to tags (this would be better directly in the data model)
+  const publicationTags: Record<string, string[]> = {
+    "2025-1": ["AI Education", "Creative Computing"],
+    "2025-2": ["Multimodal AI", "AI Education"],
+    "2025-3": ["AI Education", "Multimodal AI"],
+    // 2024 publications
+    "FACCT '24": ["AI Literacy"],
+    "JCHE '24": ["AI Education", "Multimodal AI"],
+    // 2023 publications
+    "FAccT '23": ["AI Literacy"],
+    "C&C'23": ["Creative Computing", "AI Literacy"],
+    "Arxiv '23'": ["AI Education", "Creative Computing"],
+    "VL/HCC '23'": ["Creative Computing", "AI Education"],
+    "MAKE '23": ["Creative Computing", "AI Education"],
+    "IDC '23": ["Child-AI Interaction", "AI Literacy"],
+    "arXiv '23": ["Creative Computing", "AI Literacy"],
+    "UW '23'": ["AI Education", "AI Literacy", "Child-AI Interaction"],
+    // 2022 publications
+    "MIT PRESS '22": ["AI Literacy"],
+    "CHI '22": ["AI Education", "AI Literacy", "Child-AI Interaction"],
+    "IDC '22": ["Creative Computing", "Child-AI Interaction"],
+    "ITICSE '22": ["AI Education"],
+    "IJCCI '22": ["Child-AI Interaction"],
+    "UW '22": ["AI Education", "Creative Computing"],
+    // 2021 publications
+    "IDC '21": ["Child-AI Interaction", "AI Education"],
+    "CLS '21": ["AI Education"],
+    "KDD '21": ["AI Literacy", "Child-AI Interaction"],
+    // 2020 publications
+    "JoDS '20": ["AI Literacy"],
+    "IDC '20": ["Child-AI Interaction", "Creative Computing"],
+    "CACM '20": ["AI Education"],
+    // 2019 publications
+    "FABLEARN '19": ["AI Education", "AI Literacy"],
+    "CHIPLAY '19": ["Creative Computing", "Child-AI Interaction"],
+    // 2018 publications
+    "IDC '18": ["Child-AI Interaction"],
+    "MIT '18": ["AI Education", "Creative Computing", "Child-AI Interaction"],
+    // 2017 publications
+    "CHI '17": ["Child-AI Interaction"],
+    "IDC '17": ["Child-AI Interaction"],
+    "ISWC '18": ["Multimodal AI"],
+    // 2014 publications
+    "SIGRAPH '14": ["Creative Computing"],
+    // 2010 publications
+    "EUROMIME '10": ["AI Education"]
+  };
+
+  // Function to check if a publication belongs to the active tag
+  const publicationMatchesActiveTag = (pub: any) => {
+    if (!activeTag) return true; // Show all if no tag selected
+    
+    // Get publication identifier - either id or venue
+    const pubId = pub.id || pub.venue;
+    
+    // Check if this publication has tags mapped
+    if (publicationTags[pubId]) {
+      return publicationTags[pubId].includes(activeTag);
+    }
+    return false;
+  };
+
+  // Handle tag click
+  const handleTagClick = (tagName: string) => {
+    if (activeTag === tagName) {
+      setActiveTag(null); // Clicking active tag removes the filter
+    } else {
+      setActiveTag(tagName);
+    }
+  };
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -112,7 +211,7 @@ export default function PublicationsPage() {
               authors:
                 "Stefania Druga, Ioana Baldini, Mihaela Vorvoreanu, and Rishi Bommasani",
               year: "2023",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/FAccT_2023_Language_Models_Society.pdf",
+              link: "/pdf/FAccT_2023_Language_Models_Society.pdf",
             },
             {
               venue: "C&C'23",
@@ -153,7 +252,7 @@ export default function PublicationsPage() {
               authors:
                 "Jean Salac, Rotem Landesman, Stefania Druga, and Amy J. Ko",
               year: "2023",
-              link: "https://stefania11.github.io/assets/pdf/IDC2023_Children_Sensemaking_Algo_Fairness.pdf",
+              link: "/pdf/IDC2023_Children_Sensemaking_Algo_Fairness.pdf",
             },
             {
               venue: "arXiv '23",
@@ -195,7 +294,7 @@ export default function PublicationsPage() {
               authors:
                 "Druga Stefania, Yip Jason, Preston Michael, and Dillon Devin",
               year: "2022",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/MITP2022_4As_AI_Literacy_Framework_for_Families.pdf",
+              link: "/pdf/MITP2022_4As_AI_Literacy_Framework_for_Families.pdf",
             },
             {
               venue: "CHI '22",
@@ -203,7 +302,7 @@ export default function PublicationsPage() {
                 "Family as a Third Space for AI Literacies: How do children and parents learn about AI together?",
               authors: "Stefania Druga, Fee Christoph, and Amy J. Ko",
               year: "2022",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/Druga2022FamilyAILiteracy.pdf",
+              link: "/pdf/Druga2022FamilyAILiteracy.pdf",
             },
             {
               venue: "IDC '22",
@@ -211,14 +310,14 @@ export default function PublicationsPage() {
                 "How families design and program games: a qualitative analysis of a 4-week online in-home study",
               authors: "Stefania Druga, Thomas Ball, and Amy J. Ko",
               year: "2022",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_2022_TileCode_Families.pdf",
+              link: "/pdf/IDC_2022_TileCode_Families.pdf",
             },
             {
               venue: "ITICSE '22",
               title: "The Landscape of Teaching Resources for AI Education",
               authors: "Stefania Druga, Nancy Otero, and Amy J. Ko",
               year: "2022",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/Final_ITICSE_Submission___Landscape_AI_ressources.pdf",
+              link: "/pdf/Final_ITICSE_Submission___Landscape_AI_ressources.pdf",
             },
             {
               venue: "IJCCI '22",
@@ -227,7 +326,7 @@ export default function PublicationsPage() {
               authors:
                 "Min Kyong Kim, Stefania Druga, Shaghayegh Esmaeili, Julia Woodward, Alex Shaw, Ayushi Jain, Jaida Langham, Kristy Hollingshead, Silvia B Lovato, Erin Beneteau, and others",
               year: "2022",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IJCCI_Examining_voice_assistants_in_the_context_of_children_speech.pdf",
+              link: "/pdf/IJCCI_Examining_voice_assistants_in_the_context_of_children_speech.pdf",
             },
             {
               venue: "UW '22",
@@ -235,7 +334,7 @@ export default function PublicationsPage() {
                 "Interest-Driven Creative Programming for Youth with AI Friends",
               authors: "Druga Stefania",
               year: "2022",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/GE_2022_Interest_Driven_Creative_Programming_for_Youth.pdf",
+              link: "/pdf/GE_2022_Interest_Driven_Creative_Programming_for_Youth.pdf",
             },
           ],
         },
@@ -253,7 +352,7 @@ export default function PublicationsPage() {
                 "How do children's perceptions of machine intelligence change when training and coding smart programs?",
               authors: "Stefania Druga, and Amy J. Ko",
               year: "2021",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_Machine_Intelligence_Perception_2021.pdf",
+              link: "/pdf/IDC_Machine_Intelligence_Perception_2021.pdf",
             },
             {
               venue: "CLS '21",
@@ -262,7 +361,7 @@ export default function PublicationsPage() {
               authors:
                 "Regina Cheng, Stefania Druga, Emilia Gan, Catherine D'Ignazio, Rahul Bhargava, Victor Lee, Camillia Matuk, Tamara Clegg, Andee Rubin, and Yasmin Kafai",
               year: "2021",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CLS_Future_Data_Literacies_Workshop_at_Connected_Learning_Summit_July_2021.pdf",
+              link: "/pdf/CLS_Future_Data_Literacies_Workshop_at_Connected_Learning_Summit_July_2021.pdf",
             },
             {
               venue: "KDD '21",
@@ -270,7 +369,7 @@ export default function PublicationsPage() {
                 "A Design Framework for Citizen-Science AI Platforms for Families",
               authors: "Fangqing He*, Yifeng Wang*, and Stefania Druga",
               year: "2021",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/FEED_A_Design_Framework_for_Citizen_Science_AI_Platforms_for_Families_2021.pdf",
+              link: "/pdf/FEED_A_Design_Framework_for_Citizen_Science_AI_Platforms_for_Families_2021.pdf",
             },
           ],
         },
@@ -289,14 +388,14 @@ export default function PublicationsPage() {
               authors:
                 "Druga Stefania, Yip Jason, Preston Michael, and Dillon Devin",
               year: "2020",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/JODS_Author_Draft_The_4As__Ask__Adapt__Author__Analyze___AI_Literacy_Framework_for_Families.pdf",
+              link: "/pdf/JODS_Author_Draft_The_4As__Ask__Adapt__Author__Analyze___AI_Literacy_Framework_for_Families.pdf",
             },
             {
               venue: "IDC '20",
               title: "Research Toolkit for Future-Oriented Play with Families",
               authors: "Michelson Rebecca Druga Stefania",
               year: "2020",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/INTERACT_Camera_Ready_Smart_Toys_Design.pdf",
+              link: "/pdf/INTERACT_Camera_Ready_Smart_Toys_Design.pdf",
             },
             {
               venue: "IDC '20",
@@ -304,7 +403,7 @@ export default function PublicationsPage() {
                 '"Puffy and Sticking Out" CollaborativeImage Classification with Kids',
               authors: "Druga Stefania Tian Yubing",
               year: "2020",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_Workshop_Puffy_sticking_out.pdf",
+              link: "/pdf/IDC_Workshop_Puffy_sticking_out.pdf",
             },
             {
               venue: "CACM '20",
@@ -312,7 +411,7 @@ export default function PublicationsPage() {
               authors:
                 "Amy J. Ko, Alannah Oleson, Neil Ryan, Yim Register, Benjamin Xie, Mina Tari, Matthew Davidson, Stefania Druga, and Dastyni Loksa",
               year: "2020",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CACM_Critical_CS_2020.pdf",
+              link: "/pdf/CACM_Critical_CS_2020.pdf",
             },
           ],
         },
@@ -330,7 +429,7 @@ export default function PublicationsPage() {
               authors:
                 "Druga Stefania, Vu Sarah T, Likhith Eesh, and Qiu Tammy",
               year: "2019",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/FABLEARN_Inclusive_AI_2019.pdf",
+              link: "/pdf/FABLEARN_Inclusive_AI_2019.pdf",
             },
             {
               venue: "CHIPLAY '19",
@@ -338,7 +437,7 @@ export default function PublicationsPage() {
                 "Ballbit Adventure: A Physical Game for a Collaborative Racing",
               authors: "Kuang Quincy, Zhang Jiaxin, and Druga Stefania",
               year: "2019",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CHI_PLAY_Ballbit_Adventure_2019.pdf",
+              link: "/pdf/CHI_PLAY_Ballbit_Adventure_2019.pdf",
             },
             {
               venue: "CHIPLAY '19",
@@ -347,14 +446,14 @@ export default function PublicationsPage() {
               authors:
                 "Chen Chunhan, Tang Yihan, Xie Tianyi, and Druga Stefania",
               year: "2019",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CHI_PLAY_Humming_Box_2019.pdf",
+              link: "/pdf/CHI_PLAY_Humming_Box_2019.pdf",
             },
             {
               venue: "CHIPLAY '19",
               title: "Legoons: Inflatable Construction Kit for Children",
               authors: "Yang Xuefei, and Druga Stefania",
               year: "2019",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CHI_PLAY_Legoons_2019.pdf",
+              link: "/pdf/CHI_PLAY_Legoons_2019.pdf",
             },
           ],
         },
@@ -373,7 +472,7 @@ export default function PublicationsPage() {
               authors:
                 "Druga Stefania, Williams Randi, Park Hae Won, and Breazeal Cynthia",
               year: "2018",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_How_smart_toys_2018.pdf",
+              link: "/pdf/IDC_How_smart_toys_2018.pdf",
             },
             {
               venue: "IDC '18",
@@ -382,7 +481,7 @@ export default function PublicationsPage() {
               authors:
                 "Williams Randi, Machado Christian Vázquez, Druga Stefania, Breazeal Cynthia, and Maes Pattie",
               year: "2018",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_WIP_Doll_2018.pdf",
+              link: "/pdf/IDC_WIP_Doll_2018.pdf",
             },
             {
               venue: "MIT '18",
@@ -390,7 +489,7 @@ export default function PublicationsPage() {
                 "Growing up with AI: Cognimates: from coding to teaching machines",
               authors: "Druga Stefania",
               year: "2018",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/MIT_Thesis_Growin_up_with_AI_Stefania_Druga_2018.pdf",
+              link: "/pdf/MIT_Thesis_Growin_up_with_AI_Stefania_Druga_2018.pdf",
             },
             {
               venue: "MIT '18",
@@ -415,7 +514,7 @@ export default function PublicationsPage() {
                 "Embodied learning and play in sensorimotor augmentations for kids",
               authors: "Druga Stefania",
               year: "2017",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/CHI_Workshop_Embodied_learning_2017.pdf",
+              link: "/pdf/CHI_Workshop_Embodied_learning_2017.pdf",
             },
             {
               venue: "IDC '17",
@@ -424,7 +523,7 @@ export default function PublicationsPage() {
               authors:
                 "Druga Stefania, Williams Randi, Breazeal Cynthia, and Resnick Mitchel",
               year: "2017",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_WIP_Hey_Google_2017.pdf",
+              link: "/pdf/IDC_WIP_Hey_Google_2017.pdf",
             },
             {
               venue: "ISWC '18",
@@ -432,7 +531,7 @@ export default function PublicationsPage() {
                 "Motif: a wearable sonic cueing device for memory support and cognitive intervention",
               authors: "Druga Stefania, Maes Pattie, and Rieger Alexandra",
               year: "2017",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/ISWC_WIP_Motif_2017.pdf",
+              link: "/pdf/ISWC_WIP_Motif_2017.pdf",
             },
           ],
         },
@@ -451,7 +550,7 @@ export default function PublicationsPage() {
               authors:
                 "Ausareny Justyna, Kera Denisa, Druga Stefania, and Reshef Yair",
               year: "2014",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/SIGRAPH_Workshop_OSHW_2014.pdf",
+              link: "/pdf/SIGRAPH_Workshop_OSHW_2014.pdf",
             },
           ],
         },
@@ -469,7 +568,7 @@ export default function PublicationsPage() {
                 "Open Education Resources Practices and Copyrights for Teachers",
               authors: "Druga Stefania",
               year: "2010",
-              link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/EUROMIME_Thesis_OER_2010.pdf",
+              link: "/pdf/EUROMIME_Thesis_OER_2010.pdf",
             },
           ],
         },
@@ -523,81 +622,99 @@ export default function PublicationsPage() {
 
           {/* Topic Tags Navigation */}
           <div className="flex flex-wrap justify-center gap-3 mb-12 pb-2">
-            {[
-              {
-                name: "AI Education",
-                color: "rgba(255, 214, 224, 0.5)",
-                link: "https://stefania11.github.io/assets/pdf/IDC2025_Cognimates_Copilot.pdf",
-              },
-              {
-                name: "AI Literacy",
-                color: "rgba(224, 214, 255, 0.5)",
-                link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/MITP2022_4As_AI_Literacy_Framework_for_Families.pdf",
-              },
-              { name: "Multimodal AI", color: "rgba(193, 240, 219, 0.5)", link: "#year-2025" },
-              {
-                name: "Child-AI Interaction",
-                color: "rgba(255, 224, 176, 0.5)",
-                link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_How_smart_toys_2018.pdf",
-              },
-              {
-                name: "Creative Computing",
-                color: "rgba(176, 224, 255, 0.5)",
-                link: "https://github.com/stefania11/stefania11.github.io/raw/main/assets/pdf/IDC_2022_TileCode_Families.pdf",
-              },
-            ].map((topic) => (
-              <motion.a
+            {tags.map((topic) => (
+              <motion.button
                 key={topic.name}
-                href={topic.link}
-                className="px-4 py-2 rounded-full hover:shadow-md transition-colors whitespace-nowrap flex items-center"
+                onClick={() => handleTagClick(topic.name)}
+                className={`px-4 py-2 rounded-full hover:shadow-md transition-colors whitespace-nowrap flex items-center ${activeTag === topic.name ? 'ring-2 ring-offset-2 ring-gray-900' : ''}`}
                 style={{ backgroundColor: topic.color }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
-                target={topic.link.startsWith("http") ? "_blank" : "_self"}
-                rel={topic.link.startsWith("http") ? "noopener noreferrer" : ""}
               >
                 {topic.name}
-              </motion.a>
+                {activeTag === topic.name && (
+                  <Check className="ml-2 h-4 w-4" />
+                )}
+              </motion.button>
             ))}
+            {activeTag && (
+              <motion.button
+                onClick={() => setActiveTag(null)}
+                className="px-4 py-2 rounded-full hover:shadow-md transition-colors whitespace-nowrap flex items-center bg-gray-200"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                Clear Filter <X className="ml-2 h-4 w-4" />
+              </motion.button>
+            )}
           </div>
+          
+          {activeTag && (
+            <motion.div 
+              className="text-center mb-8"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <p className="text-lg">Showing publications tagged with <span className="font-semibold">{activeTag}</span></p>
+            </motion.div>
+          )}
 
           <div className="space-y-20">
-            {publications.map((publication, i) => (
-              <motion.div
-                key={publication.year}
-                id={`year-${publication.year}`}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="scroll-mt-32"
-              >
-                <h2 className="text-3xl font-bold mb-8 relative inline-block">
-                  {publication.year}
-                  <motion.span
-                    className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB]"
-                    style={{ width: "100%" }}
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.7 }}
-                  />
-                </h2>
-                <div className="space-y-8">
-                  {publication.categories.map((category, j) => (
-                    <div key={j}>
-                      {category.title && (
-                        <h3 className="text-xl font-semibold mb-4">
-                          {category.title}
-                        </h3>
-                      )}
-                      <div className="grid grid-cols-1 gap-8">
-                        {category.items.map((item, k) => {
-                          // Generate random pastel color for each publication
-                          const colors = ["#FFD6E0", "#E0D6FF", "#C1F0DB"];
-                          const color = colors[Math.floor(k % colors.length)];
+            {publications.map((publication, i) => {
+              // Check if any items in this year match the active tag
+              const hasMatchingItems = !activeTag || publication.categories.some(category => 
+                category.items.some(item => publicationMatchesActiveTag(item))
+              );
+              
+              // Skip rendering this year if no matching items
+              if (!hasMatchingItems) return null;
+              
+              return (
+                <motion.div
+                  key={publication.year}
+                  id={`year-${publication.year}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className="scroll-mt-32"
+                >
+                  <h2 className="text-3xl font-bold mb-8 relative inline-block">
+                    {publication.year}
+                    <motion.span
+                      className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB]"
+                      style={{ width: "100%" }}
+                      initial={{ width: 0 }}
+                      whileInView={{ width: "100%" }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.7 }}
+                    />
+                  </h2>
+                  <div className="space-y-8">
+                    {publication.categories.map((category, j) => {
+                      // Filter items based on active tag
+                      const filteredItems = category.items.filter(item => publicationMatchesActiveTag(item));
+                      
+                      // Skip rendering this category if no matching items
+                      if (filteredItems.length === 0) return null;
+                      
+                      return (
+                        <div key={j}>
+                          {category.title && (
+                            <h3 className="text-xl font-semibold mb-4">
+                              {category.title}
+                            </h3>
+                          )}
+                          <div className="grid grid-cols-1 gap-8">
+                            {filteredItems.map((item, k) => {
+                              // Generate random pastel color for each publication
+                              const colors = ["#FFD6E0", "#E0D6FF", "#C1F0DB"];
+                              const color = colors[Math.floor(k % colors.length)];
 
-                          return (
+                              return (
                             <motion.div
                               key={item.id || `${item.title}-${k}`}
                               className="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all"
@@ -649,10 +766,10 @@ export default function PublicationsPage() {
                         })}
                       </div>
                     </div>
-                  ))}
+                  )})}
                 </div>
               </motion.div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

@@ -20,9 +20,9 @@ export default function News() {
       id: 1,
       title: "Keynote at Infobip Shift Miami 2025",
       date: "May 2025",
-      description: "Excited to attend #InfobipShift Miami (May 5-7)! I'll be giving a keynote talk on 'The Future of Multimodal AI Applications'. Join me May 6th at 10:00 AM to explore AI that sees, hears & interacts in real-time.",
+      description: "Excited to attend #InfobipShift Miami (May 5-7)! I'll be giving a keynote talk on 'The Future of Multimodal AI Applications'. Join me May 6th at 10:00 AM to explore AI that sees, hears & interacts in real-time. Slide deck now available!",
       icon: <Sparkles className="w-5 h-5" />,
-      link: "https://shift.infobip.com/us/schedule/",
+      link: "https://stefania11.github.io/future_multimodal_ai/",
       color: "#FFD6E0"
     },
     {
