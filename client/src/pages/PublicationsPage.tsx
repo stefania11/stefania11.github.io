@@ -50,7 +50,7 @@ export default function PublicationsPage() {
                 "Cognimates Copilot: Supporting Children's Creative AI Learning and Coding",
               authors: "Druga Stefania and Amy J. Ko",
               year: "2025",
-              link: "https://stefania11.github.io/assets/pdf/IDC2025_Cognimates_Copilot.pdf",
+              link: "https://arxiv.org/abs/2505.03867",
             },
             {
               id: "2025-2",
