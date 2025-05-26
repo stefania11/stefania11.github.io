@@ -1,12 +1,34 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Calendar, MapPin } from "lucide-react";
+import aiCoScientistImage from "../../assets/ai_coscientist.png";
 import multimodalLegoImage from "../../assets/multimodal_lego.png";
 import aiEngineerImage from "../../assets/ai_engineer_talk.png";
+import seoulMetaWeekImage from "../../assets/swe_korea.png";
 
 export default function Talks() {
   const talks = [
     {
       id: 1,
+      title: "Beyond Text: Real-World Applications of Multimodal AI",
+      venue: "Seoul Meta Week",
+      date: "June 26, 2025",
+      year: "2025",
+      description: "Keynote on the future of multimodal AI applications at Seoul Meta Week. Expect technical insights + live demos!",
+      image: seoulMetaWeekImage,
+      link: "https://seoulmetaweek.com/"
+    },
+    {
+      id: 2,
+      title: "Real-time Experiments with an AI Co-Scientist",
+      venue: "AI Engineer Summit",
+      date: "June 5, 2025 at 11:30 AM",
+      year: "2025",
+      description: "Join me at the AI Engineer Summit to explore how AI can be used to perform real-time experiments with an AI co-scientist. I'll share insights on how to leverage AI and open-source hardware to perform real-time experiments with an AI co-scientist. Expect technical insights + live demos!",
+      image: aiCoScientistImage,
+      link: "https://www.ai.engineer/schedule"
+    },
+    {
+      id: 3,
       title: "Future of Multimodal Applications",
       venue: "Infobip Shift Miami",
       date: "May 6, 2025 at 10:00 AM",
@@ -16,7 +38,7 @@ export default function Talks() {
       link: "https://shift.infobip.com/us/schedule/"
     },
     {
-      id: 2,
+      id: 4,
       title: "Next-gen AI Engineers",
       venue: "AI Engineer Summit",
       date: "April 2023",
