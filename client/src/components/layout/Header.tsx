@@ -36,6 +36,7 @@ export default function Header() {
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
     { id: "talks", label: "Talks" },
+    { id: "blog", label: "Blog", isPage: true },
   ];
 
   return (
@@ -56,17 +57,27 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className="text-sm relative nav-link hover:text-gray-600 transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick(item.id);
-              }}
-            >
-              {item.label}
-            </a>
+            item.isPage ? (
+              <Link
+                key={item.id}
+                href={`/${item.id}`}
+                className="text-sm relative nav-link hover:text-gray-600 transition-colors"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className="text-sm relative nav-link hover:text-gray-600 transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(item.id);
+                }}
+              >
+                {item.label}
+              </a>
+            )
           ))}
           <Link 
             href="/publications" 
@@ -95,17 +106,28 @@ export default function Header() {
           >
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  className="py-2 px-4 hover:bg-gray-50 rounded-md transition-colors"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick(item.id);
-                  }}
-                >
-                  {item.label}
-                </a>
+                item.isPage ? (
+                  <Link
+                    key={item.id}
+                    href={`/${item.id}`}
+                    className="py-2 px-4 hover:bg-gray-50 rounded-md transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.id}
+                    href={`#${item.id}`}
+                    className="py-2 px-4 hover:bg-gray-50 rounded-md transition-colors"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(item.id);
+                    }}
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
               <Link 
                 href="/publications" 
