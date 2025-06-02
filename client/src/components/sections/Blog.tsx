@@ -23,7 +23,7 @@ export default function Blog() {
       externalUrl: "https://medium.com/bits-and-behavior/supercharge-your-scratch-projects-introducing-cognimates-copilot-an-ai-teammate-for-kids-52e616e4096e"
     },
     {
-      id: "post-2",
+      id: "post-3",
       title: "Empowering kids for a Future They'll Help Build: A Parents Handbook",
       date: "January 15, 2024",
       excerpt: "A guide for parents on how to prepare children for a future where they'll actively participate in shaping technology and society.",
@@ -32,28 +32,29 @@ export default function Blog() {
       externalUrl: "https://medium.com/@Stefania_druga/empowering-kids-for-a-future-theyll-help-build-a-parents-handbook-f1f01ae38718"
     },
     {
-      id: "post-3",
+      id: "post-4",
       title: "Multimodal AI: A Powerful Tool for Social Good",
       date: "April 19, 2024",
       excerpt: "Summary of my presentation at the Innovation Exchange on how multimodal AI can be leveraged for social impact and addressing real-world challenges.",
-      coverImage: "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?q=80&w=1740&auto=format&fit=crop",
+      coverImage: "/assets/images/blog/multimodal-ai-social-good.jpg",
       slug: "multimodal-ai-social-good"
     },
     {
-      id: "post-4",
+      id: "post-5",
       title: "Creativity is dead! Long live creativity.",
       date: "October 10, 2023",
       excerpt: "Musings from Creative Summit 2023 in Sweden on how generative AI is changing creative ecosystems and what this means for human creativity.",
-      coverImage: "https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?q=80&w=1664&auto=format&fit=crop",
+      coverImage: "/assets/images/blog/creativity-generative-ai.jpg",
       slug: "creativity-generative-ai"
     },
     {
-      id: "post-5",
+      id: "post-6",
       title: "How do children and parents learn about AI together?",
       date: "August 15, 2023",
       excerpt: "Exploring family as a Third Space for AI Literacies and how parents and children can collaboratively develop understanding of AI technologies.",
-      coverImage: "https://images.unsplash.com/photo-1566837945700-30057527ade0?q=80&w=1740&auto=format&fit=crop",
-      slug: "family-ai-learning"
+      coverImage: "/assets/images/blog/family-ai-learning.jpg",
+      slug: "family-ai-learning",
+      externalUrl: "https://medium.com/bits-and-behavior/how-do-children-and-parents-learn-about-ai-together-ece2ed370ca4"
     }
   ];
 
