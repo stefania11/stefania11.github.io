@@ -1,7 +1,13 @@
-import { motion } from "framer-motion";
-import { ArrowLeft, Calendar, Share, User, Tag, ExternalLink } from "lucide-react";
+import {
+  ArrowLeft,
+  Calendar,
+  Share,
+  User,
+  Tag,
+  ExternalLink,
+} from "lucide-react";
 import { Link, useRoute } from "wouter";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { SiSubstack } from "react-icons/si";
@@ -9,7 +15,7 @@ import { SiSubstack } from "react-icons/si";
 export default function BlogPostPage() {
   const [, params] = useRoute("/blog/:slug");
   const slug = params?.slug;
-  
+
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -64,7 +70,7 @@ export default function BlogPostPage() {
       `,
       coverImage: "/assets/images/blog/multimodal-ai-education.jpg",
       tags: ["AI Education", "Multimodal AI"],
-      slug: "multimodal-ai-education"
+      slug: "multimodal-ai-education",
     },
     {
       id: "post-2",
@@ -133,7 +139,7 @@ export default function BlogPostPage() {
       `,
       coverImage: "/assets/images/blog/ai-research-trends.jpg",
       tags: ["AI Research", "Industry Insights"],
-      slug: "ai-research-trends-2025"
+      slug: "ai-research-trends-2025",
     },
     {
       id: "post-3",
@@ -239,23 +245,26 @@ export default function BlogPostPage() {
       `,
       coverImage: "/assets/images/blog/ai-learning-activities.jpg",
       tags: ["Tutorials", "AI Education"],
-      slug: "ai-learning-activities-tutorial"
-    }
+      slug: "ai-learning-activities-tutorial",
+    },
   ];
-  
+
   // Find the blog post that matches the current slug
-  const currentPost = blogPosts.find(post => post.slug === slug);
-  
+  const currentPost = blogPosts.find((post) => post.slug === slug);
+
   // If no matching post is found, show a "not found" message
   if (!currentPost) {
     return (
       <div className="min-h-screen flex flex-col">
         <Header />
-        
+
         <main className="flex-grow flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Blog Post Not Found</h1>
-            <p className="text-gray-600 mb-6">The blog post you're looking for doesn't exist or has been removed.</p>
+            <p className="text-gray-600 mb-6">
+              The blog post you're looking for doesn't exist or has been
+              removed.
+            </p>
             <Link href="/blog">
               <a className="inline-flex items-center text-blue-600 font-medium">
                 <ArrowLeft className="w-4 h-4 mr-2" />
@@ -264,38 +273,39 @@ export default function BlogPostPage() {
             </Link>
           </div>
         </main>
-        
+
         <Footer />
       </div>
     );
   }
-  
+
   // Find related posts based on tags (excluding the current post)
   const relatedPosts = blogPosts
-    .filter(post => 
-      post.id !== currentPost.id && 
-      post.tags.some(tag => currentPost.tags.includes(tag))
+    .filter(
+      (post) =>
+        post.id !== currentPost.id &&
+        post.tags.some((tag) => currentPost.tags.includes(tag)),
     )
     .slice(0, 2);
-  
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-grow">
         {/* Hero Section with Cover Image */}
         <div className="relative h-[40vh] md:h-[50vh] bg-gray-100">
-          <div 
+          <div
             className="absolute inset-0 bg-center bg-cover"
-            style={{ 
+            style={{
               backgroundImage: `url(${currentPost.coverImage})`,
-              backgroundPosition: 'center',
-              backgroundSize: 'cover'
+              backgroundPosition: "center",
+              backgroundSize: "cover",
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-40"></div>
           </div>
-          
+
           <div className="container mx-auto px-6 md:px-16 relative h-full flex items-end pb-12">
             <div className="text-white max-w-2xl">
               <Link href="/blog">
@@ -320,18 +330,20 @@ export default function BlogPostPage() {
             </div>
           </div>
         </div>
-        
+
         {/* Newsletter Subscription */}
         <div className="bg-gray-50 py-6 border-b border-gray-100">
           <div className="container mx-auto px-6 md:px-16">
             <div className="flex items-center justify-between flex-wrap">
               <div className="flex items-center mb-4 md:mb-0">
                 <SiSubstack className="w-5 h-5 mr-2 text-gray-700" />
-                <span className="text-gray-700 font-medium">Enjoy this post? Subscribe for updates:</span>
+                <span className="text-gray-700 font-medium">
+                  Enjoy this post? Subscribe for updates:
+                </span>
               </div>
-              <a 
-                href="https://stefaniadruga.substack.com/" 
-                target="_blank" 
+              <a
+                href="https://stefaniadruga.substack.com/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors"
               >
@@ -341,7 +353,7 @@ export default function BlogPostPage() {
             </div>
           </div>
         </div>
-        
+
         {/* Main Content */}
         <div className="py-12 px-6 md:px-16">
           <div className="container mx-auto">
@@ -349,9 +361,11 @@ export default function BlogPostPage() {
               {/* Article Content */}
               <div className="lg:w-2/3">
                 <article className="prose prose-lg max-w-none">
-                  <div dangerouslySetInnerHTML={{ __html: currentPost.content }} />
+                  <div
+                    dangerouslySetInnerHTML={{ __html: currentPost.content }}
+                  />
                 </article>
-                
+
                 {/* Tags */}
                 <div className="mt-12 pt-8 border-t border-gray-100">
                   <h3 className="text-gray-700 font-medium mb-3 flex items-center">
@@ -359,8 +373,11 @@ export default function BlogPostPage() {
                     Topics
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {currentPost.tags.map(tag => (
-                      <Link href={`/blog?tag=${encodeURIComponent(tag)}`} key={tag}>
+                    {currentPost.tags.map((tag) => (
+                      <Link
+                        href={`/blog?tag=${encodeURIComponent(tag)}`}
+                        key={tag}
+                      >
                         <a className="px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors">
                           {tag}
                         </a>
@@ -368,7 +385,7 @@ export default function BlogPostPage() {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* Share */}
                 <div className="mt-8">
                   <h3 className="text-gray-700 font-medium mb-3 flex items-center">
@@ -376,31 +393,47 @@ export default function BlogPostPage() {
                     Share this post
                   </h3>
                   <div className="flex gap-2">
-                    <a 
+                    <a
                       href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(currentPost.title)}&url=${encodeURIComponent(window.location.href)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
                     >
-                      <svg className="w-5 h-5 text-gray-700" viewBox="0 0 24 24" fill="currentColor">
+                      <svg
+                        className="w-5 h-5 text-gray-700"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
                         <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548z" />
                       </svg>
                     </a>
-                    <a 
+                    <a
                       href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
                     >
-                      <svg className="w-5 h-5 text-gray-700" viewBox="0 0 24 24" fill="currentColor">
+                      <svg
+                        className="w-5 h-5 text-gray-700"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                       </svg>
                     </a>
-                    <a 
+                    <a
                       href={`mailto:?subject=${encodeURIComponent(currentPost.title)}&body=${encodeURIComponent(window.location.href)}`}
                       className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
                     >
-                      <svg className="w-5 h-5 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <svg
+                        className="w-5 h-5 text-gray-700"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                         <polyline points="22,6 12,13 2,6" />
                       </svg>
@@ -408,19 +441,22 @@ export default function BlogPostPage() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Sidebar */}
               <div className="lg:w-1/3 mt-12 lg:mt-0">
                 {/* Author Info */}
                 <div className="bg-gray-50 p-6 rounded-xl mb-8">
-                  <h3 className="text-lg font-semibold mb-4">About the Author</h3>
+                  <h3 className="text-lg font-semibold mb-4">
+                    About the Author
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Stefania Druga is a researcher and educator specializing in AI education, 
-                    child-computer interaction, and creative computing. Her work focuses on 
-                    making AI more accessible and understandable for learners of all ages.
+                    Stefania Druga is a researcher and educator specializing in
+                    AI education, child-computer interaction, and creative
+                    computing. Her work focuses on making AI more accessible and
+                    understandable for learners of all ages.
                   </p>
-                  <a 
-                    href="https://linkedin.com/in/stefania-druga" 
+                  <a
+                    href="https://linkedin.com/in/stefania-druga"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 inline-flex items-center text-sm font-medium"
@@ -429,23 +465,25 @@ export default function BlogPostPage() {
                     <ExternalLink className="ml-1 w-3 h-3" />
                   </a>
                 </div>
-                
+
                 {/* Related Posts */}
                 {relatedPosts.length > 0 && (
                   <div className="mb-8">
-                    <h3 className="text-lg font-semibold mb-4">Related Posts</h3>
+                    <h3 className="text-lg font-semibold mb-4">
+                      Related Posts
+                    </h3>
                     <div className="space-y-4">
-                      {relatedPosts.map(post => (
+                      {relatedPosts.map((post) => (
                         <Link href={`/blog/${post.slug}`} key={post.id}>
                           <a className="block group">
                             <div className="flex items-start">
                               <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100">
-                                <div 
+                                <div
                                   className="w-full h-full bg-center bg-cover"
-                                  style={{ 
+                                  style={{
                                     backgroundImage: `url(${post.coverImage})`,
-                                    backgroundPosition: 'center',
-                                    backgroundSize: 'cover'
+                                    backgroundPosition: "center",
+                                    backgroundSize: "cover",
                                   }}
                                 />
                               </div>
@@ -464,19 +502,22 @@ export default function BlogPostPage() {
                     </div>
                   </div>
                 )}
-                
+
                 {/* Newsletter Signup (Sidebar version) */}
                 <div className="bg-gray-800 text-white p-6 rounded-xl">
                   <div className="flex items-center mb-4">
                     <SiSubstack className="w-6 h-6 mr-3 text-gray-300" />
-                    <h3 className="text-lg font-semibold">Subscribe to Updates</h3>
+                    <h3 className="text-lg font-semibold">
+                      Subscribe to Updates
+                    </h3>
                   </div>
                   <p className="text-gray-300 mb-4">
-                    Get new blog posts and updates delivered directly to your inbox.
+                    Get new blog posts and updates delivered directly to your
+                    inbox.
                   </p>
-                  <a 
-                    href="https://stefaniadruga.substack.com/" 
-                    target="_blank" 
+                  <a
+                    href="https://stefaniadruga.substack.com/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-white text-gray-800 px-4 py-2 rounded-full hover:bg-gray-100 transition-colors w-full justify-center"
                   >
@@ -489,7 +530,7 @@ export default function BlogPostPage() {
           </div>
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );

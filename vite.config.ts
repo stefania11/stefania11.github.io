@@ -4,7 +4,7 @@ import { resolve } from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 // Use __dirname equivalent for ESM
-const __dirname = new URL('.', import.meta.url).pathname;
+const __dirname = new URL(".", import.meta.url).pathname;
 
 export default defineConfig({
   plugins: [

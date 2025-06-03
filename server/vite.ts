@@ -21,7 +21,7 @@ export function log(message: string, source = "express") {
     hour12: true,
   });
 
-  console.log(`${formattedTime} [${source}] ${message}`);
+  console.warn(`${formattedTime} [${source}] ${message}`);
 }
 
 export async function setupVite(app: Express, server: Server) {
@@ -50,12 +50,7 @@ export async function setupVite(app: Express, server: Server) {
     const url = req.originalUrl;
 
     try {
-      const clientTemplate = resolve(
-        __dirname,
-        "..",
-        "client",
-        "index.html",
-      );
+      const clientTemplate = resolve(__dirname, "..", "client", "index.html");
 
       // always reload the index.html file from disk incase it changes
       let template = await fs.promises.readFile(clientTemplate, "utf-8");

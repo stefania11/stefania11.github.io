@@ -7,11 +7,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 
 // Handle GitHub Pages SPA routing
-(function() {
+(function () {
   const redirect = sessionStorage.redirect;
   delete sessionStorage.redirect;
   if (redirect && redirect !== location.href) {
-    history.replaceState(null, '', redirect);
+    history.replaceState(null, "", redirect);
   }
 })();
 
@@ -21,5 +21,5 @@ createRoot(document.getElementById("root")!).render(
       <App />
       <Toaster />
     </TooltipProvider>
-  </QueryClientProvider>
+  </QueryClientProvider>,
 );

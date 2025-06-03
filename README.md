@@ -14,7 +14,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Vite. F
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 - PostgreSQL (for full-stack mode only)
 
@@ -52,6 +52,7 @@ This site is configured to deploy to GitHub Pages at https://stefania11.github.i
 To deploy:
 
 1. **Commit all changes to main branch**:
+
    ```bash
    git add .
    git commit -m "Your commit message"
@@ -64,6 +65,7 @@ To deploy:
    ```
 
 The script will:
+
 - Build the static site with GitHub Pages configuration
 - Create a temporary `gh-pages` branch
 - Push the build to GitHub Pages
@@ -97,6 +99,7 @@ For full-stack deployment with database support:
 ## Content Management
 
 Main content is stored in `/client/src/data/content.ts`. Edit this file to update:
+
 - About section
 - Research projects
 - Portfolio projects

@@ -40,23 +40,22 @@ export default function Header() {
   ];
 
   return (
-    <header className={`py-6 px-6 md:px-16 fixed top-0 left-0 w-full z-40 transition-all duration-300 print:hidden ${scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"}`}>
+    <header
+      className={`py-6 px-6 md:px-16 fixed top-0 left-0 w-full z-40 transition-all duration-300 print:hidden ${scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"}`}
+    >
       <div className="container mx-auto flex justify-between items-center">
-        <Link 
-          href="/" 
-          className="text-xl font-bold"
-        >
+        <Link href="/" className="text-xl font-bold">
           <span className="font-bold">Stefania Druga</span>
         </Link>
-        
+
         {/* Mobile menu button */}
         <button className="block md:hidden" onClick={toggleMobileMenu}>
           <Menu className="h-6 w-6" />
         </button>
-        
+
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
+          {navItems.map((item) =>
             item.isPage ? (
               <Link
                 key={item.id}
@@ -77,23 +76,23 @@ export default function Header() {
               >
                 {item.label}
               </a>
-            )
-          ))}
-          <Link 
-            href="/publications" 
+            ),
+          )}
+          <Link
+            href="/publications"
             className="text-sm relative nav-link hover:text-gray-600 transition-colors"
           >
             Publications
           </Link>
-          <Link 
-            href="/resume" 
+          <Link
+            href="/resume"
             className="text-sm relative nav-link hover:text-gray-600 transition-colors"
           >
             Resume
           </Link>
         </nav>
       </div>
-      
+
       {/* Mobile Navigation */}
       <AnimatePresence>
         {mobileMenuOpen && (
@@ -105,7 +104,7 @@ export default function Header() {
             className="absolute top-full left-0 w-full bg-white py-4 px-6 shadow-lg"
           >
             <nav className="flex flex-col space-y-4">
-              {navItems.map((item) => (
+              {navItems.map((item) =>
                 item.isPage ? (
                   <Link
                     key={item.id}
@@ -127,16 +126,16 @@ export default function Header() {
                   >
                     {item.label}
                   </a>
-                )
-              ))}
-              <Link 
-                href="/publications" 
+                ),
+              )}
+              <Link
+                href="/publications"
                 className="py-2 px-4 hover:bg-gray-50 rounded-md transition-colors"
               >
                 Publications
               </Link>
-              <Link 
-                href="/resume" 
+              <Link
+                href="/resume"
                 className="py-2 px-4 hover:bg-gray-50 rounded-md transition-colors"
               >
                 Resume

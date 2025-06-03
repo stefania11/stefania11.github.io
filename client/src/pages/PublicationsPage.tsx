@@ -1,25 +1,21 @@
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
-  Calendar,
   ExternalLink,
   FileText,
   Users,
-  Filter,
   X,
-  Check
+  Check,
 } from "lucide-react";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { scrollToSection } from "@/lib/scroll-to-section";
 
 export default function PublicationsPage() {
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [_hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [activeTag, setActiveTag] = useState<string | null>(null);
-  
+
   // Define publication tags/categories
   const tags = [
     {
@@ -30,9 +26,9 @@ export default function PublicationsPage() {
       name: "AI Literacy",
       color: "rgba(224, 214, 255, 0.5)",
     },
-    { 
-      name: "Multimodal AI", 
-      color: "rgba(193, 240, 219, 0.5)" 
+    {
+      name: "Multimodal AI",
+      color: "rgba(193, 240, 219, 0.5)",
     },
     {
       name: "Child-AI Interaction",
@@ -89,16 +85,24 @@ export default function PublicationsPage() {
     // 2014 publications
     "SIGRAPH '14": ["Creative Computing"],
     // 2010 publications
-    "EUROMIME '10": ["AI Education"]
+    "EUROMIME '10": ["AI Education"],
   };
 
+  interface PublicationItem {
+    id?: string;
+    venue: string;
+    title?: string;
+    authors?: string;
+    link?: string;
+  }
+
   // Function to check if a publication belongs to the active tag
-  const publicationMatchesActiveTag = (pub: any) => {
+  const publicationMatchesActiveTag = (pub: PublicationItem) => {
     if (!activeTag) return true; // Show all if no tag selected
-    
+
     // Get publication identifier - either id or venue
     const pubId = pub.id || pub.venue;
-    
+
     // Check if this publication has tags mapped
     if (publicationTags[pubId]) {
       return publicationTags[pubId].includes(activeTag);
@@ -586,7 +590,7 @@ export default function PublicationsPage() {
               <motion.div
                 className="inline-flex items-center text-sm font-medium cursor-pointer px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 mb-8"
                 whileHover={{ x: -5 }}
-                onClick={(e) => {
+                onClick={(_e) => {
                   // Allow default navigation to home page
                   // No need to preventDefault here
                 }}
@@ -626,15 +630,13 @@ export default function PublicationsPage() {
               <motion.button
                 key={topic.name}
                 onClick={() => handleTagClick(topic.name)}
-                className={`px-4 py-2 rounded-full hover:shadow-md transition-colors whitespace-nowrap flex items-center ${activeTag === topic.name ? 'ring-2 ring-offset-2 ring-gray-900' : ''}`}
+                className={`px-4 py-2 rounded-full hover:shadow-md transition-colors whitespace-nowrap flex items-center ${activeTag === topic.name ? "ring-2 ring-offset-2 ring-gray-900" : ""}`}
                 style={{ backgroundColor: topic.color }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
                 {topic.name}
-                {activeTag === topic.name && (
-                  <Check className="ml-2 h-4 w-4" />
-                )}
+                {activeTag === topic.name && <Check className="ml-2 h-4 w-4" />}
               </motion.button>
             ))}
             {activeTag && (
@@ -650,28 +652,35 @@ export default function PublicationsPage() {
               </motion.button>
             )}
           </div>
-          
+
           {activeTag && (
-            <motion.div 
+            <motion.div
               className="text-center mb-8"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <p className="text-lg">Showing publications tagged with <span className="font-semibold">{activeTag}</span></p>
+              <p className="text-lg">
+                Showing publications tagged with{" "}
+                <span className="font-semibold">{activeTag}</span>
+              </p>
             </motion.div>
           )}
 
           <div className="space-y-20">
             {publications.map((publication, i) => {
               // Check if any items in this year match the active tag
-              const hasMatchingItems = !activeTag || publication.categories.some(category => 
-                category.items.some(item => publicationMatchesActiveTag(item))
-              );
-              
+              const hasMatchingItems =
+                !activeTag ||
+                publication.categories.some((category) =>
+                  category.items.some((item) =>
+                    publicationMatchesActiveTag(item),
+                  ),
+                );
+
               // Skip rendering this year if no matching items
               if (!hasMatchingItems) return null;
-              
+
               return (
                 <motion.div
                   key={publication.year}
@@ -696,11 +705,13 @@ export default function PublicationsPage() {
                   <div className="space-y-8">
                     {publication.categories.map((category, j) => {
                       // Filter items based on active tag
-                      const filteredItems = category.items.filter(item => publicationMatchesActiveTag(item));
-                      
+                      const filteredItems = category.items.filter((item) =>
+                        publicationMatchesActiveTag(item),
+                      );
+
                       // Skip rendering this category if no matching items
                       if (filteredItems.length === 0) return null;
-                      
+
                       return (
                         <div key={j}>
                           {category.title && (
@@ -712,64 +723,71 @@ export default function PublicationsPage() {
                             {filteredItems.map((item, k) => {
                               // Generate random pastel color for each publication
                               const colors = ["#FFD6E0", "#E0D6FF", "#C1F0DB"];
-                              const color = colors[Math.floor(k % colors.length)];
+                              const color =
+                                colors[Math.floor(k % colors.length)];
 
                               return (
-                            <motion.div
-                              key={item.id || `${item.title}-${k}`}
-                              className="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all"
-                              whileHover={{ y: -5 }}
-                              onHoverStart={() =>
-                                setHoveredItem(item.id || `${item.title}-${k}`)
-                              }
-                              onHoverEnd={() => setHoveredItem(null)}
-                            >
-                              <div
-                                className="border-l-8 pl-6 py-6 px-6 relative"
-                                style={{ borderColor: color }}
-                              >
-                                <div className="flex flex-col md:flex-row md:items-start">
-                                  <div className="md:w-1/5 mb-4 md:mb-0">
-                                    <span
-                                      className="px-3 py-1 rounded-full text-sm font-medium inline-flex items-center"
-                                      style={{ backgroundColor: `${color}40` }}
-                                    >
-                                      <FileText className="w-3 h-3 mr-1" />
-                                      {item.venue}
-                                    </span>
+                                <motion.div
+                                  key={item.id || `${item.title}-${k}`}
+                                  className="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all"
+                                  whileHover={{ y: -5 }}
+                                  onHoverStart={() =>
+                                    setHoveredItem(
+                                      item.id || `${item.title}-${k}`,
+                                    )
+                                  }
+                                  onHoverEnd={() => setHoveredItem(null)}
+                                >
+                                  <div
+                                    className="border-l-8 pl-6 py-6 px-6 relative"
+                                    style={{ borderColor: color }}
+                                  >
+                                    <div className="flex flex-col md:flex-row md:items-start">
+                                      <div className="md:w-1/5 mb-4 md:mb-0">
+                                        <span
+                                          className="px-3 py-1 rounded-full text-sm font-medium inline-flex items-center"
+                                          style={{
+                                            backgroundColor: `${color}40`,
+                                          }}
+                                        >
+                                          <FileText className="w-3 h-3 mr-1" />
+                                          {item.venue}
+                                        </span>
+                                      </div>
+                                      <div className="md:w-4/5">
+                                        <h3 className="text-xl font-bold mb-3">
+                                          {item.title}
+                                        </h3>
+                                        <p className="text-gray-700 mb-4 flex items-start">
+                                          <Users className="w-4 h-4 mr-2 mt-1 flex-shrink-0" />
+                                          {item.authors}
+                                        </p>
+                                        {item.link && (
+                                          <motion.a
+                                            href={item.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                                            whileHover={{ x: 5 }}
+                                          >
+                                            Read Paper
+                                            <ExternalLink className="ml-2 h-4 w-4" />
+                                          </motion.a>
+                                        )}
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div className="md:w-4/5">
-                                    <h3 className="text-xl font-bold mb-3">
-                                      {item.title}
-                                    </h3>
-                                    <p className="text-gray-700 mb-4 flex items-start">
-                                      <Users className="w-4 h-4 mr-2 mt-1 flex-shrink-0" />
-                                      {item.authors}
-                                    </p>
-                                    {item.link && (
-                                      <motion.a
-                                        href={item.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
-                                        whileHover={{ x: 5 }}
-                                      >
-                                        Read Paper
-                                        <ExternalLink className="ml-2 h-4 w-4" />
-                                      </motion.a>
-                                    )}
-                                  </div>
-                                </div>
-                              </div>
-                            </motion.div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  )})}
-                </div>
-              </motion.div>
-            )})}
+                                </motion.div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>

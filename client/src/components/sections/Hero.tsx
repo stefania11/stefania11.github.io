@@ -19,7 +19,8 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-800 mb-8">
-              I research how to build multimodal AI applications for people to learn and research with and about artificial intelligence.
+              I research how to build multimodal AI applications for people to
+              learn and do scientific discoveries.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <motion.a
@@ -48,7 +49,7 @@ export default function Hero() {
               </motion.a>
             </div>
           </motion.div>
-          
+
           <motion.div
             className="relative group"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -56,20 +57,21 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="absolute -inset-1 bg-gradient-to-r from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB] rounded-xl blur-md opacity-50 group-hover:opacity-80 transition duration-1000"></div>
-            <div className="relative rounded-xl overflow-hidden" style={{ aspectRatio: "1/1.2" }}>
-              <div 
-                className="w-full h-full relative after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-r after:from-[#FFD6E0]/10 after:via-transparent after:to-[#C1F0DB]/10"
-              >
-                <img 
-                  src="/blossom_headshot.jpg" 
-                  alt="Stefania Druga with cherry blossoms" 
+            <div
+              className="relative rounded-xl overflow-hidden"
+              style={{ aspectRatio: "1/1.2" }}
+            >
+              <div className="w-full h-full relative after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-r after:from-[#FFD6E0]/10 after:via-transparent after:to-[#C1F0DB]/10">
+                <img
+                  src="/blossom_headshot.jpg"
+                  alt="Stefania Druga with cherry blossoms"
                   className="w-full h-full object-cover"
-                  style={{ 
+                  style={{
                     filter: "contrast(1.1) brightness(1.05)",
                     opacity: 0.85,
                     objectPosition: "center center",
                     transform: "scale(1.0)",
-                    transformOrigin: "center"
+                    transformOrigin: "center",
                   }}
                 />
               </div>
@@ -77,13 +79,13 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-      
-      <motion.div 
+
+      <motion.div
         className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 1.5 }}
       >
-        <ChevronDown 
+        <ChevronDown
           className="h-8 w-8 cursor-pointer"
           onClick={() => scrollToSection("news")}
         />

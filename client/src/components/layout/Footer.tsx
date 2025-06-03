@@ -3,11 +3,31 @@ import { SiSubstack } from "react-icons/si";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: <Twitter className="w-5 h-5" />, href: "https://x.com/Stefania_druga", ariaLabel: "X" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/drugastefania/", ariaLabel: "LinkedIn" },
-    { icon: <Github className="w-5 h-5" />, href: "https://github.com/stefania11", ariaLabel: "GitHub" },
-    { icon: <BookOpen className="w-5 h-5" />, href: "https://medium.com/@Stefania_druga", ariaLabel: "Medium" },
-    { icon: <SiSubstack className="w-5 h-5" />, href: "https://stefaniadruga.substack.com/", ariaLabel: "Substack" },
+    {
+      icon: <Twitter className="w-5 h-5" />,
+      href: "https://x.com/Stefania_druga",
+      ariaLabel: "X",
+    },
+    {
+      icon: <Linkedin className="w-5 h-5" />,
+      href: "https://www.linkedin.com/in/drugastefania/",
+      ariaLabel: "LinkedIn",
+    },
+    {
+      icon: <Github className="w-5 h-5" />,
+      href: "https://github.com/stefania11",
+      ariaLabel: "GitHub",
+    },
+    {
+      icon: <BookOpen className="w-5 h-5" />,
+      href: "https://medium.com/@Stefania_druga",
+      ariaLabel: "Medium",
+    },
+    {
+      icon: <SiSubstack className="w-5 h-5" />,
+      href: "https://stefaniadruga.substack.com/",
+      ariaLabel: "Substack",
+    },
   ];
 
   return (
@@ -23,10 +43,13 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
-                style={{ 
-                  backgroundColor: index % 3 === 0 ? 'rgba(255, 214, 224, 0.5)' : 
-                                 index % 3 === 1 ? 'rgba(224, 214, 255, 0.5)' : 
-                                 'rgba(193, 240, 219, 0.5)' 
+                style={{
+                  backgroundColor:
+                    index % 3 === 0
+                      ? "rgba(255, 214, 224, 0.5)"
+                      : index % 3 === 1
+                        ? "rgba(224, 214, 255, 0.5)"
+                        : "rgba(193, 240, 219, 0.5)",
                 }}
               >
                 {link.icon}
@@ -34,9 +57,12 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        
+
         <div className="border-t border-gray-200 mt-4 pt-6 text-center text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Stefania Druga. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Stefania Druga. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>
