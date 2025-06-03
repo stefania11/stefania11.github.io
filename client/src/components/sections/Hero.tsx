@@ -19,7 +19,7 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-800 mb-8">
-              I research how people learn with and about artificial intelligence and computational making.
+              I research how to build multimodal AI applications for people to learn and research with and about artificial intelligence.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <motion.a

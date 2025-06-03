@@ -18,21 +18,21 @@ export default function News() {
   const newsItems: NewsItem[] = [
     {
       id: 0,
-      title: "Keynote at Seoul Meta Week 2025",
-      date: "June 2025",
-      description: "Keynote on the future of multimodal AI applications at Seoul Meta Week",
-      icon: <Sparkles className="w-5 h-5" />,
-      link: "https://seoulmetaweek.com/",
-      color: "#E0D6FF"
-    },
-    {
-      id: 1,
       title: "AI Co-Scientist Talk at AIE World Fair 2025",
       date: "June 2025",
       description: "Talk on Real-time AI Co-Scientist at AIE World Fair 2025",
       icon: <Sparkles className="w-5 h-5" />,
       link: "https://www.ai.engineer/schedule",
       color: "#C1F0DB"
+    },
+    {
+      id: 1,
+      title: "Keynote at Seoul Meta Week 2025",
+      date: "June 2025",
+      description: "Keynote on the future of multimodal AI applications at Seoul Meta Week",
+      icon: <Sparkles className="w-5 h-5" />,
+      link: "https://seoulmetaweek.com/",
+      color: "#E0D6FF"
     },
     {
       id: 2,
