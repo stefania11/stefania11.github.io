@@ -1,7 +1,7 @@
 export const content = {
   about: {
     paragraphs: [
-      "I'm Stefania Druga, a Research Scientist at Google DeepMind, where I work on novel multimodal AI applications. I have a master's degree from MIT, PhD from UW and have been doing research on AI education since 2015.",
+      "I'm Stefania Druga, an Independent Researcher, formerly a Research Scientist at Google DeepMind, where I worked on novel multimodal AI applications. I have a master's degree from MIT, PhD from UW and have been doing research on AI education since 2015.",
       "During graduate school, I built the first open-source platform for K12 AI Education - Cognimates. My research focuses on the development of AI literacy tools and curriculum for children and communities.",
       "When I'm not coding and writing papers, I enjoy trail running, yoga, and riding my bicycle."
     ],
@@ -14,17 +14,17 @@ export const content = {
       {
         title: "Skills",
         color: "#C1F0DB",
-        items: ["AI/ML Research", "Ed-Tech Development", "Curriculum Design", "HCI Design"]
+        items: ["AI/ML Research", "Ed-Tech Development", "R&D", "HCI Design", "Teaching"]
       },
       {
         title: "Interests",
         color: "#FFD6E0",
-        items: ["AI Education", "Child-Computer Interaction", "Digital Equity", "Creative Learning"]
+        items: ["Multimodal AI", "AI For Science", "AI Education", "Creative Learning", "Family Learning"]
       },
       {
         title: "Languages",
         color: "#E0D6FF",
-        items: ["English", "Romanian", "French", "Spanish", "Italian", "Portuguese"]
+        items: ["English", "Romanian", "French", "Spanish", "Italian", "Portuguese", "Japanese"]
       }
     ]
   },
