@@ -1,0 +1,12 @@
+dist
+build
+node_modules
+*.min.js
+*.min.css
+coverage
+.next
+.cache
+public
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
