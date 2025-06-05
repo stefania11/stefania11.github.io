@@ -55,18 +55,6 @@ export default function Blog() {
     },
     {
       id: "post-5",
-      title: "Creativity is dead! Long live creativity.",
-      date: "October 10, 2023",
-      excerpt:
-        "Musings from Creative Summit 2023 in Sweden on how generative AI is changing creative ecosystems and what this means for human creativity.",
-      coverImage:
-        "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*eIJaZVOGVy-lROagYIqPtw.jpeg",
-      slug: "creativity-generative-ai",
-      externalUrl:
-        "https://medium.com/@Stefania_druga/creativity-is-dead-long-live-creativity-b0264814e544",
-    },
-    {
-      id: "post-6",
       title: "How do children and parents learn about AI together?",
       date: "August 15, 2023",
       excerpt:
