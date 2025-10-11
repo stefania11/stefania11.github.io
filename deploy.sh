@@ -19,7 +19,7 @@ echo -e "${GREEN}Creating GitHub Pages files...${NC}"
 mkdir -p build
 
 # Create .nojekyll file to disable Jekyll processing
-touch build/.nojekyll
+touch client/build/.nojekyll
 
 # Make sure we're in the project root
 cd "$(dirname "$0")"
@@ -29,8 +29,8 @@ echo -e "${GREEN}Setting up gh-pages branch...${NC}"
 git checkout -b gh-pages
 
 # Copy the build files to the root
-cp -r build/* .
-cp build/.nojekyll .
+cp -r client/build/* .
+cp client/build/.nojekyll .
 
 # Add all files to git
 git add -A
