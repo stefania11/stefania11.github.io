@@ -23,12 +23,6 @@ export default function Contact() {
       href: undefined,
       color: "#C1F0DB",
     },
-    {
-      icon: <Phone className="h-5 w-5" />,
-      text: "+1 (206) 555-0123",
-      href: "tel:+12065550123",
-      color: "#E0D6FF",
-    },
   ];
 
   const socialLinks = [

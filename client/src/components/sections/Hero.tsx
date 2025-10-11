@@ -35,11 +35,7 @@ export default function Hero() {
                 Get in touch
               </motion.a>
               <motion.a
-                href="#research"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection("research");
-                }}
+                href="/publications"
                 className="border border-black px-8 py-3 rounded-full transition"
                 whileHover={{ y: -5 }}
                 whileTap={{ scale: 0.98 }}
