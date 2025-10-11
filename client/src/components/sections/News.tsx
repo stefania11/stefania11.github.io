@@ -31,7 +31,7 @@ export default function News() {
       date: "October 14-15, 2025",
       description: "AHA Symposium MIT - Exploring AI's role in supporting human flourishing",
       icon: <Sparkles className="w-5 h-5" />,
-      link: "https://www.mit.edu/",
+      link: null,
       color: "#E0D6FF"
     },
     {
@@ -40,16 +40,16 @@ export default function News() {
       date: "November 19, 2025",
       description: "GAIF South Korea - Keynote on AI for Science Discoveries and Applications",
       icon: <Sparkles className="w-5 h-5" />,
-      link: "https://gaif.kr/",
+      link: null,
       color: "#FFD6E0"
     },
     {
       id: 3,
       title: "Keynote on Multimodal AI for Education",
       date: "December 10, 2025",
-      description: "Linux Conference Japan - Keynote on Multimodal AI for Education",
+      description: "AI_dev: Open Source GenAI & ML Summit Japan - Keynote on Multimodal AI for Education",
       icon: <Sparkles className="w-5 h-5" />,
-      link: "https://events.linuxfoundation.org/about/calendar/",
+      link: "https://events.linuxfoundation.org/ai-dev-japan/",
       color: "#C1F0DB"
     },
     {

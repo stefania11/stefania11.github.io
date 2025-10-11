@@ -51,12 +51,14 @@ export default function BlogPage() {
   // Map blog posts to tags
   const blogTags: Record<string, string[]> = {
     "post-1": ["AI Education", "Family Learning"],
-    "post-2": ["Family Learning", "AI Education"],
+    "post-2": ["AI Education", "Family Learning"],
     "post-3": ["Multimodal AI", "AI Research"],
-    "post-4": ["Creativity", "Generative AI"],
-    "post-5": ["Family Learning", "AI Education"],
-    "post-6": ["AI Research", "Generative AI"],
-    "post-7": ["AI Education", "Family Learning"],
+    "post-4": ["AI Education", "Family Learning"],
+    "post-5": ["Multimodal AI", "AI Research"],
+    "post-6": ["Creativity", "Generative AI"],
+    "post-7": ["Family Learning", "AI Education"],
+    "post-8": ["AI Research", "Generative AI"],
+    "post-9": ["AI Education", "Family Learning"],
   };
 
   // Function to check if a blog post belongs to the active tag
@@ -90,6 +92,34 @@ export default function BlogPage() {
   const blogPosts: BlogPost[] = [
     {
       id: "post-1",
+      title: "Kids as Philosophers of AI",
+      date: "September 7, 2025",
+      author: "Stefania Druga",
+      excerpt:
+        "Welcome to the 2nd Episode of our AI Literacy Series - exploring how children naturally become philosophers when questioning what machines really 'know'.",
+      coverImage:
+        "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https://bucketeer-e05b84d1-ba93-4371-9118-9b400d0bf898.s3.amazonaws.com/public/images/8b8b8b8b-8b8b-8b8b-8b8b-8b8b8b8b8b8b/cover.png",
+      tags: ["AI Education", "Family Learning"],
+      slug: "kids-philosophers-ai",
+      externalUrl:
+        "https://substack.com/home/post/p-173012527",
+    },
+    {
+      id: "post-2",
+      title: "Who is in the Driving Seat?! Learning with AI",
+      date: "September 29, 2025",
+      author: "Stefania Druga",
+      excerpt:
+        "Use AI With Your Kids Like This - exploring the tension at the heart of learning with AI: who is in the driver's seat, the system or the learner?",
+      coverImage:
+        "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https://bucketeer-e05b84d1-ba93-4371-9118-9b400d0bf898.s3.amazonaws.com/public/images/9c9c9c9c-9c9c-9c9c-9c9c-9c9c9c9c9c9c/cover.png",
+      tags: ["AI Education", "Family Learning"],
+      slug: "driving-seat-learning-ai",
+      externalUrl:
+        "https://substack.com/home/post/p-174853715",
+    },
+    {
+      id: "post-3",
       title: "AI in the Physical World: How to Build Real-Time Multimodal Apps",
       date: "May 30, 2025",
       author: "Stefania Druga",
@@ -103,7 +133,7 @@ export default function BlogPage() {
         "https://medium.com/@Stefania_druga/ai-in-the-physical-world-how-to-build-real-time-multimodal-apps-378c3d4f685d",
     },
     {
-      id: "post-2",
+      id: "post-4",
       title:
         "Supercharge Your Scratch Projects: Introducing Cognimates Copilot",
       date: "February 20, 2024",
@@ -118,7 +148,7 @@ export default function BlogPage() {
         "https://medium.com/bits-and-behavior/supercharge-your-scratch-projects-introducing-cognimates-copilot-an-ai-teammate-for-kids-52e616e4096e",
     },
     {
-      id: "post-2",
+      id: "post-5",
       title:
         "Empowering kids for a Future They'll Help Build: A Parents Handbook",
       date: "January 15, 2024",
@@ -133,7 +163,7 @@ export default function BlogPage() {
         "https://medium.com/@Stefania_druga/empowering-kids-for-a-future-theyll-help-build-a-parents-handbook-f1f01ae38718",
     },
     {
-      id: "post-3",
+      id: "post-6",
       title: "Multimodal AI: A Powerful Tool for Social Good",
       date: "April 19, 2024",
       author: "Stefania Druga",
@@ -145,7 +175,7 @@ export default function BlogPage() {
       slug: "multimodal-ai-social-good",
     },
     {
-      id: "post-4",
+      id: "post-7",
       title: "Creativity is dead! Long live creativity.",
       date: "October 10, 2023",
       author: "Stefania Druga",
@@ -157,7 +187,7 @@ export default function BlogPage() {
       slug: "creativity-generative-ai",
     },
     {
-      id: "post-5",
+      id: "post-8",
       title: "How do children and parents learn about AI together?",
       date: "August 15, 2023",
       author: "Stefania Druga",
@@ -169,7 +199,7 @@ export default function BlogPage() {
       slug: "family-ai-learning",
     },
     {
-      id: "post-6",
+      id: "post-9",
       title: "So you think you can Agent?",
       date: "July 5, 2023",
       author: "Stefania Druga",
@@ -179,18 +209,6 @@ export default function BlogPage() {
         "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop",
       tags: ["AI Research", "Generative AI"],
       slug: "ai-agent-hackathon",
-    },
-    {
-      id: "post-7",
-      title: "The Landscape of Teaching Resources for AI Education",
-      date: "June 22, 2023",
-      author: "Stefania Druga",
-      excerpt:
-        "A systematic analysis of existing AI education resources and how they can be effectively used in different learning contexts.",
-      coverImage:
-        "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1864&auto=format&fit=crop",
-      tags: ["AI Education", "Family Learning"],
-      slug: "ai-education-resources",
     },
   ];
 
