@@ -38,12 +38,17 @@ export default function PublicationsPage() {
       name: "Creative Computing",
       color: "rgba(176, 224, 255, 0.5)",
     },
+    {
+      name: "AI Science",
+      color: "rgba(255, 224, 176, 0.5)",
+    },
   ];
 
   // Map publications to tags (this would be better directly in the data model)
   const publicationTags: Record<string, string[]> = {
+    "2025-0": ["AI Science"],
     "2025-1": ["AI Education", "Creative Computing"],
-    "2025-2": ["Multimodal AI", "AI Education"],
+    "2025-2": ["Multimodal AI", "AI Education", "AI Science"],
     "2025-3": ["AI Education", "Multimodal AI"],
     // 2024 publications
     "FACCT '24": ["AI Literacy"],
@@ -147,17 +152,25 @@ export default function PublicationsPage() {
           title: "",
           items: [
             {
+              id: "2025-0",
+              venue: "CHI '26",
+              title:
+                "AI for Science: Building Open and Customizable Tools for Discovery",
+              authors: "Druga Stefania and contributors",
+              year: "2026",
+            },
+            {
               id: "2025-1",
               venue: "IDC '25",
               title:
-                "Cognimates Copilot: Supporting Children's Creative AI Learning and Coding",
+                "Scratch Copilot: Supporting Children's Creative AI Learning and Coding",
               authors: "Druga Stefania and Amy J. Ko",
               year: "2025",
               link: "https://arxiv.org/abs/2505.03867",
             },
             {
               id: "2025-2",
-              venue: "UIST '25",
+              venue: "Proceedings'25",
               title:
                 "ChemBuddy: An AI-Powered Multimodal Chemistry Lab Assistant Addressing Misconceptions in Middle-School Science",
               authors: "Stefania Druga",
@@ -165,7 +178,7 @@ export default function PublicationsPage() {
             },
             {
               id: "2025-3",
-              venue: "UIST '25",
+              venue: "Proceedings '25",
               title:
                 "MathMind: AI-Powered Misconception Detection for Middle School Algebra Learning",
               authors: "Stefania Druga",

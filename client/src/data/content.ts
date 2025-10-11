@@ -1,7 +1,7 @@
 export const content = {
   about: {
     paragraphs: [
-      "I'm Stefania Druga, an Independent Researcher, formerly a Research Scientist at Google DeepMind, where I worked on novel multimodal AI applications. I have a master's degree from MIT, PhD from UW and have been doing research on AI education since 2015.",
+      "I'm Stefania Druga, a Research Scientist at Sakana AI, formerly at Google DeepMind, where I worked on novel multimodal AI applications. I have a master's degree from MIT, PhD from UW and have been doing research on AI education since 2015.",
       "During graduate school, I built the first open-source platform for K12 AI Education - Cognimates. My research focuses on the development of AI literacy tools and curriculum for children and communities.",
       "When I'm not coding and writing papers, I enjoy trail running, yoga, and riding my bicycle.",
     ],
@@ -189,29 +189,17 @@ export const content = {
     },
     {
       title:
-        "Research Priorities for Artificial Intelligence in Global Childhood Development",
-      venue: "IEEE Pervasive Computing",
-      year: "2022",
-      authors: "Druga, S., Pataranutaporn, P., Green, D., Shah, P.",
-      tags: [
-        { name: "AI Development", color: "#FFD6E0" },
-        { name: "Global Computing", color: "#E0D6FF" },
-      ],
-      abstractLink: "https://stefania11.github.io/publications/",
-      pdfLink: "https://ieeexplore.ieee.org/abstract/document/9851512/",
+        "From “AI” to Probabilistic Automation: How Does Anthropomorphization of Technical Systems Descriptions Influence Trust?",
+      venue: "FACCT",
+      year: "2024",
+      authors: "Inia, N., Druga, S., Zukerman, P., and Bender, E.",
     },
     {
       title:
-        "TalkingTree: A Case Study on Designing for Agency with Generative AI in Education",
-      venue: "CSCW",
-      year: "2022",
-      authors: "Seok, J., Hartmann, B., Druga, S.",
-      tags: [
-        { name: "Generative AI", color: "#C1F0DB" },
-        { name: "Education", color: "#FFD6E0" },
-      ],
-      abstractLink: "https://stefania11.github.io/publications/",
-      pdfLink: "https://dl.acm.org/doi/abs/10.1145/3501247.3531547",
+        "A Benchmark for Math Misconceptions: Bridging Gaps in Middle School Algebra with AI-Supported Personalization",
+      venue: "JCHE",
+      year: "2024",
+      authors: "Otero, N., and Druga, S.",
     },
     {
       title:

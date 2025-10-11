@@ -8,6 +8,12 @@ export default function Publications() {
   const recentPublications = [
     {
       title:
+        "AI for Science: Building Open and Customizable Tools for Discovery",
+      venue: "CHI 2026",
+      authors: "Druga Stefania and contributors",
+    },
+    {
+      title:
         'From "AI" to Probabilistic Automation: How Does Anthropomorphization of Technical Systems Descriptions Influence Trust?',
       venue: "FAccT 2024",
       authors: "Nanna Inia, Stefania Druga, Peter Zukerman, and Emily Bender",
@@ -17,13 +23,7 @@ export default function Publications() {
         "A Benchmark for Math Misconceptions: Bridging Gaps in Middle School Algebra with AI-Supported Personalized Instruction",
       venue: "JCHE 2024",
       authors: "Nancy Otero, and Stefania Druga",
-    },
-    {
-      title: "Language Models and Society: Bridging Research and Policy",
-      venue: "FAccT 2023",
-      authors:
-        "Stefania Druga, Ioana Baldini, Mihaela Vorvoreanu, and Rishi Bommasani",
-    },
+    }
   ];
 
   return (

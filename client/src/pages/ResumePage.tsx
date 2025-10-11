@@ -36,6 +36,7 @@ export default function ResumePage() {
 
   const awardsContent = [
     "ASU GSV Summit's 2025 Leading Women in AI, 2025",
+    "O1 Extraordinary Abilities Visa, 2025",
     "NSF FMitF Grant for End-User Programming project, 2021",
     "Jacobs Foundation Grant for AI Literacy project, 2020",
     "Weizenbaum Research Fellow in Criticality of AI-based Systems Lab in Berlin, 2019",
@@ -61,9 +62,15 @@ export default function ResumePage() {
 
   const researchContent = [
     {
-      title: "Research Scientist, Google Gemini",
-      period: "January 2024 - Present",
-      description: "Working on multimodal AI applications",
+      title: "Research Scientist, Sakana AI",
+      period: "August 2025 - Present",
+      description: "Novel AI applications for science and education",
+      link: "https://sakana.ai",
+    },
+    {
+      title: "Research Scientist, Google DeepMind",
+      period: "January 2024 - May 2025",
+      description: "Working on multimodal AI applications for Gemini",
       link: "https://gemini.google.com",
     },
     {
