@@ -6,7 +6,6 @@ import News from "@/components/sections/News";
 import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
 import Talks from "@/components/sections/Talks";
-import Blog from "@/components/sections/Blog";
 import CursorFollower from "@/components/ui/cursor-follower";
 import { useSectionVisibility } from "@/hooks/use-section-visibility";
 
@@ -38,9 +37,6 @@ export default function HomePage() {
         </section>
         <section id="talks" ref={registerSection} className="section-fade">
           <Talks />
-        </section>
-        <section id="blog" ref={registerSection} className="section-fade">
-          <Blog />
         </section>
       </main>
       <Footer />

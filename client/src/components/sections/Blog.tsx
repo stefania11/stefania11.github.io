@@ -5,6 +5,30 @@ export default function Blog() {
   const featuredPosts = [
     {
       id: "post-1",
+      title: "Kids as Philosophers of AI",
+      date: "September 7, 2025",
+      excerpt:
+        "Welcome to the 2nd Episode of our AI Literacy Series - exploring how children naturally become philosophers when questioning what machines really 'know'.",
+      coverImage:
+        "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https://bucketeer-e05b84d1-ba93-4371-9118-9b400d0bf898.s3.amazonaws.com/public/images/8b8b8b8b-8b8b-8b8b-8b8b-8b8b8b8b8b8b/cover.png",
+      slug: "kids-philosophers-ai",
+      externalUrl:
+        "https://substack.com/home/post/p-173012527",
+    },
+    {
+      id: "post-2",
+      title: "Who is in the Driving Seat?! Learning with AI",
+      date: "September 29, 2025",
+      excerpt:
+        "Use AI With Your Kids Like This - exploring the tension at the heart of learning with AI: who is in the driver's seat, the system or the learner?",
+      coverImage:
+        "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https://bucketeer-e05b84d1-ba93-4371-9118-9b400d0bf898.s3.amazonaws.com/public/images/9c9c9c9c-9c9c-9c9c-9c9c-9c9c9c9c9c9c/cover.png",
+      slug: "driving-seat-learning-ai",
+      externalUrl:
+        "https://substack.com/home/post/p-174853715",
+    },
+    {
+      id: "post-3",
       title: "AI in the Physical World: How to Build Real-Time Multimodal Apps",
       date: "May 30, 2025",
       excerpt:
@@ -16,7 +40,7 @@ export default function Blog() {
         "https://medium.com/@Stefania_druga/ai-in-the-physical-world-how-to-build-real-time-multimodal-apps-378c3d4f685d",
     },
     {
-      id: "post-2",
+      id: "post-4",
       title:
         "Supercharge Your Scratch Projects: Introducing Cognimates Copilot",
       date: "February 20, 2024",
@@ -29,7 +53,7 @@ export default function Blog() {
         "https://medium.com/bits-and-behavior/supercharge-your-scratch-projects-introducing-cognimates-copilot-an-ai-teammate-for-kids-52e616e4096e",
     },
     {
-      id: "post-3",
+      id: "post-5",
       title:
         "Empowering kids for a Future They'll Help Build: A Parents Handbook",
       date: "January 15, 2024",
@@ -42,7 +66,7 @@ export default function Blog() {
         "https://medium.com/@Stefania_druga/empowering-kids-for-a-future-theyll-help-build-a-parents-handbook-f1f01ae38718",
     },
     {
-      id: "post-4",
+      id: "post-6",
       title: "Multimodal AI: A Powerful Tool for Social Good",
       date: "April 19, 2024",
       excerpt:
@@ -54,7 +78,7 @@ export default function Blog() {
         "https://medium.com/@Stefania_druga/multimodal-ai-a-powerful-tool-for-social-good-694cbfb76699",
     },
     {
-      id: "post-5",
+      id: "post-7",
       title: "How do children and parents learn about AI together?",
       date: "August 15, 2023",
       excerpt:

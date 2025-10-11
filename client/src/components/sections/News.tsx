@@ -18,30 +18,48 @@ export default function News() {
   const newsItems: NewsItem[] = [
     {
       id: 0,
-      title: "AI Co-Scientist Talk at AIE World Fair 2025",
-      date: "June 2025",
-      description: "Talk on Real-time AI Co-Scientist at AIE World Fair 2025",
+      title: "AI + Education: From Curiosity to Discovery: Building Multimodal AI for Education and Science",
+      date: "October 11, 2025",
+      description: "Inaugural Symposium Penn AI - Building Multimodal AI for Education and Science",
       icon: <Sparkles className="w-5 h-5" />,
-      link: "https://www.ai.engineer/schedule",
+      link: "https://ai.upenn.edu/",
       color: "#C1F0DB"
     },
     {
       id: 1,
-      title: "Keynote at Seoul Meta Week 2025",
-      date: "June 2025",
-      description: "Keynote on the future of multimodal AI applications at Seoul Meta Week",
+      title: "Can we design AI to support human flourishing?",
+      date: "October 14-15, 2025",
+      description: "AHA Symposium MIT - Exploring AI's role in supporting human flourishing",
       icon: <Sparkles className="w-5 h-5" />,
-      link: "https://seoulmetaweek.com/",
+      link: "https://www.mit.edu/",
       color: "#E0D6FF"
     },
     {
       id: 2,
-      title: "Scratch AI Copilot Paper IDC 2025",
-      date: "June 2025",
-      description: "Scratch AI Copilot Paper accepted at ACM IDC 2025 conference in Iceland",
+      title: "Keynote on AI for Science Discoveries and Applications",
+      date: "November 19, 2025",
+      description: "GAIF South Korea - Keynote on AI for Science Discoveries and Applications",
       icon: <Sparkles className="w-5 h-5" />,
-      link: "https://idc.acm.org/2025/",
+      link: "https://gaif.kr/",
       color: "#FFD6E0"
+    },
+    {
+      id: 3,
+      title: "Keynote on Multimodal AI for Education",
+      date: "December 10, 2025",
+      description: "Linux Conference Japan - Keynote on Multimodal AI for Education",
+      icon: <Sparkles className="w-5 h-5" />,
+      link: "https://events.linuxfoundation.org/about/calendar/",
+      color: "#C1F0DB"
+    },
+    {
+      id: 4,
+      title: "Launched a new podcast series on AI literacy for parents",
+      date: "September 2025",
+      description: "New podcast series on AI literacy for parents - Turing Post",
+      icon: <Youtube className="w-5 h-5" />,
+      link: "https://www.turingpost.com/p/ailiteracy1",
+      color: "#E0D6FF"
     }
   ];
 

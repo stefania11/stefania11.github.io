@@ -19,7 +19,7 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-800 mb-8">
-              I research how to build multimodal AI applications for people to learn and research with and about artificial intelligence.
+              I am a Research Scientist at Sakana.ai, passionate about the intersection of AI, science, and education.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <motion.a
