@@ -98,7 +98,7 @@ export default function BlogPage() {
       excerpt:
         "Welcome to the 2nd Episode of our AI Literacy Series - exploring how children naturally become philosophers when questioning what machines really 'know'.",
       coverImage:
-        "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https://bucketeer-e05b84d1-ba93-4371-9118-9b400d0bf898.s3.amazonaws.com/public/images/8b8b8b8b-8b8b-8b8b-8b8b-8b8b8b8b8b8b/cover.png",
+        "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1864&auto=format&fit=crop",
       tags: ["AI Education", "Family Learning"],
       slug: "kids-philosophers-ai",
       externalUrl:
@@ -112,7 +112,7 @@ export default function BlogPage() {
       excerpt:
         "Use AI With Your Kids Like This - exploring the tension at the heart of learning with AI: who is in the driver's seat, the system or the learner?",
       coverImage:
-        "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https://bucketeer-e05b84d1-ba93-4371-9118-9b400d0bf898.s3.amazonaws.com/public/images/9c9c9c9c-9c9c-9c9c-9c9c-9c9c9c9c9c9c/cover.png",
+        "https://images.unsplash.com/photo-1566837945700-30057527ade0?q=80&w=1740&auto=format&fit=crop",
       tags: ["AI Education", "Family Learning"],
       slug: "driving-seat-learning-ai",
       externalUrl:
