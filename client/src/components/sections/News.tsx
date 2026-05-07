@@ -17,40 +17,40 @@ export default function News() {
   const newsItems: NewsItem[] = [
     {
       id: 1,
-      title: "Keynote: Future of Education with AI for the Nordics",
+      title: "Spoke at TekForstå 2026",
       date: "April 2026",
       description:
-        "Keynote at TekForstå 2026, a Nordic gathering on technology understanding in schools. The conference brings educators, researchers, school leaders, and policymakers together for dialogue and shared practice on making AI and digital technology understanding accessible to all students.",
+        "Shared ideas on the future of education with AI at TekForstå 2026, a Nordic forum on making technology understanding accessible in schools.",
       icon: <Sparkles className="w-5 h-5" />,
       link: "https://konference.tekforstaa.dk/",
       color: "#C1F0DB"
     },
     {
       id: 2,
-      title: "Upcoming Keynote: Future of Science with AI at Tech Summit New Zealand",
+      title: "Future of Science with AI",
       date: "September 2026",
       description:
-        "A keynote on how AI is reshaping scientific discovery and research practice, from multi-agent reasoning systems to tools that help researchers prototype, evaluate, and collaborate faster across disciplines.",
+        "Speaking at Tech Summit New Zealand on AI tools that help scientists prototype, reason, and collaborate across research workflows.",
       icon: <Microscope className="w-5 h-5" />,
       link: "https://techsummit.nz/",
       color: "#E0D6FF"
     },
     {
       id: 3,
-      title: "Upcoming Keynote: 2026 DIPS Global Tech Conference",
+      title: "DIPS Global Tech Conference",
       date: "November 2026",
       description:
-        "Keynote at one of South Korea's major technology forums, expected to bring together 500+ deep-tech startups, global experts, venture capital firms, and technology leaders. The proposed theme, Physical AI: Intelligence in Motion, explores how AI is moving into robotics, mobility, manufacturing, infrastructure, and other real-world systems.",
+        "Speaking in South Korea on Physical AI and how intelligence is moving into robotics, mobility, manufacturing, and infrastructure.",
       icon: <Cpu className="w-5 h-5" />,
       link: null,
       color: "#FFD6E0"
     },
     {
       id: 4,
-      title: "Upcoming Panel: AI Literacy and Technological Kinship",
+      title: "Panel in Munich",
       date: "October 16, 2026",
       description:
-        "Panel discussion at Haus der Kunst in Munich on technological kinship and the social architectures that shape AI. The session will bring AI literacy, children's agency, and participatory futures into conversation with philosophy, AI research, and critical theory.",
+        "Joining Haus der Kunst for a discussion on technological kinship, AI literacy, children's agency, and more participatory AI futures.",
       icon: <Users className="w-5 h-5" />,
       link: null,
       color: "#C1F0DB"
