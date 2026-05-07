@@ -17,17 +17,17 @@ export default function News() {
   const newsItems: NewsItem[] = [
     {
       id: 1,
-      title: "Spoke at TekForstå 2026",
+      title: "Keynote on Future of Education with AI in the Nordics",
       date: "April 2026",
       description:
-        "Shared ideas on the future of education with AI at TekForstå 2026, a Nordic forum on making technology understanding accessible in schools.",
+        "Shared ideas on the future of education with AI with 500 teachers at TekForstå 2026 in Denmark, a Nordic conference on making technology understanding accessible in schools.",
       icon: <Sparkles className="w-5 h-5" />,
       link: "https://konference.tekforstaa.dk/",
       color: "#C1F0DB"
     },
     {
       id: 2,
-      title: "Future of Science with AI",
+      title: "Keynote on the Future of Science with AI in New Zealand",
       date: "September 2026",
       description:
         "Speaking at Tech Summit New Zealand on AI tools that help scientists prototype, reason, and collaborate across research workflows.",
@@ -37,7 +37,7 @@ export default function News() {
     },
     {
       id: 3,
-      title: "DIPS Global Tech Conference",
+      title: "Keynote at DIPS Global Tech Conference",
       date: "November 2026",
       description:
         "Speaking in South Korea on Physical AI and how intelligence is moving into robotics, mobility, manufacturing, and infrastructure.",
@@ -47,10 +47,10 @@ export default function News() {
     },
     {
       id: 4,
-      title: "Panel in Munich",
+      title: "Haus der Kunst Panel on Technological Kinship",
       date: "October 16, 2026",
       description:
-        "Joining Haus der Kunst for a discussion on technological kinship, AI literacy, children's agency, and more participatory AI futures.",
+        "Joining Haus der Kunst in Munich for a panel discussion on technological kinship, AI literacy, children's agency, and more participatory AI futures.",
       icon: <Users className="w-5 h-5" />,
       link: null,
       color: "#C1F0DB"
