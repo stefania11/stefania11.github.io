@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 // Import images directly
-import chembuddyImage from "../../assets/chembuddy.png";
+import aiCoScientistImage from "../../assets/ai_coscientist.png";
 import cognimatesImage from "../../assets/cognimates.png";
 import geminiImage from "../../assets/gemini.png";
 
@@ -10,6 +10,20 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: "AI for Science Tools and Models at Sakana AI",
+      description:
+        "Developing tools and models for scientific research at Sakana AI, including Sakana Fugu: a multi-agent orchestration API that dynamically coordinates frontier models for complex reasoning. The work supports new research workflows where scientists can prototype analyses, delegate coding and reasoning tasks, and explore hypotheses with adaptive model teams.",
+      image: aiCoScientistImage,
+      link: "https://sakana.ai/fugu-beta/",
+      tags: [
+        { name: "AI for Science", color: "#C1F0DB" },
+        { name: "Multi-Agent Systems", color: "#FFD6E0" },
+        { name: "Research Workflows", color: "#E0D6FF" },
+      ],
+      gradient: "from-[#C1F0DB] via-[#FFD6E0] to-[#E0D6FF]",
+    },
+    {
+      id: 2,
       title: "Google Home Gemini Extension",
       description:
         "Led the development of Google Home's Gemini Extension, bringing multimodal AI capabilities to smart home devices, enabling users to interact with their homes through natural language and visual inputs.",
@@ -19,20 +33,6 @@ export default function Projects() {
         { name: "Gemini AI", color: "#C1F0DB" },
         { name: "Smart Home", color: "#FFD6E0" },
         { name: "Multimodal Interaction", color: "#E0D6FF" },
-      ],
-      gradient: "from-[#C1F0DB] via-[#FFD6E0] to-[#E0D6FF]",
-    },
-    {
-      id: 2,
-      title: "ChemBuddy: Multimodal AI Chemistry Assistant",
-      description:
-        "An AI-powered learning companion that combines computer vision, voice interaction, and sensor data to help students understand chemistry concepts through real-time experiment analysis.",
-      image: chembuddyImage,
-      link: "",
-      tags: [
-        { name: "Multimodal AI", color: "#FFD6E0" },
-        { name: "Computer Vision", color: "#E0D6FF" },
-        { name: "Education", color: "#C1F0DB" },
       ],
       gradient: "from-[#FFD6E0] via-[#E0D6FF] to-[#C1F0DB]",
     },

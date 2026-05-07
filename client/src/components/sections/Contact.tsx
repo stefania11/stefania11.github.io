@@ -1,13 +1,4 @@
-import { motion } from "framer-motion";
-import {
-  Mail,
-  MapPin,
-  Phone,
-  Twitter,
-  Linkedin,
-  Github,
-  BookOpen,
-} from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
   const contactInfo = [
@@ -22,29 +13,6 @@ export default function Contact() {
       text: "Tokyo, Japan",
       href: undefined,
       color: "#C1F0DB",
-    },
-  ];
-
-  const socialLinks = [
-    {
-      icon: <Twitter className="w-5 h-5" />,
-      href: "https://twitter.com/stefania_druga",
-      ariaLabel: "Twitter",
-    },
-    {
-      icon: <Linkedin className="w-5 h-5" />,
-      href: "https://linkedin.com/in/stefania-druga",
-      ariaLabel: "LinkedIn",
-    },
-    {
-      icon: <Github className="w-5 h-5" />,
-      href: "https://github.com/stefania11",
-      ariaLabel: "GitHub",
-    },
-    {
-      icon: <BookOpen className="w-5 h-5" />,
-      href: "https://medium.com/@stefania_druga",
-      ariaLabel: "Medium",
     },
   ];
 
@@ -84,21 +52,6 @@ export default function Contact() {
               ))}
             </div>
 
-            <div className="flex space-x-5 mt-10">
-              {socialLinks.map((link, index) => (
-                <motion.a
-                  key={index}
-                  href={link.href}
-                  aria-label={link.ariaLabel}
-                  className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#FFD6E0] transition-colors duration-300"
-                  whileHover={{ y: -5 }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.icon}
-                </motion.a>
-              ))}
-            </div>
           </div>
         </div>
       </div>

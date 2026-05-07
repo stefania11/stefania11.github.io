@@ -1,7 +1,6 @@
+import type { ReactNode } from "react";
 import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { Award, Sparkles, Youtube } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Cpu, Microscope, Sparkles, Users } from "lucide-react";
 
 export default function News() {
   interface NewsItem {
@@ -9,7 +8,7 @@ export default function News() {
     title: string;
     date: string;
     description: string;
-    icon: React.ReactNode;
+    icon: ReactNode;
     link: string | null;
     color: string;
     thumbnail?: string;
@@ -17,49 +16,44 @@ export default function News() {
 
   const newsItems: NewsItem[] = [
     {
-      id: 0,
-      title: "AI + Education: From Curiosity to Discovery: Building Multimodal AI for Education and Science",
-      date: "October 11, 2025",
-      description: "Inaugural Symposium Penn AI - Building Multimodal AI for Education and Science",
+      id: 1,
+      title: "Keynote: Future of Education with AI for the Nordics",
+      date: "April 2026",
+      description:
+        "Keynote at TekForstå 2026, a Nordic gathering on technology understanding in schools. The conference brings educators, researchers, school leaders, and policymakers together for dialogue and shared practice on making AI and digital technology understanding accessible to all students.",
       icon: <Sparkles className="w-5 h-5" />,
-      link: "https://ai.upenn.edu/",
+      link: "https://konference.tekforstaa.dk/",
       color: "#C1F0DB"
     },
     {
-      id: 1,
-      title: "Can we design AI to support human flourishing?",
-      date: "October 14-15, 2025",
-      description: "AHA Symposium MIT - Exploring AI's role in supporting human flourishing",
-      icon: <Sparkles className="w-5 h-5" />,
-      link: null,
+      id: 2,
+      title: "Upcoming Keynote: Future of Science with AI at Tech Summit New Zealand",
+      date: "September 2026",
+      description:
+        "A keynote on how AI is reshaping scientific discovery and research practice, from multi-agent reasoning systems to tools that help researchers prototype, evaluate, and collaborate faster across disciplines.",
+      icon: <Microscope className="w-5 h-5" />,
+      link: "https://techsummit.nz/",
       color: "#E0D6FF"
     },
     {
-      id: 2,
-      title: "Keynote on AI for Science Discoveries and Applications",
-      date: "November 19, 2025",
-      description: "GAIF South Korea - Keynote on AI for Science Discoveries and Applications",
-      icon: <Sparkles className="w-5 h-5" />,
+      id: 3,
+      title: "Upcoming Keynote: 2026 DIPS Global Tech Conference",
+      date: "November 2026",
+      description:
+        "Keynote at one of South Korea's major technology forums, expected to bring together 500+ deep-tech startups, global experts, venture capital firms, and technology leaders. The proposed theme, Physical AI: Intelligence in Motion, explores how AI is moving into robotics, mobility, manufacturing, infrastructure, and other real-world systems.",
+      icon: <Cpu className="w-5 h-5" />,
       link: null,
       color: "#FFD6E0"
     },
     {
-      id: 3,
-      title: "Keynote on Multimodal AI for Education",
-      date: "December 10, 2025",
-      description: "AI_dev: Open Source GenAI & ML Summit Japan - Keynote on Multimodal AI for Education",
-      icon: <Sparkles className="w-5 h-5" />,
-      link: "https://events.linuxfoundation.org/ai-dev-japan/",
-      color: "#C1F0DB"
-    },
-    {
       id: 4,
-      title: "Launched a new podcast series on AI literacy for parents",
-      date: "September 2025",
-      description: "New podcast series on AI literacy for parents - Turing Post",
-      icon: <Youtube className="w-5 h-5" />,
-      link: "https://www.turingpost.com/p/ailiteracy1",
-      color: "#E0D6FF"
+      title: "Upcoming Panel: AI Literacy and Technological Kinship",
+      date: "October 16, 2026",
+      description:
+        "Panel discussion at Haus der Kunst in Munich on technological kinship and the social architectures that shape AI. The session will bring AI literacy, children's agency, and participatory futures into conversation with philosophy, AI research, and critical theory.",
+      icon: <Users className="w-5 h-5" />,
+      link: null,
+      color: "#C1F0DB"
     }
   ];
 
