@@ -37,7 +37,7 @@ export default function News() {
     },
     {
       id: 3,
-      title: "Sovereign AI Governance in Japan",
+      title: "Talk at AI Engineering Singapore on Sovereign AI Governance",
       date: "May 15-17, 2026",
       description:
         "Speaking at AI Engineer Singapore on sovereign AI governance in Japan and how countries are shaping responsible AI infrastructure and policy.",
