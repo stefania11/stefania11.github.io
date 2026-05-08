@@ -17,6 +17,16 @@ export default function News() {
   const newsItems: NewsItem[] = [
     {
       id: 1,
+      title: "Talk at AI Engineering Singapore on Sovereign AI Governance",
+      date: "May 15-17, 2026",
+      description:
+        "Speaking at AI Engineer Singapore on sovereign AI governance in Japan and how countries are shaping responsible AI infrastructure and policy.",
+      icon: <Cpu className="w-5 h-5" />,
+      link: "https://www.ai.engineer/singapore",
+      color: "#FFD6E0"
+    },
+    {
+      id: 2,
       title: "Keynote on Future of Education with AI in the Nordics",
       date: "April 2026",
       description:
@@ -26,7 +36,7 @@ export default function News() {
       color: "#C1F0DB"
     },
     {
-      id: 2,
+      id: 3,
       title: "Keynote on the Future of Science with AI in New Zealand",
       date: "September 2026",
       description:
@@ -34,16 +44,6 @@ export default function News() {
       icon: <Microscope className="w-5 h-5" />,
       link: "https://techsummit.nz/",
       color: "#E0D6FF"
-    },
-    {
-      id: 3,
-      title: "Talk at AI Engineering Singapore on Sovereign AI Governance",
-      date: "May 15-17, 2026",
-      description:
-        "Speaking at AI Engineer Singapore on sovereign AI governance in Japan and how countries are shaping responsible AI infrastructure and policy.",
-      icon: <Cpu className="w-5 h-5" />,
-      link: "https://www.ai.engineer/singapore",
-      color: "#FFD6E0"
     },
     {
       id: 4,
