@@ -37,12 +37,12 @@ export default function News() {
     },
     {
       id: 3,
-      title: "Keynote at DIPS Global Tech Conference",
-      date: "November 2026",
+      title: "Sovereign AI Governance in Japan",
+      date: "May 15-17, 2026",
       description:
-        "Speaking in South Korea on Physical AI and how intelligence is moving into robotics, mobility, manufacturing, and infrastructure.",
+        "Speaking at AI Engineer Singapore on sovereign AI governance in Japan and how countries are shaping responsible AI infrastructure and policy.",
       icon: <Cpu className="w-5 h-5" />,
-      link: null,
+      link: "https://www.ai.engineer/singapore",
       color: "#FFD6E0"
     },
     {
