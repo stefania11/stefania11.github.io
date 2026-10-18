@@ -62,27 +62,24 @@
       "date": "October 26, 2026 · 15:00–18:00 JST",
       "location": "Hitotsubashi Hall · Tokyo, Japan",
       "description": "World Models & Physical AI presentation with Sebastian Risi, alongside the RSI Lab and Jürgen Schmidhuber.",
-      "status": "Confirmed speaking engagement",
       "link": "https://luma.com/kjf0z516",
-      "linkLabel": "Event details"
+      "linkLabel": "Read More"
     },
     {
       "title": "DETO 2026",
       "date": "November 10–12, 2026",
       "location": "Grand Hyatt Seoul · Seoul, South Korea",
       "description": "Keynote on November 11 (morning): “Learning to Discover: The Path to Self-Improving AI.” Exact keynote time to be announced.",
-      "status": "Confirmed keynote",
       "link": "https://deepdiveinto.kr/",
-      "linkLabel": "Event details"
+      "linkLabel": "Read More"
     },
     {
       "title": "NeurIPS 2026 Workshops",
       "date": "December 2026 · Workshop dates to be announced",
       "location": "Sydney, Australia · In-person attendance to be confirmed",
       "description": "Research contributions include Neural Fields Encode Adaptation Geometry with Prateik Sinha (NeurReps) and An Auditable Global Research Agenda for Social-Media and Generative-AI Restrictions Affecting Youth with Amanda Baughan and Alexis Hiniker (Child Safety in AI). The Sydney conference runs December 6–12; workshop presentation arrangements are to be confirmed.",
-      "status": "Workshop research involvement",
       "link": "https://neurips.cc/Conferences/2026",
-      "linkLabel": "Conference details"
+      "linkLabel": "Read More"
     }
   ]
 }

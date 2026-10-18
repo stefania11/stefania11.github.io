@@ -38,12 +38,55 @@ traverse(ast, {
           if (field(year,'year').value !== '2026') throw Error('Unexpected year');
           const items = field(field(year,'categories').elements[0],'items');
           const papers = content.papers.map(({tags,...paper}) => paper);
-          add('papers', items.start+1, items.start+1, JSON.stringify(papers).slice(1,-1)+',');
+          add('papers', items.start, items.end, JSON.stringify(papers));
         }
       }});
     }
+    if (p.node.id.name === 'ME') {
+      const array = p.node.body.body[0].declarations[0].init;
+      const icons = ['Rb', 'Bb', '_b'];
+      const accents = ['#D9A5B0', '#B8ADD9', '#9FC7B7'];
+      const entries = content.conferences.map((event, i) => ({
+        id: i + 1, title: event.title, date: event.date,
+        description: event.location + '. ' + event.description,
+        link: event.link, accent: accents[i]
+      }));
+      const literal = '[' + entries.map((event,i) => JSON.stringify(event).slice(0,-1) + ',icon:d.jsx(' + icons[i] + ',{className:"w-5 h-5"})}').join(',') + ']';
+      add('conference-data', array.start, array.end, literal);
+      p.traverse({StringLiteral(v) {
+        if (v.node.value === 'Latest News') add('conference-heading',v.node.start,v.node.end,JSON.stringify('Upcoming Conferences'));
+        if (v.node.value === 'Read more') add('conference-link',v.node.start,v.node.end,JSON.stringify('Read More'));
+      }});
+    }
+    if (p.node.id.name === 'hi') {
+      p.traverse({
+        VariableDeclarator(v) {
+          if (v.node.id.name === 'o') {
+            add('navigation',v.node.init.start,v.node.init.end,JSON.stringify([
+              {id:'talks',label:'Talks'},
+              {id:'conferences',label:'Upcoming Conferences'},
+              {id:'projects',label:'Projects'}
+            ]));
+          }
+        },
+        CallExpression(call) {
+          if (call.node.arguments[0]?.value === 'nav') {
+            const props=call.node.arguments[1];
+            const children=field(props,'children');
+            const desktop=field(props,'className').value.includes('md:flex');
+            const style=desktop ? 'text-sm relative nav-link hover:text-gray-600 transition-colors' : 'py-2 px-4 hover:bg-gray-50 rounded-md transition-colors';
+            const blog=',d.jsx("a",{href:"https://stefaniadruga.substack.com/",target:"_blank",rel:"noopener noreferrer",className:'+JSON.stringify(style)+',children:"Blog"})';
+            add(desktop ? 'blog-desktop' : 'blog-mobile',children.end-1,children.end-1,blog);
+          }
+        }
+      });
+    }
     if (p.node.id.name === 'WE') {
       p.traverse({CallExpression(call) {
+        if (call.node.arguments[0]?.value === 'section') {
+          const id=field(call.node.arguments[1],'id');
+          if(id.value==='news') add('conference-anchor',id.start,id.end,JSON.stringify('conferences'));
+        }
         if (call.node.arguments[0]?.value === 'main') {
           const children = field(call.node.arguments[1], 'children');
           add('home', children.elements[1].end, children.elements[1].end, ',d.jsx(SD2026Updates,{})');
@@ -64,17 +107,6 @@ function SD2026Updates() {
         link(paper.link,paper.link.startsWith("/pdf/") ? "Read Paper (PDF)" : "Read Paper on arXiv")
       ]},paper.id))}),
       d.jsx("div", {className:"mt-4",children:link("/publications","View All Publications")})
-    ]})}),
-    d.jsx("section", {id:"conferences",className:"py-20 px-6 md:px-16",children:d.jsxs("div", {className:"container mx-auto",children:[
-      heading("Conferences"),
-      d.jsx("div", {className:"grid grid-cols-1 gap-8",children:content.conferences.map(event => d.jsxs("article", {className:"bg-white p-6 rounded-xl shadow-sm",children:[
-        d.jsx("p", {className:"text-sm font-medium text-gray-600 mb-3",children:event.date}),
-        d.jsx("h3", {className:"text-xl font-bold mb-3",children:event.title}),
-        d.jsx("p", {className:"text-gray-600 mb-3",children:event.location}),
-        d.jsx("p", {className:"text-gray-700 mb-4",children:event.description}),
-        d.jsx("p", {className:"text-sm font-medium text-gray-600 mb-3",children:event.status}),
-        event.link && link(event.link,event.linkLabel)
-      ]},event.title))})
     ]})})
   ]});
 }
@@ -83,7 +115,7 @@ function SD2026Updates() {
     }
   }
 });
-if (found.size !== 5) throw Error('Missing targets '+ [...found]);
+if (found.size !== 12) throw Error('Missing targets '+ [...found]);
 let output=source;
 for (const e of edits.sort((a,b)=>b.start-a.start)) output=output.slice(0,e.start)+e.text+output.slice(e.end);
 parser.parse(output,{sourceType:'module'});

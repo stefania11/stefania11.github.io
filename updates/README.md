@@ -8,7 +8,7 @@ the current biography, projects, resume, and featured Singapore talk.
 four papers, and three conference entries. The two local PDFs are in `/pdf/`.
 No mailbox links, contract details, or travel bookings are published.
 
-`apply-update.cjs` applies five narrowly scoped AST edits to the original
+`apply-update.cjs` applies twelve narrowly scoped AST edits to the original
 published bundle, parses the result, and gives it a new content hash. It retains
 the original bundle so existing cached HTML continues to work. To reproduce:
 
@@ -23,3 +23,7 @@ not publish. Deployment is a regular fast-forward commit to `gh-pages`.
 
 Before switching publication back to the `main` workflow, reconcile the
 pre-existing source/deployment differences to avoid reverting live content.
+
+The follow-up revision removes the CHI 2026 placeholder, replaces Latest News
+with Upcoming Conferences using the original news card design, removes status
+labels, and adds an external Blog link to desktop and mobile navigation.
