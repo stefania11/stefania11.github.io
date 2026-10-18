@@ -1,0 +1,88 @@
+{
+  "featuredTalk": {
+    "id": 1,
+    "title": "Memory Harnesses for Long-Running Research Agents",
+    "venue": "AI Engineer World's Fair, San Francisco",
+    "date": "July 2026",
+    "description": "Memory systems that help research agents sustain long-horizon autoresearch, with practical approaches to tracking evidence, decisions, and progress across scientific workflows.",
+    "image": "https://i.ytimg.com/vi/R3-anFK1YM8/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=R3-anFK1YM8",
+    "primaryLabel": "Watch Talk"
+  },
+  "papers": [
+    {
+      "id": "2026-cmm",
+      "venue": "NeurIPS '26 · PALM Workshop",
+      "title": "Continuous Memory Machines",
+      "authors": "Ciaran Regan, Kai Arulkumaran, Luke Darlow, Stefania Druga, Sebastian Risi, and Llion Jones",
+      "year": "2026",
+      "link": "https://arxiv.org/abs/2610.07907",
+      "tags": [
+        "AI Science"
+      ]
+    },
+    {
+      "id": "2026-neural-fields",
+      "venue": "NeurIPS '26 · NeurReps Workshop",
+      "title": "Neural Fields Encode Adaptation Geometry",
+      "authors": "Prateik Sinha and Stefania Druga",
+      "year": "2026",
+      "link": "https://arxiv.org/abs/2610.07253",
+      "tags": [
+        "AI Science"
+      ]
+    },
+    {
+      "id": "2026-trace",
+      "venue": "NeurIPS '26 · Child Safety in AI Workshop",
+      "title": "An Auditable Global Research Agenda for Social-Media and Generative-AI Restrictions Affecting Youth",
+      "authors": "Stefania Druga, Amanda Baughan, and Alexis Hiniker",
+      "year": "2026",
+      "link": "/pdf/TRACE_2026.pdf",
+      "tags": [
+        "AI Literacy",
+        "Child-AI Interaction"
+      ]
+    },
+    {
+      "id": "2026-autosim",
+      "venue": "AutoSim · 2026 workshop manuscript",
+      "title": "Searching for Numerical Models of Chemical and Biological Dynamics",
+      "authors": "Dennis George Wilson, Artem Shmatko, and Stefania Druga",
+      "year": "2026",
+      "link": "/pdf/AutoSim_2026.pdf",
+      "tags": [
+        "AI Science"
+      ]
+    }
+  ],
+  "conferences": [
+    {
+      "title": "From World Models to Real-World AI",
+      "date": "October 26, 2026 · 15:00–18:00 JST",
+      "location": "Hitotsubashi Hall · Tokyo, Japan",
+      "description": "World Models & Physical AI presentation with Sebastian Risi, alongside the RSI Lab and Jürgen Schmidhuber.",
+      "status": "Confirmed speaking engagement",
+      "link": "https://luma.com/kjf0z516",
+      "linkLabel": "Event details"
+    },
+    {
+      "title": "DETO 2026",
+      "date": "November 10–12, 2026",
+      "location": "Grand Hyatt Seoul · Seoul, South Korea",
+      "description": "Keynote on November 11 (morning): “Learning to Discover: The Path to Self-Improving AI.” Exact keynote time to be announced.",
+      "status": "Confirmed keynote",
+      "link": "https://deepdiveinto.kr/",
+      "linkLabel": "Event details"
+    },
+    {
+      "title": "NeurIPS 2026 Workshops",
+      "date": "December 2026 · Workshop dates to be announced",
+      "location": "Sydney, Australia · In-person attendance to be confirmed",
+      "description": "Research contributions include Neural Fields Encode Adaptation Geometry with Prateik Sinha (NeurReps) and An Auditable Global Research Agenda for Social-Media and Generative-AI Restrictions Affecting Youth with Amanda Baughan and Alexis Hiniker (Child Safety in AI). The Sydney conference runs December 6–12; workshop presentation arrangements are to be confirmed.",
+      "status": "Workshop research involvement",
+      "link": "https://neurips.cc/Conferences/2026",
+      "linkLabel": "Conference details"
+    }
+  ]
+}
